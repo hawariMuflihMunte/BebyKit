@@ -1,2 +1,3 @@
 # BebyKit
-Simple CSS framework for my project(s)
+
+Simple-to-use CSS framework
