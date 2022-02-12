@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BebyKit</title>
+
+    <link rel="stylesheet" href="assets/script/css/bebykit.css">
+    <script src="assets/script/js/jquery-3.6.0.min.js"></script>
+</head>
+<body class="activate-navbar-fixed white-bg bg-enhanced-1">
+
+    <div class="navbar-fixed">
+        <nav class="red-bg white-text text-enhanced-1">
+            <div class="navbar-brand">
+                <a href="index.php">BebyKit</a>
+            </div>
+            <div class="navbar-link">
+                <a href="#!">Download</a>
+                <a href="#!">Documentation</a>
+                <a href="#!">About</a>
+            </div>
+            <div class="navbar-menu">
+                <a href="#!"><i class="bk-menu"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container py-xl red-text text-darker-1">
+        <h1 class="title">Components</h1>
+        <h3 class="subtitle">Built-in UI / UX Components</h3>
+        <section class="mx-s shadow-s r-l px-l light-bg">
+            <h2 class="title">Buttons</h2>
+            <h3 class="subtitle">Built-in BebyKit's Buttons</h3>
+            <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Visual</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn">button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-outline">button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-outline" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle"><i class="bk-star"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle" href="#!"&gt;&lt;i class="bk-star"&gt&lt;/i&gt;&lt;/a&gt;</span>
+                            <p>Note: Only for icons!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <hr>
+            <h2 class="title">Button Sizes</h2>
+            <h3 class="subtitle">Change the button size</h3>
+            <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Visual</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn btn-xs">xs button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn" href="#!"&gt;&lt;/a&gt;</span>
+                            or
+                            <span class="code-block">&lt;a class="btn btn-xs" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn btn-s blue-bg">s button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn btn-s blue-bg" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn btn-m">m button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn btn-m" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-outline btn-l">l button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-outline btn-l" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn btn-xl yellow-bg bg-lighter-1 dark-text">xl button</a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn btn-xl yellow-bg bg-lighter-1 dark-text" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <p>
+                These are also work in circular buttons. You can see the examples below:
+            </p>
+            <div class="table-wrapper">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Visual</th>
+                        <th>Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle btn-xs"><i class="bk-menu bk-xs"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle btn-xs" href="#!"&gt;&lt;i class="bk-menu bk-xs"&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle btn-s blue-bg bg-darker-2"><i class="bk-star-filled"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle btn-s blue-bg bg-darker-2" href="#!"&gt;&lt;i class="bk-star-filled"&gt;&lt;/i&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle blue-bg bg-lighter-3 grey-text text-lighter-2 btn-m"><i class="bk-music"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle btn-m blue-bg bg-lighter-3 grey-text text-lighter-2" href="#!"&gt;&lt;i class="bk-music"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle btn-l green-bg light-text"><i class="bk-lock bk-l"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle btn-l green-bg light-text" href="#!"&gt;&lt;i class="bk-lock bk-l"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle btn-xl yellow-bg bg-lighter-1 dark-text"><i class="bk-bookmark bk-xl"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle btn-xl yellow-bg bg-lighter-1 dark-text" href="#!"&gt;&lt;i class="bk-bookmark bk-xl"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </section>
+        <hr>
+
+        <h1 class="title">Typography</h1>
+        <h3 class="subtitle">
+            Make changes on the text properties using built-in classes
+        </h3>
+        <section class="mx-s shadow-xs red-bg bg-lighter-2 white-text">
+            <h2 class="title">Headings</h2>
+            <p>
+                There are <b>6 headings</b> to choose from:
+            </p>
+            <div class="table-wrapper">
+                <table class="grey-text text-lighter-2">
+                    <thead class="center">
+                        <tr>
+                            <th>Level</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h1>Heading1</h1></td>
+                            <td>
+                                <span class="code-block">&lt;h1&gt;&lt;/h1&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h2>Heading2</h2></td>
+                            <td>
+                                <span class="code-block">&lt;h2&gt;&lt;/h2&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Heading3</h3></td>
+                            <td>
+                                <span class="code-block">&lt;h3&gt;&lt;/h3&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4>Heading4</h4></td>
+                            <td>
+                                <span class="code-block">&lt;h4&gt;&lt;/h4&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h5>Heading5</h5></td>
+                            <td>
+                                <span class="code-block">&lt;h5&gt;&lt;/h5&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6>Heading6</h6></td>
+                            <td>
+                                <span class="code-block">&lt;h6&gt;&lt;/h6&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="mx-s shadow-xs white-bg bg-enhanced-1">
+            <h2 class="title">Title Headings</h2>
+            <p>
+                There are also <b>6 title headings</b> which is a little smaller than the raw <span class="code-block">&lt;h1&gt;</span>.
+                <br>
+                You can view them all in this table below:
+            </p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h1 class="title">Heading1</h1></td>
+                            <td>
+                                <span class="code-block">&lt;h1 class="title"&gt;&lt;/h1&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="title">Heading2</h2></td>
+                            <td>
+                                <span class="code-block">&lt;h2 class="title"&gt;&lt;/h2&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3 class="title">Heading3</h3></td>
+                            <td>
+                                <span class="code-block">&lt;h3 class="title"&gt;&lt;/h3&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="title">Heading4</h4></td>
+                            <td>
+                                <span class="code-block">&lt;h4 class="title"&gt;&lt;/h4&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h5 class="title">Heading5</h5></td>
+                            <td>
+                                <span class="code-block">&lt;h5 class="title"&gt;&lt;/h5&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6 class="title">Heading6</h6></td>
+                            <td>
+                                <span class="code-block">&lt;h6 class="title"&gt;&lt;/h6&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="mx-s shadow-xs white-bg bg-enhanced-1">
+            <h2 class="title">Subtitle Headings</h2>
+            <p>
+                There are <b>6 subtitle headings</b> that supports the <span class="code-block">.title</span> headings's.
+                <br>
+                <span class="red-text text-l ">*</span>Note:
+                <br>
+                <span class="code-block">.subtitle</span> classes starts from <span class="code-block">&lt;h2&gt;</span>.
+            </p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h2 class="subtitle">Heading2</h2></td>
+                            <td>
+                                <span class="code-block">&lt;h2 class="subtitle"&gt;&lt;/h2&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3 class="subtitle">Heading3</h3></td>
+                            <td>
+                                <span class="code-block">&lt;h3 class="subtitle"&gt;&lt;/h3&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h4 class="subtitle">Heading4</h4></td>
+                            <td>
+                                <span class="code-block">&lt;h4 class="subtitle"&gt;&lt;/h4&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h5 class="subtitle">Heading5</h5></td>
+                            <td>
+                                <span class="code-block">&lt;h5 class="subtitle"&gt;&lt;/h5&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h6 class="subtitle">Heading6</h6></td>
+                            <td>
+                                <span class="code-block">&lt;h6 class="subtitle"&gt;&lt;/h6&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="mx-s shadow-xs white-bg bg-enhanced-1">
+            <h2 class="title">Text Sizes</h2>
+            <p>
+                You can change text sizes using classes below:
+            </p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="text-xs">
+                                    Text XS
+                                </p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="text-xs"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-s">
+                                    Text S
+                                </p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="text-s"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-m">Text M</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="text-m"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-l">Text L</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="text-l"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text-xl">Text XL</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="text-xl"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="mx-s shadow-xs white-bg bg-enhanced-1">
+            <h2 class="title">Font Sizes</h2>
+            <p>
+                Similar to <b>Text Sizes</b>, but with fixed value.
+                <b>Text Sizes uses <span class="code-block">%</span></b>:
+            </p>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Level</th>
+                            <th>Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="font-xs">Font XS</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="font-xs"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font-s">Font S</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="font-s"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font-m">Font M</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="font-m"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font-l">Font L</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="font-l"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="font-xl">Font XL</p>
+                            </td>
+                            <td>
+                                <span class="code-block">&lt;p class="font-xl"&gt;&lt;/p&gt;</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/script/js/bebykit.js"></script>
+</body>
+</html>
