@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebyKit</title>
 
-    <link rel="stylesheet" href="assets/script/css/bebykit.css">
+    <!-- <link rel="stylesheet" href="assets/script/css/bebykit.css"> -->
+    <link rel="stylesheet" href="assets/script/css/bebykit.fix.css">
     <script src="assets/script/js/jquery-3.6.0.min.js"></script>
 </head>
 <body class="activate-navbar-fixed white-bg bg-enhanced-1">
@@ -27,7 +28,12 @@
         </nav>
     </div>
 
-    <div class="container py-xl red-text text-darker-1">
+    <div class="full-container">
+        <h1 class="title shadow-text-3d red-text">BebyKit</h1>
+        <h3 class="subtitle">Keeping your code written semantically</h3>
+    </div>
+
+    <div class="container py-xl blue-text text-darker-1">
         <h1 class="title">Helpers</h1>
         <h2 class="subtitle">Utilities that helps you getting done with a tasks or a specific task</h2>
         <section class="mx-s shadow-s r-l px-l light-bg">
@@ -514,6 +520,9 @@
                     </tbody>
                 </table>
             </div>
+            <p>
+                You can choose whether using semantic tags or using <span class="code-block">&lt;div class="section"&gt;&lt;/div&gt;</span>
+            </p>
         </section>
 
         <hr>
@@ -546,6 +555,25 @@
                         </td>
                         <td>
                             <span class="code-block">&lt;a class="btn-outline" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="black-bg">
+                                <a href="#!" class="btn-outline btn-blue r-xl btn-m">button</a>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-outline" href="#!"&gt;&lt;/a&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="#!" class="btn-circle"><i class="bk-star"></i></a>
+                        </td>
+                        <td>
+                            <span class="code-block">&lt;a class="btn-circle" href="#!"&gt;&lt;i class="bk-star"&gt&lt;/i&gt;&lt;/a&gt;</span>
+                            <p>Note: Only for icons!</p>
                         </td>
                     </tr>
                     <tr>
@@ -655,7 +683,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="#!" class="btn-circle btn-l green-bg light-text"><i class="bk-lock bk-l"></i></a>
+                            <a href="#!" class="btn-circle btn-l green-bg light-text"><i class="bk-lock bk-m"></i></a>
                         </td>
                         <td>
                             <span class="code-block">&lt;a class="btn-circle btn-l green-bg light-text" href="#!"&gt;&lt;i class="bk-lock bk-l"&gt;&lt;/a&gt;</span>
@@ -676,9 +704,7 @@
         <hr>
 
         <h1 class="title">Typography</h1>
-        <h3 class="subtitle">
-            Make changes on the text properties using built-in classes
-        </h3>
+        <h2 class="subtitle">Make changes on the text properties using built-in classes</h2>
         <section class="mx-s shadow-s r-l px-l light-bg">
             <h2 class="title">Headings</h2>
             <p>
@@ -904,7 +930,7 @@
                 </table>
             </div>
             <hr>
-            <h2 class="title">Font Sizes</h2>
+            <h2 class="title shadow-text-xl">Font Sizes</h2>
             <p>
                 Similar to <b>Text Sizes</b>, but with fixed value.
                 <b>Text Sizes uses <span class="code-block">%</span></b>:
