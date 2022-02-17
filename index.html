@@ -10,26 +10,22 @@
     <link rel="stylesheet" href="assets/script/css/bebykit.fix.css">
     <script src="assets/script/js/jquery-3.6.0.min.js"></script>
 </head>
-<body class="activate-navbar-fixed white-bg bg-enhanced-1">
+<body class="navbar-fixed-activated white-bg bg-enhanced-1">
 
     <div class="navbar-fixed">
         <nav class="red-bg white-text">
-            <div class="navbar-brand">
-                <a href="index.php">BebyKit</a>
-            </div>
-            <div class="navbar-link">
-                <a href="#!">Download</a>
-                <a href="#!">Documentation</a>
-                <a href="#!">About</a>
-            </div>
-            <div class="navbar-menu">
-                <a href="#!"><i class="bk-menu"></i></a>
-            </div>
+            <a class="navbar-brand" href="index.html">BebyKit</a>
+            <a class="navbar-icon" href="#!"><i class="bk-menu"></i></a>
+            <ul class="navbar-item">
+                <li><a href="https://github.com/hawariMuflihMunte/BebyKit/archive/refs/heads/main.zip" download="BebyKit_v0.1.zip">Download</a></li>
+                <li><a href="#!">Documentation</a></li>
+                <li><a href="#!">About</a></li>
+            </ul>
         </nav>
     </div>
 
-    <div class="full-container">
-        <h1 class="title shadow-text-3d red-text">BebyKit</h1>
+    <div class="full-container red-bg">
+        <h1 class="title shadow-text-3d white-text grey-selection">BebyKit</h1>
         <h3 class="subtitle">Keeping your code written semantically</h3>
     </div>
 
@@ -382,7 +378,7 @@
                         <div class="container">
                             <div class="col-wrapper">
                                 <div class="col s-12 light-bg p-m display-inline-flex justify-content-space-evenly shadow-1">
-                                    <span class="code-block dark-bg blue-text text-lighter-3 my-m">Light-bg</span> <span class="code-block dark-bg blue-text text-lighter-3 my-m">Light-text</span>
+                                    <span class="code-block dark-bg blue-text text-lighter-3 my-m">light-bg</span> <span class="code-block dark-bg blue-text text-lighter-3 my-m">light-text</span>
                                 </div>
                                 <div class="col s-12 dark-bg p-m display-inline-flex justify-content-space-evenly">
                                     <span class="code-block light-bg blue-text text-darker-3 my-m">dark-bg</span> <span class="code-block light-bg blue-text text-darker-3 my-m">dark-text</span>                                </div>
@@ -578,7 +574,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="#!" class="btn-circle"><i class="bk-star"></i></a>
+                            <a href="#!" class="btn-circle-outline btn-blue"><i class="bk-star"></i></a>
                         </td>
                         <td>
                             <span class="code-block">&lt;a class="btn-circle" href="#!"&gt;&lt;i class="bk-star"&gt&lt;/i&gt;&lt;/a&gt;</span>
@@ -990,6 +986,11 @@
         </section>
     </div>
 
-    <script src="assets/script/js/bebykit.js"></script>
+    <!-- <script src="assets/script/js/bebykit.js"></script> -->
+<script>
+window.onload = () => {
+    
+};
+</script>
 </body>
 </html>
