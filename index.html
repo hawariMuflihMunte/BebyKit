@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebyKit</title>
 
-    <!-- <link rel="stylesheet" href="assets/script/css/bebykit.css"> -->
     <link rel="stylesheet" href="assets/script/css/bebykit.fix.css">
-    <script src="assets/script/js/jquery-3.6.0.min.js"></script>
+
+    <meta property="og:title" content="BebyKit" />
+    <meta property="og:type" content="documentation" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="Simple & free-to-use CSS Framework, and also open-source" />
+
 </head>
 <body class="navbar-fixed-activated white-bg bg-enhanced-1">
 
     <div class="navbar-fixed">
-        <nav class="white-text">
-            <a class="navbar-brand" href="index.html">BebyKit</a>
-            <a class="navbar-icon" href="#!"><i class="bk-menu"></i></a>
+        <nav class="white-text" id="navbar">
+            <a class="navbar-brand" href="index.html" style="clip-path: polygon(50% 24%, 100% 0, 75% 50%, 100% 100%, 51% 76%, 24% 100%, 0 76%, 0 24%, 24% 0);">
+                <img src="assets/image/logo/bebykit-light.png" alt="BebyKit's Logo" class="r-xs">
+            </a>
+            <a class="navbar-icon"><i class="bk-menu"></i></a>
             <ul class="navbar-item">
                 <li><a href="https://github.com/hawariMuflihMunte/BebyKit/archive/refs/heads/main.zip" download="BebyKit_v0.1.zip">Download</a></li>
                 <li><a href="#!">Documentation</a></li>
@@ -24,16 +31,135 @@
         </nav>
     </div>
 
-    <div class="full-container">
+    <main class="full-container">
+
         <div class="container">
             <h1 class="title blue-text text-center-xs">BebyKit</h1>
             <h1 class="subtitle text-center-xs">Keeping your code semantically written</h1>
         </div>
 
+        <!-- <section class="container">
+            <h3 class="title">Directory Lists</h3>
+            <ul class="list-directory" id="names-collection">
+                <li>Arash <em>-dir</em></li>
+                <li>Bennie <em>-dir</em></li>
+                <li>Connie <em>-dir</em></li>
+                <li>
+                    <ul class="list-directory">
+                        <li>Donnie <em>-dir</em></li>
+                        <li>Earny <em>-dir</em></li>
+                        <li>
+                            <ul class="list-directory">
+                                <li>Froggy <em>-dir</em></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section> -->
+
+        <!-- <section class="container">
+            <h2 class="title">Outline</h2>
+            <div class="container">
+                <div class="inline-block p-m light-bg w-45 shadow-s r-m outline-xs outline-blue"></div>
+                <div class="inline-block p-m light-bg w-45 shadow-s r-m outline-s outline-red"></div>
+                <div class="inline-block p-m light-bg w-45 shadow-s r-m outline-m outline-red"></div>
+                <div class="inline-block p-m light-bg w-45 shadow-s r-m outline-l outline-red"></div>
+                <div class="inline-block p-m light-bg w-45 shadow-s r-m outline-xl outline-purple"></div>
+            </div>
+        </section> -->
+
+        <section class="container">
+            <h2 class="title">Alert Boxes</h2>
+            <div class="alert alert-green">
+                <p class="font-m green-text text-lighter-2 alert-title">Congrats!</p>
+                <p class="alert-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam nisi culpa unde vero laboriosam! Fuga ad sunt et. Voluptas doloremque soluta sint iste rerum architecto mollitia rem cum excepturi exercitationem.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="title">Forms</h2>
+            <div class="p-m r-m shadow-s shadow-hover-minimize light-bg">
+                <form action="" method="post">
+                    <div class="row">
+                        <div class="column xs-12">
+                            <input type="text">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="password">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="radio" name="radio1" id="radio1">
+                            <label for="radio1">BebyKit</label>
+                            <input type="radio" name="radio2" id="radio2">
+                            <label for="radio2">Framework</label>
+                        </div>
+                        <div class="column xs-12">
+                            <input type="checkbox">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="button" value="button">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="color">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="email"  style="--form-outline-color: var(--permanent-geranium-lake);">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="file">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="hidden">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="image">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="number" min="-10" max="10">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="search">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="tel">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="time">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="date">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="datetime">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="datetime-local">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="week">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="month">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="url" style="--form-outline-color: red;">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="submit">
+                        </div>
+                        <div class="column xs-12">
+                            <input type="reset">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <section class="container">
             <h2 class="title">Visibility</h2>
             <h3 class="title">Element Hide</h3>
-            <div class="light-bg r-m p-s mb-xl shadow-m hover-shadow">
+            <div class="light-bg r-m p-s mb-xl shadow-m shadow-hover-minimize">
                 <table class="table-fluid">
                     <thead>
                         <tr>
@@ -94,7 +220,7 @@
                 </table>
             </div>
             <h3 class="title">Element Invisibility</h3>
-            <div class="light-bg r-m mb-xl p-s shadow-m hover-shadow">
+            <div class="light-bg r-m mb-xl p-s shadow-m shadow-hover-minimize">
                 <table class="table-fluid">
                     <thead>
                         <tr>
@@ -155,7 +281,7 @@
                 </table>
             </div>
             <h3 class="title">Element Visibility</h3>
-            <div class="light-bg r-m p-s shadow-m hover-shadow">
+            <div class="light-bg r-m p-s shadow-m shadow-hover-minimize">
                 <table class="table-fluid">
                     <thead>
                         <tr>
@@ -221,27 +347,27 @@
             <h2 class="title">Shadows</h2>
             <div class="row text-center">
                 <div class="column xs-12 s-6 m-3 p-s">
-                    <div class="p-s r-m shadow-xs dark-text light-bg hover-shadow">
+                    <div class="p-s r-m shadow-xs dark-text light-bg shadow-hover-minimize">
                         shadow-xs
                     </div>
                 </div>
                 <div class="column xs-12 s-6 m-3 p-s">
-                    <div class="p-s r-m shadow-s dark-text light-bg hover-shadow">
+                    <div class="p-s r-m shadow-s dark-text light-bg shadow-hover-minimize">
                         shadow-s
                     </div>
                 </div>
                 <div class="column xs-12 s-6 m-3 p-s">
-                    <div class="p-s r-m shadow-m dark-text light-bg hover-shadow">
+                    <div class="p-s r-m shadow-m dark-text light-bg shadow-hover-minimize">
                         shadow-m
                     </div>
                 </div>
                 <div class="column xs-12 s-6 m-3 p-s">
-                    <div class="p-s r-m shadow-l dark-text light-bg hover-shadow">
+                    <div class="p-s r-m shadow-l dark-text light-bg shadow-hover-minimize">
                         shadow-l
                     </div>
                 </div>
                 <div class="column xs-12 p-s">
-                    <div class="p-s r-m shadow-xl dark-text light-bg hover-shadow">
+                    <div class="p-s r-m shadow-xl dark-text light-bg shadow-hover-minimize">
                         shadow-xl
                     </div>
                 </div>
@@ -707,7 +833,7 @@
                 </div>
                 <div class="column xs-12 s-6 m-4">
                     <div class="row light-text">
-                        <div class="column grey-bg bg-lighter-3 p-s">
+                        <div class="column grey-bg bg-lighter-3 p-s dark-text">
                             #999999 grey lighter-3
                         </div>
                         <div class="column grey-bg bg-lighter-2 p-s">
@@ -788,7 +914,7 @@
             <div class="light-bg p-m mb-m shadow-s">
                 <div class="container">
                     <a href="#!" class="btn light-text">Button</a>
-                    <a href="#!" class="btn blue-bg light-text">Button</a>
+                    <a href="#!" class="btn red-bg light-text">Button</a>
                     <a href="#!" class="btn white-bg dark-text">Button</a>
                     <a href="#!" class="btn dark-bg light-text">Button</a>
                 </div>
@@ -797,7 +923,7 @@
             <div class="dark-bg p-m mb-m shadow-m">
                 <div class="container">
                     <a href="#!" class="btn-outline">Button</a>
-                    <a href="#!" class="btn-outline btn-blue">Button</a>
+                    <a href="#!" class="btn-outline btn-red">Button</a>
                     <a href="#!" class="btn-outline btn-white">Button</a>
                     <a href="#!" class="btn-outline btn-yellow">Button</a>
                 </div>
@@ -807,7 +933,7 @@
             <div class="light-bg p-m mb-m shadow-s">
                 <div class="container">
                     <a href="#!" class="btn-circle"><i class="bk-star"></i></a>
-                    <a href="#!" class="btn-circle blue-bg"><i class="bk-star"></i></a>
+                    <a href="#!" class="btn-circle red-bg"><i class="bk-star"></i></a>
                     <a href="#!" class="btn-circle white-bg dark-text"><i class="bk-star"></i></a>
                     <a href="#!" class="btn-circle dark-bg"><i class="bk-star"></i></a>
                 </div>
@@ -816,7 +942,7 @@
             <h3 class="subtitle">Icons only buttons</h3>
             <div class="dark-bg p-m mb-m shadow-m">
                 <div class="container">
-                    <a href="#!" class="btn-circle-outline btn-pink"><i class="bk-star"></i></a>
+                    <a href="#!" class="btn-circle-outline"><i class="bk-star"></i></a>
                     <a href="#!" class="btn-circle-outline btn-orange"><i class="bk-star"></i></a>
                     <a href="#!" class="btn-circle-outline btn-white"><i class="bk-star"></i></a>
                     <a href="#!" class="btn-circle-outline btn-yellow"><i class="bk-star"></i></a>
@@ -937,7 +1063,7 @@
                 <div class="row">
                     <div class="column xs-12 s-6 m-4">
                         <h4 class="title">Unordered</h5>
-                        <h6 class="subtitle">List Style Type <em>None</em></h6>
+                        <h5 class="subtitle">List Style Type <em>None</em></h5>
                         <ul class="list-none">
                             <li>John Doe</li>
                             <li>Jane Dee</li>
@@ -946,7 +1072,7 @@
                     </div>
                     <div class="column xs-12 s-6 m-4">
                         <h4 class="title">Unordered</h5>
-                        <h6 class="subtitle">List Style Type <em>Disc</em></h6>
+                        <h5 class="subtitle">List Style Type <em>Disc</em></h5>
                         <ul class="list-disc">
                             <li>John Doe</li>
                             <li>Jane Dee</li>
@@ -955,7 +1081,7 @@
                     </div>
                     <div class="column xs-12 s-6 m-4">
                         <h4 class="title">Unordered</h5>
-                            <h6 class="subtitle">List Style Type <em>Circle</em></h6>
+                        <h5 class="subtitle">List Style Type <em>Circle</em></h5>
                         <ul class="list-circle">
                             <li>John Doe</li>
                             <li>Jane Dee</li>
@@ -964,7 +1090,7 @@
                     </div>
                     <div class="column xs-12 s-6 m-4">
                         <h4 class="title">Unordered</h5>
-                        <h6 class="subtitle">List Style Type <em>Square</em></h6>
+                        <h5 class="subtitle">List Style Type <em>Square</em></h5>
                         <ul class="list-square">
                             <li>John Doe</li>
                             <li>Jane Dee</li>
@@ -972,7 +1098,7 @@
                         </ul>
                     </div>
                     <div class="column xs-12 m-4">
-                        <h4 class="title">Ordered</h5>
+                        <h4 class="title">Ordered</h4>
                         <ol>
                             <li>John Doe</li>
                             <li>Jane Dee</li>
@@ -980,7 +1106,7 @@
                         </ol>
                     </div>
                     <div class="column xs-12 s-12 m-4">
-                        <h4 class="title">Description List</h5>
+                        <h4 class="title">Description List</h4>
                         <dl>
                             <dt>Description Title</dt>
                             <dd>Jane Dee</dd>
@@ -989,6 +1115,15 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section class="container">
+            <h4 class="title">Fancy Lists</h4>
+            <ul class="list-fancy" id="names-collection">
+                <li>Arash <button class="btn btn-s"><i class="bk-trash bk-l"></i></button></li>
+                <li>Bennie <button class="btn btn-s"><i class="bk-trash bk-l"></i></button></li>
+                <li>Connie <button class="btn btn-s"><i class="bk-trash bk-l"></i></button></li>
+            </ul>
         </section>
 
         <div class="container">
@@ -2251,13 +2386,9 @@
             <hr>
         </div>
 
-    </div>
+    </main>
 
     <!-- <script src="assets/script/js/bebykit.js"></script> -->
-<script>
-window.onload = () => {
-    
-};
-</script>
+<script src="assets/script/js/bebykit.exerc.js"></script>
 </body>
 </html>
