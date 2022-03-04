@@ -1573,7 +1573,7 @@ button[type="submit"]:hover {
   -o-transition: var(--f-transition-value);
   transition: var(--f-transition-value);
   color: var(--queen-blue) !important;
-  outline: 1px solid var(--queen-blue);
+  border: 1px solid var(--queen-blue);
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
@@ -1600,7 +1600,7 @@ button[type="submit"]:hover {
        -o-transition: var(--f-transition-value);
           transition: var(--f-transition-value);
   color: var(--queen-blue) !important;
-  outline: 1px solid var(--queen-blue);
+  border: 1px solid var(--queen-blue);
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   line-height: 4px;
@@ -1657,27 +1657,27 @@ button[type="submit"]:hover {
 
 .btn-outline.xs-outline,
 .btn-group-outline.xs-outline {
-  outline-width: 1px !important;
+  border-width: 1px !important;
 }
 
 .btn-outline.s-outline,
 .btn-group-outline.s-outline {
-  outline-width: 2px !important;
+  border-width: 2px !important;
 }
 
 .btn-outline.m-outline,
 .btn-group-outline.m-outline {
-  outline-width: 3px !important;
+  border-width: 3px !important;
 }
 
 .btn-outline.l-outline,
 .btn-group-outline.l-outline {
-  outline-width: 5px !important;
+  border-width: 5px !important;
 }
 
 .btn-outline.xl-outline,
 .btn-group-outline.xl-outline {
-  outline-width: 8px !important;
+  border-width: 8px !important;
 }
 
 .btn-outline:hover,
@@ -1689,18 +1689,18 @@ button[type="submit"]:hover {
 .btn-outline.btn-no-outline,
 .btn-circle-outline.btn-no-outline,
 .btn-group-outline.btn-no-outline {
-  outline-style: none;
+  border: none;
 }
 
 .btn-outline.btn-black,
 .btn-circle-outline.btn-black {
   background-color: transparent !important;
-  outline-color: var(--pure-black) !important;
+  border-color: var(--pure-black) !important;
   color: var(--pure-black) !important;
 }
 
 .btn-group-outline.btn-black {
-  outline-color: var(--pure-black) !important;
+  border-color: var(--pure-black) !important;
 }
 
 .btn-group-outline.btn-black > .btn {
@@ -1718,12 +1718,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-white,
 .btn-circle-outline.btn-white {
   background-color: transparent !important;
-  outline-color: var(--pure-white) !important;
+  border-color: var(--pure-white) !important;
   color: var(--pure-white) !important;
 }
 
 .btn-group-outline.btn-white {
-  outline-color: var(--pure-white) !important;
+  border-color: var(--pure-white) !important;
 }
 
 .btn-group-outline.btn-white > .btn {
@@ -1736,19 +1736,19 @@ button[type="submit"]:hover {
 .btn-group-outline.btn-white > .btn:hover {
   --pure-white: rgba(0, 0, 0, 0.83);
   background-color: white !important;
-  outline-color: white !important;
+  border-color: white !important;
   color: var(--pure-white) !important;
 }
 
 .btn-outline.btn-purple,
 .btn-circle-outline.btn-purple {
   background-color: transparent !important;
-  outline-color: var(--medium-orchid) !important;
+  border-color: var(--medium-orchid) !important;
   color: var(--medium-orchid) !important;
 }
 
 .btn-group-outline.btn-purple {
-  outline-color: var(--medium-orchid) !important;
+  border-color: var(--medium-orchid) !important;
 }
 
 .btn-group-outline.btn-purple > .btn {
@@ -1766,12 +1766,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-blue,
 .btn-circle-outline.btn-blue {
   background-color: transparent !important;
-  outline-color: var(--queen-blue) !important;
+  border-color: var(--queen-blue) !important;
   color: var(--queen-blue) !important;
 }
 
 .btn-group-outline.btn-blue {
-  outline-color: var(--queen-blue) !important;
+  border-color: var(--queen-blue) !important;
 }
 
 .btn-group-outline.btn-blue > .btn {
@@ -1789,12 +1789,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-red,
 .btn-circle-outline.btn-red {
   background-color: transparent !important;
-  outline-color: var(--permanent-geranium-lake) !important;
+  border-color: var(--permanent-geranium-lake) !important;
   color: var(--permanent-geranium-lake) !important;
 }
 
 .btn-group-outline.btn-red {
-  outline-color: var(--permanent-geranium-lake) !important;
+  border-color: var(--permanent-geranium-lake) !important;
 }
 
 .btn-group-outline.btn-red > .btn {
@@ -1812,12 +1812,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-pink,
 .btn-circle-outline.btn-pink {
   background-color: transparent !important;
-  outline-color: var(--paradise-pink) !important;
+  border-color: var(--paradise-pink) !important;
   color: var(--paradise-pink) !important;
 }
 
 .btn-group-outline.btn-pink {
-  outline-color: var(--paradise-pink) !important;
+  border-color: var(--paradise-pink) !important;
 }
 
 .btn-group-outline.btn-pink > .btn {
@@ -1835,12 +1835,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-yellow,
 .btn-circle-outline.btn-yellow {
   background-color: transparent !important;
-  outline-color: var(--jonqull) !important;
+  border-color: var(--jonqull) !important;
   color: var(--jonqull) !important;
 }
 
 .btn-group-outline.btn-yellow {
-  outline-color: var(--jonqull) !important;
+  border-color: var(--jonqull) !important;
 }
 
 .btn-group-outline.btn-yellow > .btn {
@@ -1858,12 +1858,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-orange,
 .btn-circle-outline.btn-orange {
   background-color: transparent !important;
-  outline-color: var(--orange-peel) !important;
+  border-color: var(--orange-peel) !important;
   color: var(--orange-peel) !important;
 }
 
 .btn-group-outline.btn-orange {
-  outline-color: var(--orange-peel) !important;
+  border-color: var(--orange-peel) !important;
 }
 
 .btn-group-outline.btn-orange > .btn {
@@ -1881,12 +1881,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-green,
 .btn-circle-outline.btn-green {
   background-color: transparent !important;
-  outline-color: var(--slimy-green) !important;
+  border-color: var(--slimy-green) !important;
   color: var(--slimy-green) !important;
 }
 
 .btn-group-outline.btn-green {
-  outline-color: var(--slimy-green) !important;
+  border-color: var(--slimy-green) !important;
 }
 
 .btn-group-outline.btn-green > .btn {
@@ -1904,12 +1904,12 @@ button[type="submit"]:hover {
 .btn-outline.btn-brown,
 .btn-circle-outline.btn-brown {
   background-color: transparent !important;
-  outline-color: var(--golden-brown) !important;
+  border-color: var(--golden-brown) !important;
   color: var(--golden-brown) !important;
 }
 
 .btn-group-outline.btn-brown {
-  outline-color: var(--golden-brown) !important;
+  border-color: var(--golden-brown) !important;
 }
 
 .btn-group-outline.btn-brown > .btn {
@@ -1929,13 +1929,13 @@ button[type="submit"]:hover {
 .btn-circle-outline.btn-grey,
 .btn-circle-outline.btn-gray {
   background-color: transparent !important;
-  outline-color: var(--dim-grey) !important;
+  border-color: var(--dim-grey) !important;
   color: var(--dim-grey) !important;
 }
 
 .btn-group-outline.btn-grey,
 .btn-group-outline.btn-gray {
-  outline-color: var(--dim-grey) !important;
+  border-color: var(--dim-grey) !important;
 }
 
 .btn-group-outline.btn-grey > .btn,
@@ -2019,7 +2019,7 @@ button.btn-xl {
 }
 
 .btn-group-outline {
-  outline: 1px solid var(--permanent-geranium-lake);
+  border: 1px solid var(--permanent-geranium-lake);
 }
 
 .btn-group-outline > .btn {
@@ -4976,14 +4976,30 @@ table {
   max-width: 100%;
   white-space: nowrap;
   font-weight: inherit;
+  overflow-x: auto;
+}
+
+table.table-striped thead tr:first-child,
+table.table-striped tr:nth-child(even) {
+  background-color: transparent;
+}
+
+table.table-striped thead tr:not(:first-child),
+table.table-striped tr:not(:nth-child(even)) {
+  background-color: var(--cultured);
+}
+
+table.no-border,
+table.no-border * {
+  border: none !important;
 }
 
 th {
-  font-size: 25px;
+  font-size: 26px;
 }
 
 td {
-  font-size: 23px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 576px) {
@@ -5001,7 +5017,7 @@ td {
   display: table-cell;
   vertical-align: middle;
   text-align: left;
-  padding: 16px 6px;
+  padding: 15px 8px;
 }
 
 thead tr {
@@ -5041,7 +5057,7 @@ tbody tr {
 
   table.table-fluid thead tr {
     display: block;
-    padding: 0 8px 0 0;
+    padding: 0 4px 0 0;
   }
 
   table.table-fluid tbody {
@@ -5063,24 +5079,52 @@ tbody tr {
   table.table-fluid td {
     display: block;
     text-align: center;
-    min-height: 96px;
+    min-height: 32px;
   }
 
   table.table-fluid tr {
     border-bottom: none;
-    padding: 0 6px;
+    padding: 0 3px;
   }
 
   table.table-fluid thead {
     border: 0;
     border-right: 1px solid var(--shadow-color);
-    padding: 6px;
+    padding: 3px;
   }
 
   table.table-fluid::after {
     content: "";
     clear: both;
   }
+}
+
+table.table-bordered {
+  border: 1px solid var(--shadow-color);
+  overflow-x: auto;
+}
+
+table.table-bordered thead tr:first-child {
+  border-top-left-radius: 20px;
+}
+
+table.table-bordered tbody tr:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+table.table-bordered thead th:not(:last-child),
+table.table-bordered tbody td:not(:last-child) {
+  border-right: 1px solid var(--shadow-color);
+}
+
+table.table-bordered.table-striped thead tr:first-child,
+table.table-bordered.table-striped tr:nth-child(even) {
+  background-color: transparent;
+}
+
+table.table-bordered.table-striped thead tr:not(:first-child),
+table.table-bordered.table-striped tr:not(:nth-child(even)) {
+  background-color: var(--cultured);
 }
 
 .w-100 {
@@ -5350,7 +5394,7 @@ input[type="url"]:focus,
 input[type="url"]:focus-within {
   -webkit-box-shadow: 0 0 0.420em var(--form-outline-color);
           box-shadow: 0 0 0.420em var(--form-outline-color);
-  outline: 1px solid var(--form-outline-color);
+  border: 1px solid var(--form-outline-color);
 }
 
 input[type="color"] {
@@ -5414,7 +5458,7 @@ input[type="file"]:hover,
   -webkit-box-shadow: 0 0 0.1em var(--shadow-color);
           box-shadow: 0 0 0.1em var(--shadow-color);
 }
-/* 
+
  input[type="radio"] {
   display: none;
 }
@@ -5462,7 +5506,7 @@ input[type="file"]:hover,
   background-color: var(--pure-white);
   -webkit-box-shadow: inset 0 0 0 1px var(--form-outline-color);
           box-shadow: inset 0 0 0 1px var(--form-outline-color);
-  outline: 1px solid var(--form-outline-color);
+  border: 1px solid var(--form-outline-color);
 }
 
  label.radio-field:hover {
@@ -5474,7 +5518,7 @@ input[type="file"]:hover,
   -webkit-box-shadow: inset 0 0 0 2px var(--pure-white);
           box-shadow: inset 0 0 0 2px var(--pure-white);
   background-color: var(--form-outline-color);
-} */
+}
 
 @media only screen and (max-width: 768px){
   input[type="text"],
