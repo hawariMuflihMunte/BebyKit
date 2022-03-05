@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
-/* @charset "UTF-8"; */
 
 :root {
   --pure-black: #000000;
@@ -4949,7 +4948,6 @@ nav .navbar-icon {
     min-width: 240px;
     width: 500000px !important;
     transition: 255ms linear;
-    /* z-index: ; */
   }
 
   nav ul.navbar-item li {
@@ -4994,8 +4992,19 @@ table.no-border * {
   border: none !important;
 }
 
+table.no-border.table-striped thead tr:first-child,
+table.no-border.table-striped tr:nth-child(even) {
+  background-color: transparent;
+}
+
+table.no-border.table-striped thead tr:not(:first-child),
+table.no-border.table-striped tr:not(:nth-child(even)) {
+  background-color: var(--cultured);
+}
+
 th {
   font-size: 26px;
+  font-weight: 400;
 }
 
 td {
@@ -5079,7 +5088,7 @@ tbody tr {
   table.table-fluid td {
     display: block;
     text-align: center;
-    min-height: 32px;
+    min-height: 36px;
   }
 
   table.table-fluid tr {
