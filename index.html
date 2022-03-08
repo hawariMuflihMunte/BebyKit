@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BebyKit</title>
+
+    <link rel="stylesheet" href="assets/script/css/bebykit.fix.css">
+
+    <meta property="og:title" content="BebyKit" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hawarimuflihmunte.github.io/BebyKit/" />
+    <meta property="og:image" content="assets/image/logo/BebyKit.png" />
+    <meta property="og:description" content="Simple & free-to-use CSS Framework, and also open-source" />
+
+    <style type="text/css">
+        @-webkit-keyframes spinY {
+            to {
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes spinY {
+            to {
+                -webkit-transform: rotateY(360deg);
+                        transform: rotateY(360deg);
+            }
+        }
+
+        #bk-logo {
+            -webkit-transition: 5s ease;
+                 -o-transition: 5s ease;
+                    transition: 5s ease;
+            -webkit-animation-name: spinY;
+                    animation-name: spinY;
+            -webkit-animation-duration: 4s;
+                    animation-duration: 4s;
+            -webkit-animation-delay: 1.25s;
+                    animation-delay: 1.25s;
+            -webkit-animation-play-state: running;
+                    animation-play-state: running;
+            -webkit-animation-iteration-count: infinite;
+                    animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+                    animation-timing-function: linear;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+        }
+
+        #bk-logo:hover {
+            -webkit-animation-play-state: paused;
+                    animation-play-state: paused;
+        }
+
+        @media only screen and (max-width: 576px) {
+            #bk-logo {
+                max-width: 65px !important;
+            }
+        }
+    </style>
+
+</head>
+<body class="white-bg bg-enhanced-1">
+    
+    <nav class="shadow-xs light-bg pr-xl">
+        <a href="index.html" class="navbar-brand flex items-align-center text-l blue-text text-lighter-1 unselectable" style="font-weight: 400;">
+            <img src="assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;">
+            BebyKit
+        </a>
+        <ul class="navbar-item">
+            <li>
+                <div class="dropdown r-s">
+                    <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
+                    <div class="dropdown-content light-bg blue-text font-m">
+                        <a href="index.html">Home</a>
+                        <a href="layout/">Layout</a>
+                        <a href="components/">Components</a>
+                        <a href="utilities/">Utilities</a>
+                        <a href="forms/">Forms</a>
+                        <a href="icons/">Icons</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container pt-m mb-l">
+        <div class="flex items-align-center content-align-center mb-l">
+            <img src="assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 80px;" id="bk-logo">
+            <h2 class="title blue-text text-lighter-1 shadow-text-3d unselectable">BebyKit</h2>
+        </div>
+        <h2 class="title grey-text text-lighter-1">Introduction</h2>
+        <p class="font-l">
+            Get started with BebyKit, mobile-first approach and responsive display.
+        </p>
+        <hr class="mt-m">
+        <h4 class="title mt-l">Quick Start</h4>
+        <h5 class="title">Starter Template</h6>
+        <div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3 overflow-auto">
+        <pre>
+&lt;!<span class="orange-text text-lighter-1">DOCTYPE</span> <span class="yellow-text">html</span>&gt;
+&lt;<span class="orange-text text-lighter-1">html</span>&gt;
+&lt;<span class="orange-text text-lighter-1">head</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">meta</span> <span class="yellow-text">charset</span>=<span class="yellow-text text-lighter-3">"UTF-8"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">meta</span> <span class="yellow-text">http-equiv</span>=<span class="yellow-text text-lighter-3">"X-UA-Compatible"</span> <span class="yellow-text">content</span>=<span class="yellow-text text-lighter-3">"IE=edge"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">meta</span> <span class="yellow-text">name</span>=<span class="yellow-text text-lighter-3">viewport</span> <span class="yellow-text">content</span>=<span class="yellow-text text-lighter-3">"width=device-width, initial-scale=1.0"</span>&gt;
+
+    &lt;<span class="orange-text text-lighter-1">title</span>&gt;<span class="light-text">Project Name</span>&lt;/<span class="orange-text text-lighter-1">title</span>&gt;
+
+    &lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">stylesheet</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"assets/script/css/bebykit.fix.css"</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">head</span>&gt;
+&lt;<span class="orange-text text-lighter-1">body</span>&gt;
+    
+&lt;/<span class="orange-text text-lighter-1">body</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">html</span>&gt;</pre>
+        </div>
+        <p class="font-l">
+            For the framework's CSS, you can download it from GitHub or directly from here.
+        </p>
+        <div class="dropdown blue-bg bg-lighter-1 r-s">
+            <button class="btn px-m shadow-n font-m"><i class="bk-download bk-s"></i>&nbsp;Download</button>
+            <div class="dropdown-content light-bg blue-text font-m">
+                <a href="#!"><i class="bk-github bk-m"></i>&nbsp;GitHub</a>
+                <a href="#!"><i class="bk-download bk-m"></i>&nbsp;Download</a>
+            </div>
+        </div>
+        <p class="font-l mt-m">
+            <span class="red-text">*</span>Note:<br>
+            If you have already downloaded the framework and its assets, use it in your project by placing its assets directly in your project.
+        </p>
+        <hr class="mt-m">
+
+        <div class="my-xl blue-bg p-m r-s shadow-s overflow-auto">
+            <h2 class="title light-text mb-m">Quick Overview</h2>
+            <p class="font-l">
+                Quick link:
+            </p>
+            <div class="btn-group-outline btn-white mx-auto blue-text">
+                <a href="layout/" class="btn font-m py-m px-m"><i class="bk-link bk-s"></i>&nbsp;Layout</a>
+                <a href="components/" class="btn font-m py-m px-m"><i class="bk-link bk-s"></i>&nbsp;Components</a>
+                <a href="utilities/" class="btn font-m py-m px-m"><i class="bk-link bk-s"></i>&nbsp;Utilities</a>
+                <a href="forms/" class="btn font-m py-m px-m"><i class="bk-link bk-s"></i>&nbsp;Forms</a>
+                <a href="icons/" class="btn font-m py-m px-m"><i class="bk-link bk-s"></i>&nbsp;Icons</a>
+            </div>
+            <div class="light-text mt-l">
+                <h4 class="title light-text">Layout</h4>
+                <ul class="font-m">
+                    <li>Grid</li>
+                    <li>Container</li>
+                </ul>
+                <hr class="light-bg my-m">
+                <h4 class="title light-text">Components</h4>
+                <ul class="font-m">
+                    <li>Buttons</li>
+                    <li>Circle Buttons</li>
+                    <li>Button Group</li>
+                    <li>Table</li>
+                    <li>Dropdown</li>
+                </ul>
+                <hr class="light-bg my-m">
+                <h4 class="title light-text">Utilities</h4>
+                <ul class="font-m">
+                    <li>Padding</li>
+                    <li>Margin</li>
+                    <li>Radius</li>
+                    <li>Border</li>
+                    <li>Hide</li>
+                    <li>Visible</li>
+                    <li>Invisible</li>
+                    <li>Shadow</li>
+                    <li>Text Shadow</li>
+                    <li>Background Color</li>
+                    <li>Text Color</li>
+                    <li>Color Palette</li>
+                    <li>Overflow</li>
+                </ul>
+                <hr class="light-bg my-m">
+                <h4 class="title light-text">Forms</h4>
+                <hr class="light-bg my-m">
+                <h4 class="title light-text">Icons</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer class="blue-bg pt-xl pb-s px-m">
+        <div class="row">
+            <div class="column xs-12 s-5 m-4 l-3 light-bg r-s flex content-justify-center shadow-s">
+                <a href="index.html" class="py-s flex items-align-center">
+                    <img src="assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 60px;">
+                    <p class="font-xl blue-text text-lighter-1"><strong>BebyKit</strong></p>
+                </a>
+            </div>
+            <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
+                <p class="font-m">
+                    Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
+                    Current Version: v1.0.1
+                </p>
+            </div>
+            <div class="column xs-12 mt-m text-center">
+                <p>
+                    BebyKit © 2022. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
