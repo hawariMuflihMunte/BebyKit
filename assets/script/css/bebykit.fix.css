@@ -6236,7 +6236,8 @@ details:hover {
   cursor: pointer;
 } */
 
-.dropdown {
+.dropdown,
+.dropup {
   position: relative;
   display: inline-block;
   background-color: inherit;
@@ -6244,12 +6245,14 @@ details:hover {
   padding: 0;
 }
 
-.dropdown > [class*="btn"] {
+.dropdown > [class*="btn"],
+.dropup > [class*="btn"] {
   background-color: inherit;
   margin: 0;
 }
 
-.dropdown-content {
+.dropdown-content,
+.dropup-content {
   --shadow-color: rgba(0, 0, 0, 0.19);
   display: none;
   position: absolute;
@@ -6272,7 +6275,12 @@ details:hover {
   border-radius: 2px;
 }
 
-.dropdown-content a {
+.dropup-content {
+  bottom: 100%;
+}
+
+.dropdown-content a,
+.dropup-content a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6295,16 +6303,26 @@ details:hover {
   background-color: inherit;
 }
 
-.dropdown-content a:first-child {
+.dropup-content a {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
+}
+
+.dropdown-content a:first-child,
+.dropup-content a:first-child {
   border-top-left-radius: 2px;
 }
 
-.dropdown-content a:last-child {
+.dropdown-content a:last-child,
+.dropup-content a:last-child {
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover,
+.dropup-content a:hover {
   -webkit-transition: var(--xf-transition-value) linear;
        -o-transition: var(--xf-transition-value) linear;
           transition: var(--xf-transition-value) linear;
@@ -6312,7 +6330,8 @@ details:hover {
           filter: brightness(93.66666%);
 }
 
-.dropdown-content a:active {
+.dropdown-content a:active,
+.dropup-content a:active {
   --xf-transition-value: 10ms;
   -webkit-transition: var(--xf-transition-value) linear;
        -o-transition: var(--xf-transition-value) linear;
@@ -6321,8 +6340,26 @@ details:hover {
           filter: brightness(100%);
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+.dropup:hover .dropup-content {
   display: block;
+}
+
+.divider {
+  --shadow-color: rgba(0,0,0,0.20);
+  display: block;
+  max-width: 100%;
+  min-width: 20px;
+  height: 1px;
+  max-height: 1px;
+  background-color: var(--shadow-color);
+  border: none !important;
+  outline: none !important;
+  border-radius: 1px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 4px auto;
+  width: 100%;
 }
 
 .card {
@@ -6595,6 +6632,7 @@ nav .navbar-brand {
 }
 
 nav .navbar-brand img {
+  pointer-events: none !important;
   display: block;
   max-width: 50px;
   height: auto;

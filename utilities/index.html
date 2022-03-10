@@ -28,11 +28,13 @@
                     <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
                     <div class="dropdown-content light-bg blue-text font-m">
                         <a href="../index.html">Home</a>
+                        <div class="divider"></div>
                         <a href="../layout/">Layout</a>
                         <a href="../components/">Components</a>
                         <a href="index.html">Utilities</a>
                         <a href="../forms/">Forms</a>
                         <a href="../icons/">Icons</a>
+                        <a href="../typography/">Typography</a>
                     </div>
                 </div>
             </li>
@@ -445,51 +447,72 @@
             You can apply this in almost any elements!<br>
             See how it works below:
         </p>
-        <div class="light-bg dark-text p-s w-20 r-s font-l text-center b-xs b-grey">
+        <div class="light-bg dark-text p-s w-20 hidden-xs-only r-s font-l text-center b-xs b-grey">
             b-xs
         </div>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-s mt-s b-red">
-            b-s
+        <div class="light-bg dark-text p-s w-45 hidden-s-to-upper r-s font-l text-center b-xs b-grey">
+            b-xs
         </div>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-m mt-s b-green">
-            b-m
+        <div class="light-bg dark-text p-s w-20 hidden-xs-only r-s font-l text-center bt-s b-grey my-s">
+            bt-s
         </div>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-l mt-s">
-            b-l
+        <div class="light-bg dark-text p-s w-45 hidden-s-to-upper r-s font-l text-center bt-s b-grey my-s">
+            bt-s
         </div>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-xl mt-s">
-            b-xl
+        <div class="light-bg dark-text p-s w-20 hidden-xs-only r-s font-l text-center bl-m b-grey my-s">
+            bl-m
+        </div>
+        <div class="light-bg dark-text p-s w-45 hidden-s-to-upper r-s font-l text-center bl-m b-grey my-s">
+            bl-m
+        </div>
+        <div class="light-bg dark-text p-s w-20 hidden-xs-only r-s font-l text-center br-l b-grey my-s">
+            br-l
+        </div>
+        <div class="light-bg dark-text p-s w-45 hidden-s-to-upper r-s font-l text-center br-l b-grey my-s">
+            br-l
+        </div>
+        <div class="light-bg dark-text p-s w-20 hidden-xs-only r-s font-l text-center bb-xl b-grey my-s">
+            bb-xl
+        </div>
+        <div class="light-bg dark-text p-s w-45 hidden-s-to-upper r-s font-l text-center bb-xl b-grey my-s">
+            bb-xl
         </div>
         <div class="dark-bg py-l px-s my-s r-s white-text text-enhanced-3 overflow-auto">
             <pre>
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-xs"</span>&gt;
-        b-xs
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-xs"</span>&gt;
+    b-xs
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
 
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-s"</span>&gt;
-        b-s
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s bt-s"</span>&gt;
+    bt-s
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
 
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-m"</span>&gt;
-        b-m
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s bl-m"</span>&gt;
+    bl-m
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
 
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-l"</span>&gt;
-        b-l
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s br-l"</span>&gt;
+    br-l
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
 
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-xl"</span>&gt;
-        b-xl
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s bb-xl"</span>&gt;
+    bb-xl
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
             </div>
         <p class="font-l mt-m">
             You can also change the border style!<br>
             See how it works below:
         </p>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-m b-dash mt-s">
+        <div class="light-bg p-s w-20 hidden-xs-only r-s font-l text-center b-m b-dash mt-s">
             b-dash
         </div>
-        <div class="light-bg p-s w-20 r-s font-l text-center b-l b-dot mt-m">
+        <div class="light-bg p-s w-45 hidden-s-to-upper r-s font-l text-center b-m b-dash mt-s">
+            b-dash
+        </div>
+        <div class="light-bg p-s w-20 hidden-xs-only r-s font-l text-center b-m b-dot mt-s">
+            b-dot
+        </div>
+        <div class="light-bg p-s w-45 hidden-s-to-upper r-s font-l text-center b-m b-dot mt-s">
             b-dot
         </div>
         <p class="font-l mt-m">
@@ -540,7 +563,7 @@
                 <div class="light-bg p-s w-20 r-s hidden-s-to-lower font-l text-center b-l b-outset mt-m b-orange">
                     b-outset
                 </div>
-                <div class="light-bg p-s w-45 r-s hidmen-s-upper-lower font-l text-center b-l b-outset mt-m b-orange">
+                <div class="light-bg p-s w-45 r-s hidden-m-to-upper font-l text-center b-l b-outset mt-m b-orange">
                     b-outset
                 </div>
             </div>
@@ -548,32 +571,35 @@
                 <div class="light-bg p-s w-20 r-s hidden-s-to-lower font-l text-center b-l b-groove mt-m b-pink">
                     b-groove
                 </div>
-                <div class="light-bg p-s w-45 r-s hidmen-s-upper-lower font-l text-center b-l b-groove mt-m b-pink">
+                <div class="light-bg p-s w-45 r-s hidden-m-to-upper font-l text-center b-l b-groove mt-m b-pink">
                     b-groove
                 </div>
             </div>
             <div class="column">
-                <div class="dark-bg light-text p-s hidden-s-to-lower w-20 r-s font-l text-center b-l b-hidden mt-m">
+                <div class="dark-bg p-s w-20 r-s hidden-s-to-lower font-l text-center b-l b-hidden mt-m b-pink">
+                    b-hidden
+                </div>
+                <div class="dark-bg p-s w-45 r-s hidden-m-to-upper font-l text-center b-l b-hidden mt-m b-pink">
                     b-hidden
                 </div>
             </div>
         </div>
-        <div class="dark-bg py-l px-s my-s r-s white-text text-enhanced-3 overflow-auto">
+        <div class="dark-bg py-l px-s mt-m mb-s r-s white-text text-enhanced-3 overflow-auto">
             <pre>
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-m b-solid"</span>&gt;
-        b-solid
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-m b-solid"</span>&gt;
+    b-solid
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
             </div>
             <p class="font-l">
-                Border are also able to has its own unique color. You can apply coloring on border by using color name with <code>b-</code> prefixes.
+                Border are also able to have their own unique colors. You can apply coloring on border by using color name with <code>b-</code> prefixes.
                 <br>
                 Example:
             </p>
             <div class="dark-bg py-l px-s my-s r-s white-text text-enhanced-3 overflow-auto">
                 <pre>
-    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-m b-red font-l"</span>&gt;
-        b-red
-    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"light-bg dark-text p-s b-m b-red font-l"</span>&gt;
+    b-red
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
             </div>
             <div class="light-bg dark-text p-s b-m b-red font-l">
                 b-red
@@ -1385,12 +1411,12 @@
             <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
                 <p class="font-m">
                     Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
-                    Current Version: v1.0.1
+                    Current Version: v1.0.2
                 </p>
             </div>
             <div class="column xs-12 mt-m text-center">
                 <p>
-                    BebyKit © 2022. All Rights Reserved
+                    BebyKit © 2022. MIT Licensed
                 </p>
             </div>
         </div>
