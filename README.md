@@ -1,10 +1,26 @@
 # BebyKit
 
-Simple-to-use CSS framework
+💎- Front-end Utilities -💎
 
-Made with ❤️ by Hawari & Hikari...
+Made with ❤️ by all the _BebyKit_'s Developer whose participated.
+### Description
 
---------------------------------------------------------------------------------
+Welcome onboard Front-end Developer, here you can express yourself freely by contributing to our Open-source Front-end framework. If you think it is nice for others to see it, then why not contribute it? Don't let your imagination slipped away before you can even realize it to the world.
+
+> “ If freedom of speech is taken away, then dumb and silent we may be led, like sheep to the slaughter. ”
+> 
+> ```- George Washington```
+
+### Contribution Guideline
+Instruction
+- At the very first step, star this repo!
+- Fork this repo
+- Clone your forked repo
+- Create your own creative script
+- Commit & Push your code
+- Discuss the Pull Request to be merged (if accepted, your script will be pulled)
+- Celebrate your contribute to open-source project 😄
+---
 MIT License
 
 Copyright (c) 2022 Hawari Muflih Munte
