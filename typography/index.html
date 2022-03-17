@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebyKit</title>
 
+    <link rel="icon" href="../assets/image/logo/BebyKit.ico" sizes="32x32" type="image/x-icon">
+
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
 
     <meta property="og:title" content="BebyKit" />
@@ -18,22 +20,21 @@
 <body class="white-bg bg-enhanced-1">
     
     <nav class="shadow-xs light-bg pr-xl">
-        <a href="../index.html" class="navbar-brand flex items-align-center text-l blue-text text-lighter-1 unselectable" style="font-weight: 400;">
-            <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;">
-            BebyKit
+        <a href="../index.html" class="navbar-brand flex items-align-center blue-text text-lighter-1 unselectable" style="font-weight: 400;">
+            <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;" loading="lazy">
         </a>
         <ul class="navbar-item">
             <li>
                 <div class="dropdown r-s">
                     <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
-                    <div class="dropdown-content light-bg blue-text font-m">
+                    <div class="dropdown-content light-bg blue-text">
                         <a href="../index.html">Home</a>
                         <div class="divider"></div>
-                        <a href="../layout/">Layout</a>
-                        <a href="../components/">Components</a>
-                        <a href="../utilities/">Utilities</a>
-                        <a href="../forms/">Forms</a>
-                        <a href="../icons/">Icons</a>
+                        <a href="../layout/index.html">Layout</a>
+                        <a href="../components/index.html">Components</a>
+                        <a href="../utilities/index.html">Utilities</a>
+                        <a href="../forms/index.html">Forms</a>
+                        <a href="../icons/index.html">Icons</a>
                         <a href="index.html">Typography</a>
                     </div>
                 </div>
@@ -42,13 +43,13 @@
     </nav>
 
     <div class="container py-m">
-        <h2 class="title">Typography</h2>
+        <h1 class="title">Typography</h1>
         <hr class="mb-l">
         <h3 class="title">Headings</h3>
-        <p class="font-l mb-m">
+        <p class="mb-m">
             Headings are usually used to indicate the title of a section on the page.
             <br>
-            You can achieve this just by using semantic HTML heading tag <code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code>.
+            You can make this by using semantic HTML heading tag <code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code>.
             <br>
             See examples below:
         </p>
@@ -59,7 +60,7 @@
         <h5>Heading5</h5>
         <h6>Heading6</h6>
         <h3 class="title mt-l pt-l">Title Headings</h3>
-        <p class="font-l mb-s">
+        <p class="mb-s">
             Similar to Heading, but with a little bit smaller in size than normal headings.
             To use this, you have to add <code>title</code> class inside the class attribute.
             <br>
@@ -72,7 +73,7 @@
         <h5 class="title">Heading5</h5>
         <h6 class="title">Heading6</h6>
         <h3 class="title mt-l pt-l">Subtitle Headings</h3>
-        <p class="font-l mb-s">
+        <p class="mb-s">
             Smaller headings (subtitle) for heading. Add <code>subtitle</code> inside the class attribute.
             Take a note that this <em>subtitle</em> work only if the previous heading has <code>title</code> class!
             <br>
@@ -94,7 +95,7 @@
         <h1 class="title">Hello There Title</h1>
         <h1 class="subtitle">Hello There Subtitle</h1>
         <hr class="mb-l">
-        <p class="font-l mb-s">Or...</p>
+        <p class="mb-s">Or...</p>
         <div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3 overflow-auto">
             <pre>
 &lt;<span class="orange-text text-lighter-1">h1</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"title"</span>&gt;
@@ -111,7 +112,7 @@
 <h2 class="subtitle">Hello There Subtitle</h2>
     </div>
     <div class="container pb-l">
-        <p class="font-l">
+        <p>
             Make the first heading higher one level than the next one.
             <br>
             See examples below:
@@ -122,7 +123,45 @@
         <h4 class="subtitle">Hello There Sub4</h4>
         <h5 class="subtitle">Hello There Sub5</h5>
         <h6 class="subtitle">Hello There Sub6</h6>
-        <p class="font-l mb-l mt-s">
+        <div class="my-m">
+            <h1 class="title">
+                Hello There Title
+            </h1>
+            <h1 class="subtitle">
+                Hello There Subtitle
+            </h1>
+            <h2 class="title">
+                Hello There Title
+            </h2>
+            <h2 class="subtitle">
+                Hello There Subtitle
+            </h2>
+            <h3 class="title">
+                Hello There Title
+            </h3>
+            <h3 class="subtitle">
+                Hello There Subtitle
+            </h3>
+            <h4 class="title">
+                Hello There Title
+            </h4>
+            <h4 class="subtitle">
+                Hello There Subtitle
+            </h4>
+            <h5 class="title">
+                Hello There Title
+            </h5>
+            <h5 class="subtitle">
+                Hello There Subtitle
+            </h5>
+            <h6 class="title">
+                Hello There Title
+            </h6>
+            <h6 class="subtitle">
+                Hello There Subtitle
+            </h6>
+        </div>
+        <p class="mb-l mt-s">
             You can also use this as a standalone heading too.
         </p>
         <h3 class="title">Font & Text Sizes</h3>
@@ -315,7 +354,7 @@
             </table>
         </div>
         <h3 class="title mt-xl pt-m">Code Writing</h3>
-        <p class="font-l">
+        <p>
             The font of the code that is used in this framework, is <code>monospace</code> font.
             <br>
             Apply code writing by using semantic HTML tags.
@@ -327,42 +366,74 @@
 <code>console.log("Hello CSS");
 console.log("Hello JS");
 console.log("Hello BebyKit");</code>
-        <div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3">
+        <div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3 overflow-auto">
         <pre>
 &lt;<span class="orange-text text-lighter-1">code</span>&gt;console.log("Hello CSS");
 console.log("Hello JS");
-console.log("Hello BebyKit");&lt;/<span class="orange-text text-lighter-1">code</span>&gt;
-        </pre>
+console.log("Hello BebyKit");&lt;/<span class="orange-text text-lighter-1">code</span>&gt;</pre>
         </div>
-        <p class="font-l mt-s">
+        <p class="mt-s">
             <strong>pre</strong>
         </p>
 <code>console.log("Hello CSS");
 console.log("Hello JS");
 console.log("Hello BebyKit");</code>
-<div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3">
+<div class="dark-bg py-l px-s mb-s r-s white-text text-enhanced-3 overflow-auto">
     <pre>
 &lt;<span class="orange-text text-lighter-1">pre</span>&gt;console.log("Hello CSS");
 console.log("Hello JS");
-console.log("Hello BebyKit");&lt;/<span class="orange-text text-lighter-1">pre</span>&gt;
-    </pre>
+console.log("Hello BebyKit");&lt;/<span class="orange-text text-lighter-1">pre</span>&gt;</pre>
     </div>
-    <p class="font-l">
+    <p>
         The differences between <code>code</code> and <code>pre</code> are on their default background color.
         You can change this by using <a href="../utilities/" class="blue-text">Background Color</a> Utility.
     </p>
     </div>
 
+    <div class="container mb-l">
+        <h2 class="title">Text Transformation</h2>
+        <p>
+            Make your writing transformed into capitalized, or uppercase or others, it's up to you.
+        </p>
+        <div class="table-responsive">
+            <table class="no-border table-striped">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Function</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>transform-none</code></td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td><code>transform-uppercase</code></td>
+                        <td>uppercase</td>
+                    </tr>
+                    <tr>
+                        <td><code>transform-lowercase</code></td>
+                        <td>lowercase</td>
+                    </tr>
+                    <tr>
+                        <td><code>transform-capitalize</code></td>
+                        <td>capitalize</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <footer class="blue-bg pt-xl pb-s px-m">
         <div class="row">
-            <div class="column xs-12 s-5 m-4 l-3 light-bg r-s flex content-justify-center shadow-s">
+            <div class="column xs-12 s-3 m-2 l-1 light-bg r-s flex content-justify-center shadow-s">
                 <a href="../index.html" class="py-s flex items-align-center">
                     <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 60px;">
-                    <p class="font-xl blue-text text-lighter-1"><strong>BebyKit</strong></p>
                 </a>
             </div>
-            <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
-                <p class="font-m">
+            <div class="column xs-12 s-9 m-10 l-11 light-text py-s px-m text-center-xs">
+                <p>
                     Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
                     Current Version: v1.0.2
                 </p>

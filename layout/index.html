@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebyKit</title>
 
+    <link rel="icon" href="../assets/image/logo/BebyKit.ico" sizes="32x32" type="image/x-icon">
+
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
 
     <meta property="og:title" content="BebyKit" />
@@ -26,7 +28,7 @@
             <li>
                 <div class="dropdown r-s">
                     <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
-                    <div class="dropdown-content light-bg blue-text font-m">
+                    <div class="dropdown-content light-bg blue-text">
                         <a href="../index.html">Home</a>
                         <div class="divider"></div>
                         <a href="index.html">Layout</a>
@@ -46,9 +48,9 @@
         <hr class="mb-xl">
         <h2 class="title grey-text text-lighter-1">Grid</h2>
         <h3 class="subtitle">Responsive Grid Column</h3>
-        <div class="row font-l text-center">
-            <div class="column mb-s r-s xs-12 p-xs white-bg bg-enhanced-1 shadow-m">12</div>
-            <div class="column mb-s r-s xs-1 p-xs blue-bg shadow-s">1</div>
+        <div class="row text-m text-center">
+            <div class="column mb-s r-s xs-12 white-bg bg-enhanced-1 shadow-m">12</div>
+            <div class="column mb-s r-s xs-1 blue-bg shadow-s">1</div>
             <div class="column mb-s r-s xs-11 p-xs white-bg bg-enhanced-1 shadow-m">11</div>
             <div class="column mb-s r-s xs-2 p-xs blue-bg shadow-s">2</div>
             <div class="column mb-s r-s xs-10 p-xs white-bg bg-enhanced-1 shadow-m">10</div>
@@ -75,7 +77,7 @@
         <h4 class="title mt-xl">Implementing Grid Column</h4>
         <div class="dark-bg py-l px-s r-s overflow-auto mt-xs">
         <pre>
-&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row font-l text-center"</span>&gt;
+&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
     &lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-2">"column mb-s r-s xs-12 p-xs white-bg bg-enhanced-1 shadow-m"</span>&gt;<span class="light-text">column</span>&lt;/<span class="orange-text">div</span>&gt;
 &lt;/<span class="orange-text">div</span>&gt;</pre>
         </div>
@@ -123,44 +125,173 @@
 
     <div class="container">
         <h2 class="title mt-xl">Container</h2>
-        <p class="font-l">
+        <p>
             Without using container class(es), your element will spread its size into the maximum viewport.<br>See examples below:
         </p>
-        <h5 class="title mt-s"><strong>Without Container:</strong></h5>
-    </div>
-    <div class="blue-bg px-s py-m mb-xl font-m text-justify shadow-s">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+        <h5 class="title mt-m"><strong>Without Container:</strong></h5>
+        <div class="blue-bg px-s py-m mb-m text-justify shadow-s">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+        </div>
+        <p class="mb-xl">
+            Element(s) will spread with just a little padding on its left-right side.
+        </p>
     </div>
     <div class="container">
         <h5 class="title"><strong>With Container:</strong></h5>
-        <div class="blue-bg p-m mb-xl font-m text-justify r-s shadow-s">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+        <div class="container">
+            <div class="blue-bg p-m mb-m text-justify r-s shadow-s">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+            </div>
         </div>
-        <h5 class="title"><strong>Or Full Container:</strong></h5>
-    </div>
-    <div class="full-container">
-        <div class="blue-bg p-m mb-m font-m text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
-        </div>
-    </div>
-    <div class="container mb-l">
-        <p class="font-l">
-            Summary:    
+        <p class="mb-xl">
+            Element(s) will be centered with relative width depending on its viewport's width size.
         </p>
-        <ul class="font-l">
-            <li class="mb-l">
-                <em>Without Container</em>:<br>
-                Element(s) will spread with just a little padding on its left-right side.
-            </li>
-            <li class="mb-l">
-                <em>With Container</em>:<br>
-                Element(s) will be centered with relative width depending on its viewport's width size.
-            </li>
-            <li class="mb-l">
-                <em>Without Container</em>:<br>
-                Element(s) will have the same width just like <em>Without Container</em>. But with a little bit added-padding on its left-right side.
-            </li>
-        </ul>
+    </div>
+    <div class="container">
+        <h5 class="title"><strong>Or Full Container:</strong></h5>
+        <div class="full-container">
+            <div class="blue-bg p-m mb-m text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+            </div>
+        </div>
+    </div>
+    <div class="container mb-xl pb-l">
+        <p>
+            Element(s) will have the same width just like <em>Without Container</em>. But with a little bit added-padding on its left-right side.
+        </p>
+    </div>
+
+    <div class="container pb-l">
+        <h1 class="title">Display</h1>
+        <p>
+            Define the element's display by easily calling the classes.
+        </p>
+        <div class="table-responsive mb-l">
+            <table class="no-border table-striped">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Display</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>block</code></td>
+                        <td>Block</td>
+                    </tr>
+                    <tr>
+                        <td><code>inline</code></td>
+                        <td>Inline</td>
+                    </tr>
+                    <tr>
+                        <td><code>inline-block</code></td>
+                        <td>Inline Block</td>
+                    </tr>
+                    <tr>
+                        <td><code>flex</code></td>
+                        <td>Flex</td>
+                    </tr>
+                    <tr>
+                        <td><code>inline-flex</code></td>
+                        <td>Inline Flex</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            <code>flex</code> and <code>inline-flex</code> have additional utility classes. You can view them all below:
+        </p>
+        <div class="table-responsive my-l">
+            <table class="no-border table-striped table-center">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>content-align-start</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-align-end</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-align-center</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-align-space-around</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-align-space-between</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-start</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-end</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-center</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-space-around</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-space-between</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>content-justify-space-evenly</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>items-align-flex-start</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>items-align-flex-end</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>items-align-center</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>items-align-stretch</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>items-align-baseline</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-flex-start</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-flex-end</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-center</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-space-around</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-space-between</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-stretch</code></td>
+                    </tr>
+                    <tr>
+                        <td><code>self-align-baseline</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 class="title pt-l">Navbar</h2>
+        <div class="my-l">
+            <nav>
+                <a class="navbar-brand">Home</a>
+                <ul class="navbar-item">
+                    <li><a>A</a></li>
+                    <li><a>B</a></li>
+                    <li><a>C</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <footer class="blue-bg pt-xl pb-s px-m">

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BebyKit</title>
 
+    <link rel="icon" href="../assets/image/logo/BebyKit.ico" sizes="32x32" type="image/x-icon">
+
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
 
     <meta property="og:title" content="BebyKit" />
@@ -18,15 +20,14 @@
 <body class="white-bg bg-enhanced-1">
     
     <nav class="shadow-xs light-bg pr-xl">
-        <a href="../index.html" class="navbar-brand flex items-align-center text-l blue-text text-lighter-1 unselectable" style="font-weight: 400;">
+        <a href="../index.html" class="navbar-brand flex items-align-center unselectable" style="font-weight: 400;">
             <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;">
-            BebyKit
         </a>
         <ul class="navbar-item">
             <li>
                 <div class="dropdown r-s">
                     <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
-                    <div class="dropdown-content light-bg blue-text font-m">
+                    <div class="dropdown-content light-bg blue-text">
                         <a href="../index.html">Home</a>
                         <div class="divider"></div>
                         <a href="../layout/">Layout</a>
@@ -42,7 +43,7 @@
     </nav>
 
     <div class="container py-m">
-        <h2 class="title">Forms</h2>
+        <h1 class="title">Forms</h1>
         <hr class="mb-l">
         <h4 class="title">Input</h4>
         <input type="text" class="w-auto" placeholder="text">
@@ -52,7 +53,7 @@
         <input type="search" class="w-auto my-s" placeholder="search" style="--form-outline-color: azure;">
         <input type="tel" class="w-auto my-s" placeholder="tel" style="--form-outline-color: pink;">
         <input type="url" class="w-auto my-s" placeholder="url" style="--form-outline-color: yellow;">
-        <h4 class="title mt-xl pt-m">Date & Time Input</h4>
+        <h4 class="title mt-l pt-s">Date & Time Input</h4>
         <input type="week" class="w-auto my-s" placeholder="week" style="--form-outline-color: navy;">
         <input type="month" class="w-auto my-s" placeholder="month" style="--form-outline-color: orange;">
         <input type="datetime" class="w-auto my-s" placeholder="datetime" style="--form-outline-color: green;">
@@ -60,86 +61,92 @@
         <input type="datetime-local" class="w-auto my-s" placeholder="datetime-local">
         <input type="time" class="w-auto my-s" placeholder="time">
         <h4 class="title mt-xl pt-m">Others</h4>
-        <label class="font-l flex items-align-center">
-            <span class="mr-s">Range</span>
-            <input type="range">
+        <label class="flex items-align-center">
+            <p class="mr-s">Range</p>
+            <input type="range" class="input-m">
         </label>
         <hr class="w-30 ml-n hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
-        <p class="font-l mt-s">
+        <p class="mt-s">
             Radio
         </p>
         <label class="input-field">
             <input type="radio" name="radio-input">
+            <div class="input"></div>
             <span>HTML</span>
         </label>
         <label class="input-field">
             <input type="radio" name="radio-input" style="--form-outline-color: red;">
+            <div class="input"></div>
             <span>CSS</span>
         </label>
         <label class="input-field">
             <input type="radio" name="radio-input" style="--form-outline-color: green;">
+            <div class="input"></div>
             <span>JS</span>
         </label>
         <hr class="w-30 ml-n hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
-        <p class="font-l mt-s">
+        <p class="mt-s">
             Checkbox
         </p>
         <label class="input-field">
             <input type="checkbox" name="radio-input">
+            <div class="input"></div>
             <span>HTML</span>
         </label>
         <label class="input-field">
             <input type="checkbox" name="radio-input" style="--form-outline-color: red;">
+            <div class="input"></div>
             <span>CSS</span>
         </label>
         <label class="input-field">
             <input type="checkbox" name="radio-input" style="--form-outline-color: green;">
+            <div class="input"></div>
             <span>JS</span>
         </label>
         <hr class="w-30 ml-n hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
         <div class="block mt-s">
-            <p class="font-l">Color</p>
+            <p>Color</p>
             <input type="color">
         </div>
         <hr class="w-30 ml-n hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
         <div class="block mt-s">
-            <p class="font-l">File</p>
+            <p>File</p>
             <input type="file">
         </div>
         <hr class="w-30 ml-n mt-s hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
         <div class="block mt-s">
-            <p class="font-l">Image</p>
+            <p>Image</p>
             <input type="image">
         </div>
         <hr class="w-30 ml-n mt-s hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
         <div class="block mt-s">
-            <p class="font-l">Button</p>
+            <p>Button</p>
             <div class="flex items-align-center mb-s">
-                <input type="button" value="button"><span class="font-l ml-s">Input</span>
+                <input type="button" value="button"><p class="ml-s">Input</p>
             </div>
             <div class="flex items-align-center mb-s">
-                <input type="submit" value="submit" class="w-auto red-bg"><span class="font-l ml-s">Input Submit</span>
+                <input type="submit" value="submit" class="w-auto red-bg"><p class="ml-s">Input Submit</p>
             </div>
             <div class="flex items-align-center mb-s">
-                <button class="green-bg">Button</button><span class="font-l ml-s">Button</span>
+                <button class="green-bg">Button</button><p class="ml-s">Button</p>
             </div>
             <div class="flex items-align-center mb-s">
-                <button type="submit" class="w-auto light-bg flex items-align-center"><span class="blue-text">submit</span>&nbsp;<i class="bk-direction flex blue-text"></i></button><span class="font-l ml-s">Button Submit</span>
+                <button type="submit" class="w-auto light-bg flex items-align-center"><span class="blue-text">submit</span>&nbsp;<i class="bk-direction flex blue-text"></i></button><p class="ml-s">Button Submit</p>
             </div>
             <div class="flex items-align-center mb-s">
-                <button type="reset" class="w-auto pink-bg bg-darker-1 flex items-align-center content-justify-center"><i class="bk-cw flex"></i></button><span class="font-l ml-s">Button Reset</span>
+                <button type="reset" class="w-auto pink-bg bg-darker-1 flex items-align-center content-justify-center"><i class="bk-cw flex"></i></button><p class="ml-s">Button Reset</p>
             </div>
         </div>
         <hr class="w-30 ml-n mt-s hidden-m-to-upper">
@@ -159,14 +166,13 @@
 
     <footer class="blue-bg pt-xl pb-s px-m">
         <div class="row">
-            <div class="column xs-12 s-5 m-4 l-3 light-bg r-s flex content-justify-center shadow-s">
+            <div class="column xs-12 s-3 m-2 l-1 light-bg r-s flex content-justify-center shadow-s">
                 <a href="../index.html" class="py-s flex items-align-center">
                     <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 60px;">
-                    <p class="font-xl blue-text text-lighter-1"><strong>BebyKit</strong></p>
                 </a>
             </div>
-            <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
-                <p class="font-m">
+            <div class="column xs-12 s-9 m-10 l-11 light-text py-s px-m text-center-xs">
+                <p>
                     Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
                     Current Version: v1.0.2
                 </p>
