@@ -1,6 +1,6 @@
 # BebyKit
 
-💎- Front-end Utilities -💎
+Front-end Utilities
 
 Made with ❤️ by all the _BebyKit_'s Developer whose participated.
 ### Description
@@ -16,10 +16,10 @@ Instruction
 - At the very first step, star this repo!
 - Fork this repo
 - Clone your forked repo
-- Create your own creative script
+- Create your script
 - Commit & Push your code
-- Discuss the Pull Request to be merged (if accepted, your script will be pulled)
-- Celebrate your contribute to open-source project 😄
+- Discuss the Pull Request with others to be merged in to the legacy code (if accepted, your script will be pulled)
+- Celebrate your contribution to open-source project
 ---
 MIT License
 
