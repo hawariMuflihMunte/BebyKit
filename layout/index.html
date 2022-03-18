@@ -8,312 +8,468 @@
 
     <link rel="icon" href="../assets/image/logo/BebyKit.ico" sizes="32x32" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <meta property="og:title" content="BebyKit" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hawarimuflihmunte.github.io/BebyKit/" />
-    <meta property="og:image" content="../assets/image/logo/BebyKit.png" />
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" />
     <meta property="og:description" content="Simple & free-to-use CSS Framework, and also open-source" />
+
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 <body class="white-bg bg-enhanced-1">
-    
-    <nav class="shadow-xs light-bg pr-xl">
-        <a href="../index.html" class="navbar-brand flex items-align-center text-l blue-text text-lighter-1 unselectable" style="font-weight: 400;">
-            <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;">
-            BebyKit
-        </a>
-        <ul class="navbar-item">
-            <li>
-                <div class="dropdown r-s">
-                    <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
-                    <div class="dropdown-content light-bg blue-text">
-                        <a href="../index.html">Home</a>
-                        <div class="divider"></div>
-                        <a href="index.html">Layout</a>
-                        <a href="../components/">Components</a>
-                        <a href="../utilities/">Utilities</a>
-                        <a href="../forms/">Forms</a>
-                        <a href="../icons/">Icons</a>
-                        <a href="../typography/">Typography</a>
+    <div class="fixed w-100 index-5">
+        <nav class="blue-bg px-m shadow-n flex content-align-center items-align-center">
+            <a href="../index.html" class="flex content-align-center items-align-center">
+                <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" style="max-width: 45px; height: auto;" oncontextmenu="return false;">
+            </a>
+            <a class="menu-drop hidden-m-to-upper">
+                <i class="bk-th font-s"></i>
+            </a>
+            <ul class="flex content-justify-space-between items-align-center hidden-s-to-lower change-color">
+                <li>
+                    <div class="dropdown r-s mr-m">
+                        <button class="btn btn-s transparent-bg shadow-n">Documentation</button>
+                        <div class="dropdown-content light-bg blue-text">
+                            <a href="index.html">Layout</a>
+                            <a href="../components/index.html">Components</a>
+                            <a href="../utilities/index.html">Utilities</a>
+                            <a href="../forms/index.html">Forms</a>
+                            <a href="../icons/index.html">Icons</a>
+                            <a href="../typography/index.html">Typography</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </nav>
+                </li>
+                <li><a href="../index.html#download" class="btn-outline btn-s btn-white r-xs"><i class="bk-download bk-xs"></i>&nbsp;&nbsp;Download</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <div class="container pt-m mb-l">
-        <h1 class="title grey-text text-lighter-1">Layout</h1>
+    <div class="container pt-xl mb-l">
+        <div class="pt-m"></div>
+        <h1 class="title">Layout</h1>
         <hr class="mb-xl">
-        <h2 class="title grey-text text-lighter-1">Grid</h2>
-        <h3 class="subtitle">Responsive Grid Column</h3>
-        <div class="row text-m text-center">
-            <div class="column mb-s r-s xs-12 white-bg bg-enhanced-1 shadow-m">12</div>
-            <div class="column mb-s r-s xs-1 blue-bg shadow-s">1</div>
-            <div class="column mb-s r-s xs-11 p-xs white-bg bg-enhanced-1 shadow-m">11</div>
-            <div class="column mb-s r-s xs-2 p-xs blue-bg shadow-s">2</div>
-            <div class="column mb-s r-s xs-10 p-xs white-bg bg-enhanced-1 shadow-m">10</div>
-            <div class="column mb-s r-s xs-3 p-xs blue-bg shadow-s">3</div>
-            <div class="column mb-s r-s xs-9 p-xs white-bg bg-enhanced-1 shadow-m">9</div>
-            <div class="column mb-s r-s xs-4 p-xs blue-bg shadow-s">4</div>
-            <div class="column mb-s r-s xs-8 p-xs white-bg bg-enhanced-1 shadow-m">8</div>
-            <div class="column mb-s r-s xs-5 p-xs blue-bg shadow-s">5</div>
-            <div class="column mb-s r-s xs-7 p-xs white-bg bg-enhanced-1 shadow-m">7</div>
-            <div class="column mb-s r-s xs-6 p-xs blue-bg shadow-s">6</div>
-            <div class="column mb-s r-s xs-6 p-xs white-bg bg-enhanced-1 shadow-m">6</div>
-            <div class="column mb-s r-s xs-7 p-xs blue-bg shadow-s">7</div>
-            <div class="column mb-s r-s xs-5 p-xs white-bg bg-enhanced-1 shadow-m">5</div>
-            <div class="column mb-s r-s xs-8 p-xs blue-bg shadow-s">8</div>
-            <div class="column mb-s r-s xs-4 p-xs white-bg bg-enhanced-1 shadow-m">4</div>
-            <div class="column mb-s r-s xs-9 p-xs blue-bg shadow-s">9</div>
-            <div class="column mb-s r-s xs-3 p-xs white-bg bg-enhanced-1 shadow-m">3</div>
-            <div class="column mb-s r-s xs-10 p-xs blue-bg shadow-s">10</div>
-            <div class="column mb-s r-s xs-2 p-xs white-bg bg-enhanced-1 shadow-m">2</div>
-            <div class="column mb-s r-s xs-11 p-xs blue-bg shadow-s">11</div>
-            <div class="column mb-s r-s xs-1 p-xs white-bg bg-enhanced-1 shadow-m">1</div>
-            <div class="column mb-s r-s xs-12 p-xs blue-bg shadow-s">12</div>
-        </div>
-        <h4 class="title mt-xl">Implementing Grid Column</h4>
-        <div class="dark-bg py-l px-s r-s overflow-auto mt-xs">
-        <pre>
-&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
-    &lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-2">"column mb-s r-s xs-12 p-xs white-bg bg-enhanced-1 shadow-m"</span>&gt;<span class="light-text">column</span>&lt;/<span class="orange-text">div</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-        </div>
-        <h4 class="title mt-xl">Changing Width Sizes</h4>
-        <div class="table-responsive pb-l">
-            <table class="no-border table-striped table-caption-bottom unselectable">
-                <caption>Media Breakpoints</caption>
-                <thead>
-                    <tr>
-                        <th>Class</th>
-                        <th>Breakpoints Size</th>
-                        <th>Device</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>xs</code></td>
-                        <td>0px - 576px</td>
-                        <td>Mobile</td>
-                    </tr>
-                    <tr>
-                        <td><code>s</code></td>
-                        <td>577px - 768px</td>
-                        <td>Mobile & Tablet</td>
-                    </tr>
-                    <tr>
-                        <td><code>m</code></td>
-                        <td>769px - 992px</td>
-                        <td>Tablet & Laptop</td>
-                    </tr>
-                    <tr>
-                        <td><code>l</code></td>
-                        <td>993px - 1200px</td>
-                        <td>Laptop & Desktop</td>
-                    </tr>
-                    <tr>
-                        <td><code>xl</code></td>
-                        <td>1201px ~</td>
-                        <td>Desktop</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2 class="title mt-xl">Container</h2>
-        <p>
-            Without using container class(es), your element will spread its size into the maximum viewport.<br>See examples below:
+        <h2 class="title mb-n">Columns</h2>
+        <h3 class="subtitle pb-s">Responsive Columns</h3>
+        <p class="mb-m">
+            BebyKit has default 12 columns system. Each column will automatically set their width fit to window sizes, relative to each window sizes.
         </p>
-        <h5 class="title mt-m"><strong>Without Container:</strong></h5>
-        <div class="blue-bg px-s py-m mb-m text-justify shadow-s">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
-        </div>
-        <p class="mb-xl">
-            Element(s) will spread with just a little padding on its left-right side.
-        </p>
-    </div>
-    <div class="container">
-        <h5 class="title"><strong>With Container:</strong></h5>
-        <div class="container">
-            <div class="blue-bg p-m mb-m text-justify r-s shadow-s">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+        <div class="b-xs b-grey b-lighter-2 p-l r-s mb-l">
+            <div class="row text-center shadow-s">
+                <div class="column xs-3 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    3 column
+                </div>
+                <div class="column xs-3 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    3 column
+                </div>
+                <div class="column xs-3 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    3 column
+                </div>
+                <div class="column xs-3 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2">
+                    3 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center shadow-s">
+                <div class="column xs-4 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    4 column
+                </div>
+                <div class="column xs-4 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    4 column
+                </div>
+                <div class="column xs-4 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2">
+                    4 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center shadow-s">
+                <div class="column xs-6 bl-xs bt-xs bb-xs bl-grey bt-grey bb-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 p-s white-bg bg-enhanced-2">
+                    6 column
+                </div>
+                <div class="column xs-6 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2">
+                    6 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center shadow-s">
+                <div class="column xs-12 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2">
+                    12 column
+                </div>
             </div>
         </div>
-        <p class="mb-xl">
-            Element(s) will be centered with relative width depending on its viewport's width size.
-        </p>
-    </div>
-    <div class="container">
-        <h5 class="title"><strong>Or Full Container:</strong></h5>
-        <div class="full-container">
-            <div class="blue-bg p-m mb-m text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eius cumque explicabo, impedit voluptates pariatur! Nam, quam id? Harum accusamus ipsum, nihil quibusdam eveniet molestias officiis soluta modi neque! Doloremque, corporis maxime tempora magnam culpa esse perferendis? Quidem porro vitae, quis at molestias nam, placeat corrupti eveniet sit aliquam nemo!
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-4 p-s"</span>&gt;
+        <span class="light-text">4 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-4 p-s"</span>&gt;
+        <span class="light-text">4 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-4 p-s"</span>&gt;
+        <span class="light-text">4 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-6 p-s"</span>&gt;
+        <span class="light-text">6 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-6 p-s"</span>&gt;
+        <span class="light-text">6 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-12 p-s"</span>&gt;
+        <span class="light-text">12 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+            </div>
+        </div>
+        <div class="my-xl"></div>
+        <h3 class="title pt-l">Code Playground</h3>
+        <div class="row my-s">
+            <div class="column xs-12 b-xs r-s overflow-auto dark-bg">
+                <iframe class="preview w-100 p-s overflow-auto light-bg light-text rtl-s rtr-s mt-xs"></iframe>
+                <hr class="my-m">
+                <div class="code-language-wrapper code-language-tester-html relative block orange-text ml-s font-m b-xs b-orange py-xs px-s r-s mb-s">HTML</div>
+                <div class="dark-bg p-s r-s overflow-auto">
+                    <textarea class="dark-bg light-text px-xs py-s b-n w-100 html r-s" placeholder="Write HTML Code" style="resize: none; min-height: 200px; max-height: 200px;" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"><h3>Write HTML code</h3></textarea>
+                </div>
+            </div>
+            <div class="mt-l"></div>
+            <h3 class="title pt-xl">Column Sizes</h3>
+            <div class="table-responsive">
+                <table class="table-bordered table-striped font-s">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Breakpoint</th>
+                            <th>Media</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>xs</code></td>
+                            <td>0px - 576px</td>
+                            <td>Mobile</td>
+                        </tr>
+                        <tr>
+                            <td><code>s</code></td>
+                            <td>577px - 768px</td>
+                            <td>Mobile ~ Tablet</td>
+                        </tr>
+                        <tr>
+                            <td><code>m</code></td>
+                            <td>769px - 992px</td>
+                            <td>Tablet ~ Laptop</td>
+                        </tr>
+                        <tr>
+                            <td><code>l</code></td>
+                            <td>993px - 1200px</td>
+                            <td>Laptop ~ Desktop</td>
+                        </tr>
+                        <tr>
+                            <td><code>xl</code></td>
+                            <td>1201px ~</td>
+                            <td>Desktop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-l"></div>
+            <h3 class="title pt-xl">Column Push & Pull</h3>
+            <p class="mb-m">
+                You can make a pull on columns. It is easy to apply this, just add <code>push-</code> or <code>pull-</code> and the next of it is the breakpoint
+                size.
+            </p>
+            <div class="b-xs b-grey b-lighter-2 p-l r-s mb-l">
+            <div class="row text-center">
+                <div class="column xs-3 push-xs-2 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    3 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-4 push-xs-3 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    4 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-6 pull-xs-1 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    6 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-12 pull-xs-2 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    12 column
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 push-xs-2 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-4 push-xs-3 p-s"</span>&gt;
+        <span class="light-text">4 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-6 pull-xs-1 p-s"</span>&gt;
+        <span class="light-text">6 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-12 pull-xs-2 p-s"</span>&gt;
+        <span class="light-text">12 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+            </div>
+        </div>
+        <h3 class="title pt-xl">Column Offset</h3>
+            <p class="mb-m">
+                Offset in column is like <code>pull-</code>, but <code>pull-</code> will only move the column that targeted and likely to overlap other column(s). With using offset, all of the column(s) in the front of the targeted column will
+                be moved relatively and sizing themself automatically.
+            </p>
+            <div class="b-xs b-grey b-lighter-2 p-l r-s mb-l">
+            <div class="row text-center">
+                <div class="column xs-3 offset-xs-7 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    3 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-4 offset-xs-10 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    4 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-6 offset-xs-2 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    6 column
+                </div>
+            </div>
+            <div class="my-l"></div>
+            <div class="row text-center">
+                <div class="column xs-12 offset-xs-1 bl-xs bt-xs bb-xs br-xs bl-grey bt-grey bb-grey br-grey bl-lighter-3 bt-lighter-3 bb-lighter-3 br-lighter-3 p-s white-bg bg-enhanced-2 shadow-s">
+                    12 column
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-3 offset-xs-7 p-s"</span>&gt;
+        <span class="light-text">3 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-4 offset-xs-10 p-s"</span>&gt;
+        <span class="light-text">4 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-6 offset-xs-2 p-s"</span>&gt;
+        <span class="light-text">6 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"row text-center"</span>&gt;
+    &lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"column xs-12 offset-xs-1 p-s"</span>&gt;
+        <span class="light-text">12 column</span>
+    &lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
             </div>
         </div>
     </div>
-    <div class="container mb-xl pb-l">
-        <p>
-            Element(s) will have the same width just like <em>Without Container</em>. But with a little bit added-padding on its left-right side.
+        <hr class="my-xl">
+        <h2 class="title pt-m">Container</h2>
+        <p class="mb-s">
+            Center your content by using <code>container</code> class. Don't worry about width dimension or viewport, your content will stay in the center, as long as you are not modifying it.
         </p>
-    </div>
-
-    <div class="container pb-l">
-        <h1 class="title">Display</h1>
-        <p>
-            Define the element's display by easily calling the classes.
-        </p>
-        <div class="table-responsive mb-l">
-            <table class="no-border table-striped">
-                <thead>
-                    <tr>
-                        <th>Class</th>
-                        <th>Display</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>block</code></td>
-                        <td>Block</td>
-                    </tr>
-                    <tr>
-                        <td><code>inline</code></td>
-                        <td>Inline</td>
-                    </tr>
-                    <tr>
-                        <td><code>inline-block</code></td>
-                        <td>Inline Block</td>
-                    </tr>
-                    <tr>
-                        <td><code>flex</code></td>
-                        <td>Flex</td>
-                    </tr>
-                    <tr>
-                        <td><code>inline-flex</code></td>
-                        <td>Inline Flex</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"container"</span>&gt;
+    <span class="grey-text text-lighter-3">&lt;!-- content --&gt;</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+            </div>
         </div>
-        <p>
-            <code>flex</code> and <code>inline-flex</code> have additional utility classes. You can view them all below:
+        <h4 class="title pt-xl mt-l">Full Container</h4>
+        <p class="mb-m">
+            <code>full-container</code> spanning the width and makes your content centered.
         </p>
-        <div class="table-responsive my-l">
-            <table class="no-border table-striped table-center">
-                <thead>
-                    <tr>
-                        <th>Class</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><code>content-align-start</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-align-end</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-align-center</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-align-space-around</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-align-space-between</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-start</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-end</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-center</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-space-around</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-space-between</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>content-justify-space-evenly</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>items-align-flex-start</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>items-align-flex-end</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>items-align-center</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>items-align-stretch</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>items-align-baseline</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-flex-start</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-flex-end</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-center</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-space-around</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-space-between</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-stretch</code></td>
-                    </tr>
-                    <tr>
-                        <td><code>self-align-baseline</code></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"full-container"</span>&gt;
+    <span class="grey-text text-lighter-3">&lt;!-- content --&gt;</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
+            </div>
         </div>
-        <h2 class="title pt-l">Navbar</h2>
-        <div class="my-l">
-            <nav>
-                <a class="navbar-brand">Home</a>
-                <ul class="navbar-item">
-                    <li><a>A</a></li>
-                    <li><a>B</a></li>
-                    <li><a>C</a></li>
-                </ul>
-            </nav>
+        <hr class="mt-l mb-xl">
+        <h2 class="title">Display</h2>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"stylesheet"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>&gt;</pre>
+            </div>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language b-blue b-lighter-1 blue-text text-lighter-1">CSS</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre><span class="purple-text text-lighter-3">@import</span> <span class="orange-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>;</pre>
+            </div>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"preconnect"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.googleapis.com"</span>&gt;
+&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"preconnect"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.gstatic.com"</span> <span class="yellow-text">crossorigin</span>&gt;
+&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"stylesheet"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"</span>&gt;</pre>
+            </div>
+        </div>
+        <hr class="mt-l mb-l">
+        <h2 class="title mb-n">Responsiveness</h2>
+        <p class="mt-n">HTML responsive support for the webpage and framework</p>
+        <h4 class="title mt-l">Meta Tags</h4>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">meta</span> <span class="yellow-text">name</span>=<span class="yellow-text text-lighter-3">viewport</span> <span class="yellow-text">content</span>=<span class="yellow-text text-lighter-3">"width=device-width, initial-scale=1.0"</span>&gt;</pre>
+            </div>
         </div>
     </div>
 
     <footer class="blue-bg pt-xl pb-s px-m">
         <div class="row">
-            <div class="column xs-12 s-5 m-4 l-3 light-bg r-s flex content-justify-center shadow-s">
-                <a href="../index.html" class="py-s flex items-align-center">
-                    <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 60px;">
-                    <p class="font-xl blue-text text-lighter-1"><strong>BebyKit</strong></p>
+            <div class="column xs-12 m-6">
+                <a href="index.html" class="w-auto mb-s flex items-align-flex-end">
+                    <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 50px;">
+                    <span class="light-text text-m font-sans-serif shadow-text-3d">BebyKit</span>
                 </a>
-            </div>
-            <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
-                <p class="font-m">
-                    Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
-                    Current Version: v1.0.2
+                <p class="mt-s">
+                    Made with <i class="bk-heart-filled text-xs"></i> by BebyKit team and all of the contributors.
                 </p>
+                <p>Current version: v1.0.3</p>
+            </div>
+            <div class="column xs-12 m-6 pt-l hidden-m-to-upper">
+                <div class="row">
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Community</h6>
+                        <div class="row p-n m-n font-s">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/projects" class="light-text">Projects</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="light-text">Issues</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/discussions" class="light-text">Discussion (GitHub)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="light-text">Discussion (Whatsapp)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://gitter.im/BebyKit/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="light-text">Discussion (Gitter)</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4 pt-m">
+                        <h6 class="title light-text">Projects</h6>
+                        <div class="row p-n m-n font-s">
+                            <div class="column xs-12"><a href="icons_project.html" class="light-text">Icons</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4 pt-m">
+                        <h6 class="title light-text">License</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/README.md" class="light-text">MIT</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column xs-12 m-6 hidden-s-to-lower">
+                <div class="row">
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Community</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/projects" class="light-text">Projects</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="light-text">Issues</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/discussions" class="light-text">Discussion (GitHub)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="light-text">Discussion (Whatsapp)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://gitter.im/BebyKit/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="light-text">Discussion (Gitter)</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Projects</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a href="icons_project.html" class="light-text">Icons</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">License</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/README.md" class="light-text">MIT</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="column xs-12 mt-m text-center">
+                <div class="divider light-bg mb-m"></div>
                 <p>
                     BebyKit © 2022. MIT Licensed
                 </p>
             </div>
         </div>
     </footer>
+
+<script src="../script.js" type="text/javascript"></script>
+
 </body>
 </html>

@@ -313,16 +313,30 @@ q::after {
   content: "”";
 }
 
+/* Online CDN */
 @font-face {
     font-family: 'bk';
-    src: url('../ico/bk.eot?97620309');
-    src: url('../ico/bk.eot?97620309#iefix') format('embedded-opentype'),
-         url('../ico/bk.woff2?97620309') format('woff2'),
-         url('../ico/bk.woff?97620309') format('woff'),
-         url('../ico/bk.ttf?97620309') format('truetype'),
-         url('../ico/bk.svg?97620309#bk') format('svg');
+    src: url('https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/ico/bk.eot?97620309');
+    src: url('https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/ico/bk.eot?97620309#iefix') format('embedded-opentype'),
+         url('https://github.com/hawariMuflihMunte/BebyKit/blob/main/assets/script/ico/bk.woff2?97620309') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/ico/bk.woff?97620309') format('woff'),
+         url('https://github.com/hawariMuflihMunte/BebyKit/blob/main/assets/script/ico/bk.ttf?97620309') format('truetype'),
+         url('https://github.com/hawariMuflihMunte/BebyKit/blob/main/assets/script/ico/bk.svg?97620309#bk') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Offline fallback */
+@font-face {
+  font-family: 'bk';
+  src: url('../ico/bk.eot?97620309');
+  src: url('../ico/bk.eot?97620309#iefix') format('embedded-opentype'),
+       url('../ico/bk.woff2?97620309') format('woff2'),
+       url('../ico/bk.woff?97620309') format('woff'),
+       url('../ico/bk.ttf?97620309') format('truetype'),
+       url('../ico/bk.svg?97620309#bk') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
