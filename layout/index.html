@@ -38,6 +38,8 @@
                     <div class="dropdown r-s mr-m">
                         <button class="btn btn-s transparent-bg shadow-n">Documentation</button>
                         <div class="dropdown-content light-bg blue-text">
+                            <a href="../index.html" class="content-justify-center"><i class="bk-home"></i></a>
+                            <div class="divider"></div>
                             <a href="index.html">Layout</a>
                             <a href="../components/index.html">Components</a>
                             <a href="../utilities/index.html">Utilities</a>
@@ -153,17 +155,7 @@
             </div>
         </div>
         <div class="my-xl"></div>
-        <h3 class="title pt-l">Code Playground</h3>
         <div class="row my-s">
-            <div class="column xs-12 b-xs r-s overflow-auto dark-bg">
-                <iframe class="preview w-100 p-s overflow-auto light-bg light-text rtl-s rtr-s mt-xs"></iframe>
-                <hr class="my-m">
-                <div class="code-language-wrapper code-language-tester-html relative block orange-text ml-s font-m b-xs b-orange py-xs px-s r-s mb-s">HTML</div>
-                <div class="dark-bg p-s r-s overflow-auto">
-                    <textarea class="dark-bg light-text px-xs py-s b-n w-100 html r-s" placeholder="Write HTML Code" style="resize: none; min-height: 200px; max-height: 200px;" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"><h3>Write HTML code</h3></textarea>
-                </div>
-            </div>
-            <div class="mt-l"></div>
             <h3 class="title pt-xl">Column Sizes</h3>
             <div class="table-responsive">
                 <table class="table-bordered table-striped font-s">
@@ -356,42 +348,108 @@
         </div>
         <hr class="mt-l mb-xl">
         <h2 class="title">Display</h2>
+        <p class="mb-s">
+            Make your own content-layout display so you can make it adaptive to your own styling style.
+        </p>
+        <div class="pl-m pr-m pb-m pt-xl b-xs r-s b-grey b-lighter-3 mb-xl">
+            <div class="pt-m"></div>
+            <div class="inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;">
+                INLINE
+            </div>
+            <div class="inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;">
+                INLINE
+            </div>
+            <div class="inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;">
+                INLINE
+            </div>
+            <div class="inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs hidden-s-to-lower" style="width: 240px; min-width: 120px;">
+                INLINE
+            </div>
+            <hr class="my-m">
+            <div class="inline-block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs" style="width: 240px; min-width: 120px;">
+                INLINE-BLOCK
+            </div>
+            <div class="inline-block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs" style="width: 240px; min-width: 120px;">
+                INLINE-BLOCK
+            </div>
+            <hr class="my-m">
+            <div class="block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs shadow-s" style="width: 240px; min-width: 120px;">
+                BLOCK
+            </div>
+            <hr class="my-m">
+            <div class="flex b-xs white-bg bg-enhanced-2 p-m r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;">
+                FLEX
+            </div>
+            <hr class="my-m">
+            <div class="inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;">
+                INLINE-FLEX
+            </div>
+            <div class="inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;">
+                INLINE-FLEX
+            </div>
+            <div class="inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;">
+                INLINE-FLEX
+            </div>
+        </div>
         <div class="block">
             <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
                 <span class="code-language">HTML</span>
             </div>
             <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"stylesheet"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>&gt;</pre>
+                <pre>&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline white-bg bg-enhanced-2 b-xs p-m text-center r-s m-xs hidden-s-to-lower" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text">hr</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"my-m"</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline-block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE-BLOCK</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline-block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE-BLOCK</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text">hr</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"my-m"</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"block b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs shadow-s" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">BLOCK</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text">hr</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"my-m"</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"flex b-xs white-bg bg-enhanced-2 p-m r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">FLEX</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text">hr</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"my-m"</span>&gt;
+
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE-FLEX</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE-FLEX</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;
+&lt;<span class="orange-text text-lighter-1">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"inline-flex b-xs white-bg bg-enhanced-2 p-m text-center r-s my-xs items-align-center content-justify-center shadow-s" style="width: 240px; min-width: 120px;"</span>&gt;
+    <span class="light-text">INLINE-FLEX</span>
+&lt;/<span class="orange-text text-lighter-1">div</span>&gt;</pre>
             </div>
         </div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language b-blue b-lighter-1 blue-text text-lighter-1">CSS</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre><span class="purple-text text-lighter-3">@import</span> <span class="orange-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>;</pre>
-            </div>
-        </div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"preconnect"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.googleapis.com"</span>&gt;
-&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"preconnect"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.gstatic.com"</span> <span class="yellow-text">crossorigin</span>&gt;
-&lt;<span class="orange-text text-lighter-1">link</span> <span class="yellow-text">rel</span>=<span class="yellow-text text-lighter-3">"stylesheet"</span> <span class="yellow-text">href</span>=<span class="yellow-text text-lighter-3">"https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"</span>&gt;</pre>
-            </div>
-        </div>
-        <hr class="mt-l mb-l">
-        <h2 class="title mb-n">Responsiveness</h2>
-        <p class="mt-n">HTML responsive support for the webpage and framework</p>
-        <h4 class="title mt-l">Meta Tags</h4>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">meta</span> <span class="yellow-text">name</span>=<span class="yellow-text text-lighter-3">viewport</span> <span class="yellow-text">content</span>=<span class="yellow-text text-lighter-3">"width=device-width, initial-scale=1.0"</span>&gt;</pre>
+        <div class="row">
+            <div class="column xs-12">
+                <h3 class="title pt-xl mt-m">Code Playground</h3>
+                <div class="column xs-12 b-xs r-s overflow-auto dark-bg">
+                    <iframe class="preview w-100 p-s overflow-auto light-bg light-text rtl-s rtr-s mt-xs"></iframe>
+                    <hr class="my-m">
+                    <div class="code-language-wrapper code-language-tester-html relative block orange-text ml-s font-m b-xs b-orange py-xs px-s r-s mb-s">HTML</div>
+                    <div class="dark-bg p-s r-s overflow-auto">
+                        <textarea class="dark-bg light-text px-xs py-s b-n w-100 html r-s" placeholder="Write HTML Code" style="resize: none; min-height: 200px; max-height: 200px;" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}"><h3>Write HTML code</h3></textarea>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

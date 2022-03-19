@@ -8,440 +8,241 @@
 
     <link rel="icon" href="../assets/image/logo/BebyKit.ico" sizes="32x32" type="image/x-icon">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <meta property="og:title" content="BebyKit" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://hawarimuflihmunte.github.io/BebyKit/" />
-    <meta property="og:image" content="../assets/image/logo/BebyKit.png" />
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" />
     <meta property="og:description" content="Simple & free-to-use CSS Framework, and also open-source" />
+
+    <link rel="stylesheet" href="../style.css">
 
 </head>
 <body class="white-bg bg-enhanced-1">
-    
-    <nav class="shadow-xs light-bg pr-xl">
-        <a href="../index.html" class="navbar-brand flex items-align-center text-l blue-text text-lighter-1 unselectable" style="font-weight: 400;">
-            <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="height: 45px;">
-            BebyKit
-        </a>
-        <ul class="navbar-item">
-            <li>
-                <div class="dropdown r-s">
-                    <button class="btn btn-s transparent-bg shadow-n"><i class="bk-menu blue-text"></i></button>
-                    <div class="dropdown-content light-bg blue-text">
-                        <a href="../index.html">Home</a>
-                        <div class="divider"></div>
-                        <a href="../layout/">Layout</a>
-                        <a href="index.html">Components</a>
-                        <a href="../utilities/">Utilities</a>
-                        <a href="../forms/">Forms</a>
-                        <a href="../icons/">Icons</a>
-                        <a href="../typography/">Typography</a>
+    <div class="fixed w-100 index-5">
+        <nav class="blue-bg px-m shadow-n flex content-align-center items-align-center">
+            <a href="../index.html" class="flex content-align-center items-align-center">
+                <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" style="max-width: 45px; height: auto;" oncontextmenu="return false;">
+            </a>
+            <a class="menu-drop hidden-m-to-upper">
+                <i class="bk-th font-s"></i>
+            </a>
+            <ul class="flex content-justify-space-between items-align-center hidden-s-to-lower change-color">
+                <li>
+                    <div class="dropdown r-s mr-m">
+                        <button class="btn btn-s transparent-bg shadow-n">Documentation</button>
+                        <div class="dropdown-content light-bg blue-text">
+                            <a href="../index.html" class="content-justify-center"><i class="bk-home"></i></a>
+                            <div class="divider"></div>
+                            <a href="../layout/index.html">Layout</a>
+                            <a href="index.html">Components</a>
+                            <a href="../utilities/index.html">Utilities</a>
+                            <a href="../forms/index.html">Forms</a>
+                            <a href="../icons/index.html">Icons</a>
+                            <a href="../typography/index.html">Typography</a>
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </nav>
+                </li>
+                <li><a href="../index.html#download" class="btn-outline btn-s btn-white r-xs"><i class="bk-download bk-xs"></i>&nbsp;&nbsp;Download</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <div class="container py-m">
-        <h1 class="title grey-text text-lighter-1">Components</h1>
+    <div class="container pt-xl mb-l">
+        <div class="pt-m"></div>
+        <h1 class="title">Components</h1>
         <hr class="mb-xl">
-        <h2 class="title">Buttons</h2>
-        <h4 class="title">Default Buttons</h4>
-        <div class="flex overflow-auto light-bg p-s b-xs r-s mb-m">
-            <a class="btn">Button</a>
-            <a class="btn red-bg">Button</a>
-            <a class="btn green-bg">Button</a>
-            <a class="btn purple-bg">Button</a>
-            <a class="btn brown-bg">Button</a>
-            <a class="btn orange-bg dark-text">Button</a>
-        </div>
-        <h4 class="title">Outlined Buttons</h4>
-        <div class="flex overflow-auto light-bg p-s b-xs r-s mb-xl">
-            <a class="btn-outline">Button</a>
-            <a class="btn-outline btn-red">Button</a>
-            <a class="btn-outline btn-green">Button</a>
-            <a class="btn-outline btn-purple">Button</a>
-            <a class="btn-outline btn-brown">Button</a>
-            <a class="btn-outline btn-orange">Button</a>
-        </div>
-        <h2 class="title mt-xl pt-l">Circle Buttons</h2>
+        <h2 class="title">Button</h2>
         <p class="mb-m">
-            <span class="red-text">*</span>Note:<br>
-            Icon only inside!
+            You can use built-in buttons from BebyKit. Or, you can also create your own button by changing button properties using
+            BebyKit's utilities (e.g. padding, margin, border, radius, etc).
         </p>
-        <h4 class="title">Default Circle Buttons</h4>
-        <div class="flex overflow-auto light-bg p-s b-xs r-s mb-m">
+        <div class="block items-align-center p-m r-s b-xs b-grey b-lighter-3 overflow-hidden">
+            <a class="btn">button</a>
+            <a class="btn-outline r-s">button</a>
+            <a class="btn r-l">button</a>
+            <a class="btn-outline r-l">button</a>
+            <a class="btn light-bg dark-text">button</a>
+            <a class="btn dark-bg">button</a>
             <a class="btn-circle"><i class="bk-heart"></i></a>
-            <a class="btn-circle red-bg"><i class="bk-heart"></i></a>
-            <a class="btn-circle green-bg"><i class="bk-heart"></i></a>
-            <a class="btn-circle purple-bg"><i class="bk-heart"></i></a>
-            <a class="btn-circle brown-bg"><i class="bk-heart"></i></a>
-            <a class="btn-circle orange-bg dark-text"><i class="bk-heart"></i></a>
-        </div>
-        <h4 class="title">Outlined Circle Buttons</h4>
-        <div class="flex overflow-auto light-bg p-s b-xs r-s mb-xl">
             <a class="btn-circle-outline"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline btn-red"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline btn-green"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline btn-purple"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline btn-brown"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline btn-orange"><i class="bk-heart"></i></a>
-        </div>
-        <h2 class="title mt-xl pt-l">Button Group</h2>
-        <h4 class="title">Default Button Group</h4>
-        <div class="btn-group">
-            <a class="btn py-m px-m">btn1</a>
-            <a class="btn py-m px-m red-bg">btn2</a>
-            <a class="btn py-m px-m green-bg">btn3</a>
-            <a class="btn py-m px-m purple-bg">btn4</a>
-            <a class="btn py-m px-m brown-bg">btn5</a>
-            <a class="btn py-m px-m orange-bg">btn6</a>
-        </div>
-        <h4 class="title mt-l">Outlined Button Group</h4>
-        <div class="block dark-bg p-s r-s text-center mb-xl">
-            <div class="btn-group-outline btn-blue r-s mb-l">
-                <a class="btn py-m px-m">btn1</a>
-                <a class="btn py-m px-m">btn2</a>
-                <a class="btn py-m px-m">btn3</a>
-                <a class="btn py-m px-m">btn4</a>
-                <a class="btn py-m px-m">btn5</a>
-                <a class="btn py-m px-m">btn6</a>
+            <div class="btn-group btn-m">
+                <a class="btn">Button#1</a>
+                <a class="btn red-bg bg-lighter-1">Button#2</a>
             </div>
-            <div class="btn-group-outline btn-red r-s mb-l">
-                <a class="btn py-m px-m">btn1</a>
-                <a class="btn py-m px-m">btn2</a>
-                <a class="btn py-m px-m">btn3</a>
-                <a class="btn py-m px-m">btn4</a>
-                <a class="btn py-m px-m">btn5</a>
-                <a class="btn py-m px-m">btn6</a>
-            </div>
-            <div class="btn-group-outline btn-green r-s">
-                <a class="btn py-m px-m">btn1</a>
-                <a class="btn py-m px-m">btn2</a>
-                <a class="btn py-m px-m">btn3</a>
-                <a class="btn py-m px-m">btn4</a>
-                <a class="btn py-m px-m">btn5</a>
-                <a class="btn py-m px-m">btn6</a>
-            </div>
-            <div class="btn-group-outline btn-purple r-s hidden-l-to-lower">
-                <a class="btn py-m px-m">btn1</a>
-                <a class="btn py-m px-m">btn2</a>
-                <a class="btn py-m px-m">btn3</a>
-                <a class="btn py-m px-m">btn4</a>
-                <a class="btn py-m px-m">btn5</a>
-                <a class="btn py-m px-m">btn6</a>
+            <div class="btn-group-outline btn-m btn-red">
+                <a class="btn">Button#1</a>
+                <a class="btn">Button#2</a>
             </div>
         </div>
-        <h2 class="title mt-xl pt-xl">Tables</h2>
-        <h4 class="title">Default Table</h4>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Responsive Table</h4>
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Field</th>
-                        <th>Email</th>
-                        <th class="text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>25</td>
-                        <td>Front-end Developer</td>
-                        <td>bebykit@framework.bk</td>
-                        <td class="text-center"><i class="bk-pen bk-s"></i>&nbsp;<i class="bk-trash bk-s"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Jane Dee</td>
-                        <td>26</td>
-                        <td>Back-end Developer</td>
-                        <td>bebykit@framework.bk</td>
-                        <td class="text-center"><i class="bk-pen bk-s"></i>&nbsp;<i class="bk-trash bk-s"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Josh Dan</td>
-                        <td>28</td>
-                        <td>Fullstack Developer</td>
-                        <td>bebykit@framework.bk</td>
-                        <td class="text-center"><i class="bk-pen bk-s"></i>&nbsp;<i class="bk-trash bk-s"></i></td>
-                    </tr>
-                </tbody>
-            </table>
+        <h5 class="title mt-xl">Normal Button</h5>
+        <div class="my-m">
+            <p>
+                BebyKit's buttons are soft and interactive. Once you pressed it, you can see the state changed to brighter.
+                Indicating that the button was pressed.
+            </p>
         </div>
-        <h4 class="title mt-xl">Striped Table</h4>
-        <table class="table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Table - No Border</h4>
-        <table class="no-border">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Table - No Border Striped</h4>
-        <table class="no-border table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Table - Bordered</h4>
-        <table class="table-bordered">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Table - Striped Bordered</h4>
-        <table class="table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Fluid Table</h4>
-        <table class="table-fluid">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Fluid Bordered Table</h4>
-        <table class="table-bordered table-fluid">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4 class="title mt-xl">Fluid Striped Bordered Table</h4>
-        <table class="table-bordered table-striped table-fluid">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Field</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Front-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dee</td>
-                    <td>Back-end Developer</td>
-                </tr>
-                <tr>
-                    <td>Josh Dan</td>
-                    <td>Fullstack Developer</td>
-                </tr>
-                <tr>
-                    <td>Jane Dan</td>
-                    <td>DevOps</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="my-l pt-l">
-            <h2 class="title">Dropdown</h2>
-            <div class="dropdown">
-                <a class="btn blue-bg">dropdown</a>
-                <div class="dropdown-content light-bg blue-text">
-                    <a>dropdown1</a>
-                    <a>dropdown2</a>
-                    <a>dropdown3</a>
-                </div>
+        <a class="btn">button</a>
+        <a class="btn red-bg">button</a>
+        <a class="btn purple-bg">button</a>
+        <div class="my-m"></div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
             </div>
-            <h2 class="title mt-l">Dropup</h2>
-            <div class="dropup">
-                <a class="btn red-bg">dropup</a>
-                <div class="dropup-content light-bg blue-text">
-                    <a>dropup1</a>
-                    <a>dropup2</a>
-                    <a>dropup3</a>
-                    <div class="divider"></div>
-                    <a>dropup4</a>
-                </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn red-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn purple-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
             </div>
         </div>
-        <h2 class="title">Card</h2>
-        <div class="card card-xl">
-            <div class="card-image">
-                <img src="../assets/image/logo/BebyKit.png">
-                <span class="card-title">
-                    Hello
-                </span>
+        <h5 class="title mt-xl">Normal Circular Button</h5>
+        <div class="my-m">
+            <p>
+                This button is worked only on icons. You can't put text inside of it.
+            </p>
+        </div>
+        <a class="btn-circle"><i class="bk-th"></i></a>
+        <a class="btn-circle red-bg"><i class="bk-th-outline"></i></a>
+        <a class="btn-circle light-bg dark-text"><i class="bk-menu"></i></a>
+        <div class="my-m"></div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
             </div>
-            <div class="card-content">
-                <span class="card-title">BebyKit</span>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum neque sunt ad ducimus, voluptatibus ipsam pariatur. Error ducimus provident rem minus est id, officia deleniti culpa eos maiores quia consequuntur!</p>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle red-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th-outline"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle light-bg dark-text</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-menu"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
             </div>
-            <div class="card-footer">
-                <a class="btn">Hello</a>
+        </div>
+        <h5 class="title mt-xl">Outline Button</h5>
+        <div class="my-m">
+            <p>
+                Outline buttons are cool stuff coming from BebyKit. These buttons background are transparent when they are not being hovered, and change their background color based on text color.
+                You can customize them too!
+            </p>
+        </div>
+        <a class="btn-outline r-s">button</a>
+        <a class="btn-outline btn-red r-s">button</a>
+        <a class="btn-outline b-n btn-black r-l">button</a>
+        <div class="my-m"></div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black b-n r-l"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            </div>
+        </div>
+        <h5 class="title mt-xl">Outline Circular Button</h5>
+        <div class="my-m">
+            <p>
+                This button is worked only on icons. You can't put text inside of it.
+            </p>
+        </div>
+        <a class="btn-circle-outline"><i class="bk-th"></i></a>
+        <a class="btn-circle-outline btn-red"><i class="bk-th-outline"></i></a>
+        <a class="btn-circle-outline btn-green b-n"><i class="bk-menu"></i></a>
+        <div class="my-m"></div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-red"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th-outline"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-green b-n</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-menu"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
             </div>
         </div>
     </div>
 
     <footer class="blue-bg pt-xl pb-s px-m">
         <div class="row">
-            <div class="column xs-12 s-5 m-4 l-3 light-bg r-s flex content-justify-center shadow-s">
-                <a href="../index.html" class="py-s flex items-align-center">
-                    <img src="../assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 60px;">
-                    <p class="font-xl blue-text text-lighter-1"><strong>BebyKit</strong></p>
+            <div class="column xs-12 m-6">
+                <a href="index.html" class="w-auto mb-s flex items-align-flex-end">
+                    <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 50px;">
+                    <span class="light-text text-m font-sans-serif shadow-text-3d">BebyKit</span>
                 </a>
-            </div>
-            <div class="column xs-12 s-7 m-8 l-9 light-text py-s px-m text-center-xs">
-                <p class="font-m">
-                    Made with <i class="bk-heart-filled bk-s red-text"></i> by <em>Hawari</em> [ <span class="font-xs red-text shadow-text-s"><strong>ハワリ</strong></span> ] and Hikari [ <span class="font-xs red-text shadow-text-s"><strong>光</strong></span> ].<br>
-                    Current Version: v1.0.2
+                <p class="mt-s">
+                    Made with <i class="bk-heart-filled text-xs"></i> by BebyKit team and all of the contributors.
                 </p>
+                <p>Current version: v1.0.3</p>
+            </div>
+            <div class="column xs-12 m-6 pt-l hidden-m-to-upper">
+                <div class="row">
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Community</h6>
+                        <div class="row p-n m-n font-s">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/projects" class="light-text">Projects</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="light-text">Issues</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/discussions" class="light-text">Discussion (GitHub)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="light-text">Discussion (Whatsapp)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://gitter.im/BebyKit/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="light-text">Discussion (Gitter)</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4 pt-m">
+                        <h6 class="title light-text">Projects</h6>
+                        <div class="row p-n m-n font-s">
+                            <div class="column xs-12"><a href="icons_project.html" class="light-text">Icons</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4 pt-m">
+                        <h6 class="title light-text">License</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/README.md" class="light-text">MIT</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column xs-12 m-6 hidden-s-to-lower">
+                <div class="row">
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Community</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/projects" class="light-text">Projects</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="light-text">Issues</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/discussions" class="light-text">Discussion (GitHub)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="light-text">Discussion (Whatsapp)</a></div>
+                            <div class="column xs-12"><a target="_blank" href="https://gitter.im/BebyKit/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="light-text">Discussion (Gitter)</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">Projects</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a href="icons_project.html" class="light-text">Icons</a></div>
+                        </div>
+                    </div>
+                    <div class="column xs-12 m-4">
+                        <h6 class="title light-text">License</h6>
+                        <div class="row p-n m-n font-m">
+                            <div class="column xs-12"><a target="_blank" href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/README.md" class="light-text">MIT</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="column xs-12 mt-m text-center">
+                <div class="divider light-bg mb-m"></div>
                 <p>
                     BebyKit © 2022. MIT Licensed
                 </p>
             </div>
         </div>
     </footer>
+
+<script src="../script.js" type="text/javascript"></script>
+
 </body>
 </html>
