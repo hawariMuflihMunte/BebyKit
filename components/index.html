@@ -64,21 +64,34 @@
             BebyKit's utilities (e.g. padding, margin, border, radius, etc).
         </p>
         <div class="block items-align-center p-m r-s b-xs b-grey b-lighter-3 overflow-hidden">
-            <a class="btn">button</a>
-            <a class="btn-outline r-s">button</a>
-            <a class="btn r-l">button</a>
-            <a class="btn-outline r-l">button</a>
-            <a class="btn light-bg dark-text">button</a>
-            <a class="btn dark-bg">button</a>
-            <a class="btn-circle"><i class="bk-heart"></i></a>
-            <a class="btn-circle-outline"><i class="bk-heart"></i></a>
-            <div class="btn-group btn-m">
-                <a class="btn">Button#1</a>
-                <a class="btn red-bg bg-lighter-1">Button#2</a>
-            </div>
-            <div class="btn-group-outline btn-m btn-red">
-                <a class="btn">Button#1</a>
-                <a class="btn">Button#2</a>
+            <div class="row">
+                <div class="column">
+                    <a class="btn">button</a>
+                    <a class="btn-outline r-s btn-red">button</a>
+                    <a class="btn orange-bg dark-text r-l">button</a>
+                </div>
+                <div class="column">
+                    <a class="btn-outline r-l">button</a>
+                    <a class="btn light-bg dark-text">button</a>
+                    <a class="btn dark-bg">button</a>
+                </div>
+                <div class="column">
+                    <a class="btn-circle"><i class="bk-heart"></i></a>
+                    <a class="btn-circle-outline btn-purple"><i class="bk-heart"></i></a>
+                    <a class="btn-circle-outline btn-green"><i class="bk-heart"></i></a>
+                </div>
+                <div class="column">
+                    <div class="btn-group btn-m">
+                        <a class="btn">Button#1</a>
+                        <a class="btn red-bg bg-lighter-1">Button#2</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="btn-group-outline btn-m btn-red">
+                        <a class="btn">Button#1</a>
+                        <a class="btn">Button#2</a>
+                    </div>
+                </div>
             </div>
         </div>
         <h5 class="title mt-xl">Normal Button</h5>
@@ -161,18 +174,160 @@
                 <span class="code-language">HTML</span>
             </div>
             <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
 &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-red"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th-outline"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
 &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-green b-n</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-menu"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
             </div>
         </div>
+        <h5 class="title mt-xl pt-m">Advanced</h5>
+        <p class="pb-l">
+            You can style those button above by yourself. You can see example below:
+        </p>
+        <h6 class="title">Button Coloring</h6>
+        <div class="flex my-m items-align-center ">
+            <p>from default</p>&nbsp;&nbsp;<a class="btn">button</a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn green-bg bg-lighter-3 dark-text">button</a>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn green-bg bg-lighter-3 dark-text"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            </div>
+        </div>
+        <div class="flex mt-xl mb-m items-align-center">
+            <p>from default</p>&nbsp;&nbsp;<a class="btn-outline r-s">button</a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-outline btn-pink r-s">button</a>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline r-s"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline r-s btn-pink"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            </div>
+        </div>
+        <p class="mt-m mb-xl">
+            If you are using <code>btn-outline</code> button, you have to choose it's color by using <code>btn-</code> and then its color-name. See example above.
+            <br>
+            <br>
+            This is also works on circle button. Where you can choose color by using <code>btn-</code> color-name.
+        </p>
+        <div class="flex my-m items-align-center">
+            <p>from default</p>&nbsp;&nbsp;<a class="btn-circle"><i class="bk-music"></i></a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-circle green-bg bg-lighter-3 dark-text"><i class="bk-music"></i></a>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle green-bg bg-lighter-3 dark-text"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            </div>
+        </div>
+        <div class="flex mt-xl mb-m items-align-center">
+            <p>from default</p>&nbsp;&nbsp;<a class="btn-circle-outline"><i class="bk-music"></i></a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-circle-outline btn-pink"><i class="bk-music"></i></a>
+        </div>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-pink"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            </div>
+        </div>
+        <p class="mt-m mb-xl">
+            If the button has background color, then you can apply background colors such as <code>green-bg</code>, <code>red-bg bg-lighter-3</code> or <code>blue-bg bg-darker-2</code>.
+            But, if the button doesn't have any background colors such as outlined button, then you can't apply background color to its. But you can tckle this problem by using <code>btn-red</code> or <code>btn-white</code> to make the outline and hovered state changed to our styling.
+        </p>
+        <h5 class="title">Sizing</h5>
+        <p>
+            BebyKit has its built-in sizes for buttons. you can modify them by using utilities or simply just by following our built-in sizes.
+            You can make a group of buttons by using <code>btn-group</code> class to a <code>div</code>. After done with that, create buttons inside of it by calling <code>btn</code> class name. The sizes for button starts from <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, <code>xl</code>.
+            Look at their differences below:
+        </p>
+        <div class="row">
+            <div class="column">
+                <a class="btn btn-xs">xs</a>
+                <a class="btn btn-s">s</a>
+                <a class="btn btn-m">m</a>
+                <a class="btn btn-l">l</a>
+                <a class="btn btn-xl">xl</a>
+            </div>
+            <div class="column mt-l">
+                <a class="btn-outline r-m btn-xs">xs</a>
+                <a class="btn-outline r-m btn-s">s</a>
+                <a class="btn-outline r-m btn-m">m</a>
+                <a class="btn-outline r-m btn-l">l</a>
+                <a class="btn-outline r-m btn-xl">xl</a>
+            </div>
+            <div class="column mt-l">
+                <a class="btn-circle r-m btn-xs">xs</a>
+                <a class="btn-circle r-m btn-s">s</a>
+                <a class="btn-circle r-m btn-m">m</a>
+                <a class="btn-circle r-m btn-l">l</a>
+                <a class="btn-circle r-m btn-xl">xl</a>
+            </div>
+            <div class="column mt-l">
+                <a class="btn-circle-outline btn-xs">xs</a>
+                <a class="btn-circle-outline btn-s">s</a>
+                <a class="btn-circle-outline btn-m">m</a>
+                <a class="btn-circle-outline btn-l">l</a>
+                <a class="btn-circle-outline btn-xl">xl</a>
+            </div>
+            <div class="column mt-l">
+                <p>
+                    The default size for BebyKit's Buttons is <code>xs</code> size!
+                    <br>
+                    <a class="btn">xs#1</a>
+                    <a class="btn-outline btn-green r-s">xs#2</a>
+                    <a class="btn-circle"><i class="bk-block"></i></a>
+                    <a class="btn-circle-outline btn-green"><i class="bk-block"></i></a>
+                </p>
+            </div>
+            <div class="column mt-l">
+                <p>
+                    Let's see what happened if we change the <code>font-size</code> inside the buttons...
+                    <br>
+                    <a class="btn font-l">xs#1</a>
+                    <a class="btn-outline btn-green r-s font-xl">xs#2</a>
+                    <a class="btn-circle"><i class="bk-block text-m"></i></a>
+                    <a class="btn-circle-outline btn-green"><i class="bk-block text-xl"></i></a>
+                    <br>
+                    <br>
+                    The first one, using <code>font-l</code>, second use <code>font-xl</code>, and three use <code>text-m</code> and the last one, four use <code>text-xl</code>.
+                    <br>
+                    <br>
+                    <span class="red-text">*</span>Note:
+                    To change icon's size, you have to deal with the icon by your own. Set the <code>font-size</code> inside the <code>i</code> class attribute.
+                </p>
+            </div>
+        </div>
+        <p class="mt-l">
+            The <code>font-size</code>s can also be changed. By changing <code>font-size</code>s, it can affect the button's size!
+        </p>
+        <hr class="my-l">
+        <h2 class="title mt-xl mb-l">Button Group</h2>
+        <h5 class="title">Normal Button Group</h5>
+        <p>
+            <div class="row mt-s">
+                <div class="column">
+                    <div class="btn-group btn-s">
+                        <div class="btn">Button#1</div>
+                        <div class="btn red-bg">Button#2</div>
+                        <div class="btn yellow-bg dark-bg">Button#3</div>
+                    </div>
+                </div>
+            </div>
+        </p>
     </div>
 
     <footer class="blue-bg pt-xl pb-s px-m">
         <div class="row">
             <div class="column xs-12 m-6">
-                <a href="index.html" class="w-auto mb-s flex items-align-flex-end">
+                <a href="../index.html" class="w-auto mb-s flex items-align-flex-end">
                     <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" alt="BebyKit's Logo" style="max-width: 50px;">
                     <span class="light-text text-m font-sans-serif shadow-text-3d">BebyKit</span>
                 </a>

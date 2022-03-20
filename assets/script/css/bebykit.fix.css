@@ -3292,6 +3292,7 @@ button,
   opacity: 0.85;
 }
 
+[class*="btn-"][disabled],
 .btn-disabled,
 .btn-group.btn-disabled > .btn,
 .btn-group-outline.btn-disabled > .btn {
@@ -3826,19 +3827,19 @@ button.btn-s {
 .btn.btn-m,
 .btn-outline.btn-m,
 button.btn-m {
-  padding: calc(var(--m-padding-container) + 0.5px) calc(var(--m-padding-container) * 1.75);
+  padding: calc(var(--m-padding-container) - 9.6px) calc(var(--m-padding-container) * 0.96);
 }
 
 .btn.btn-l,
 .btn-outline.btn-l,
 button.btn-l {
-  padding: calc(var(--l-padding-container) - 1px) calc(var(--l-padding-container) * 1.5);
+  padding: calc(var(--l-padding-container) - 18.6px) calc(var(--l-padding-container) * 0.8);
 }
 
 .btn.btn-xl,
 .btn-outline.btn-xl,
 button.btn-xl { 
-  padding: calc(var(--xl-padding-container) - 8px) calc(var(--xl-padding-container) * 1.07);
+  padding: calc(var(--xl-padding-container) - 23.6px) calc(var(--xl-padding-container) * 0.60);
 }
 
 .btn-group,
@@ -3868,7 +3869,7 @@ button.btn-xl {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   margin: 0 !important;
-  padding: var(--s-padding-container) calc(var(--s-padding-container) * 2);
+  padding: calc(var(--s-padding-container) * 2) calc(var(--s-padding-container) * 2);
 }
 
 .btn-group-outline {
@@ -3900,28 +3901,28 @@ button.btn-xl {
 
 .btn-group.btn-xs > .btn,
 .btn-group-outline.btn-xs > .btn {
-  padding: var(--xs-padding-container) calc(var(--xs-padding-container) * 2);
+  padding: calc(var(--xs-padding-container) * 3) calc(var(--xs-padding-container) * 2.5);
 }
 
 .btn-group.btn-s > .btn,
 .btn-group-outline.btn-s > .btn {
-  padding: var(--s-padding-container) calc(var(--s-padding-container) * 2);
+  padding: calc(var(--s-padding-container) * 2) calc(var(--s-padding-container) * 2);
 }
 
 .btn-group.btn-m > .btn,
 .btn-group-outline.btn-m > .btn {
-  padding: var(--m-padding-container) calc(var(--m-padding-container) * 2);
+  padding: calc(var(--m-padding-container) * 0.85) calc(var(--m-padding-container) * 1.85);
 }
 
 .btn-group.btn-l > .btn,
 .btn-group-outline.btn-l > .btn {
-  padding: var(--l-padding-container) calc(var(--l-padding-container) * 2);
+  padding: calc(var(--l-padding-container) - (var(--xs-padding-container) * 2.85)) calc(var(--l-padding-container) - (var(--s-padding-container) * 1.500));
   line-height: 6px;
 }
 
 .btn-group.btn-xl > .btn,
 .btn-group-outline.btn-xl > .btn {
-  padding: var(--xl-padding-container) calc(var(--xl-padding-container) * 1.45);
+  padding: calc(var(--xl-padding-container) - (var(--xs-padding-container) * 4.800)) calc(var(--xl-padding-container) - var(--m-padding-container));
   line-height: 8px;
 }
 
