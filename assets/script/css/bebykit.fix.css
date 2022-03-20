@@ -5869,24 +5869,45 @@ h6.subtitle {
           box-shadow: 0 1rem 2.125rem var(--shadow-color) !important;
 }
 
-.shadow-hover-minimize {
+.shadow-hover-to-n,
+.shadow-hover-to-xs,
+.shadow-hover-to-s,
+.shadow-hover-to-m,
+.shadow-hover-to-l,
+.shadow-hover-to-xl {
   -webkit-transition: var(--xf-transition-value) linear;
        -o-transition: var(--xf-transition-value) linear;
           transition: var(--xf-transition-value) linear;
 }
 
-.shadow-hover-minimize:hover {
-  -webkit-box-shadow: 0 0 0.095em var(--shadow-color) !important;
-          box-shadow: 0 0 0.095em var(--shadow-color) !important;
+.shadow-hover-to-n:hover {
+  -webkit-box-shadow: 0 0 0 var(--shadow-color) !important;
+          box-shadow: 0 0 0 var(--shadow-color) !important;
 }
 
-.shadow-hover-maximize {
-  -webkit-transition: var(--xf-transition-value) linear;
-       -o-transition: var(--xf-transition-value) linear;
-          transition: var(--xf-transition-value) linear;
+.shadow-hover-to-xs:hover {
+  -webkit-box-shadow: 0 0 0.15rem var(--shadow-color) !important;
+          box-shadow: 0 0 0.15rem var(--shadow-color) !important;
 }
 
-.shadow-hover-maximize:hover {
+.shadow-hover-to-s:hover {
+  --shadow-color: rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 2px 4px var(--shadow-color) !important;
+          box-shadow: 0 2px 4px var(--shadow-color) !important;
+}
+
+.shadow-hover-to-m:hover {
+  --shadow-color: rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0.125rem 0.25rem var(--shadow-color) !important;
+          box-shadow: 0 0.125rem 0.25rem var(--shadow-color) !important;
+}
+
+.shadow-hover-to-l:hover {
+  -webkit-box-shadow: 0 7px 3px var(--shadow-color) !important;
+          box-shadow: 0 7px 3px var(--shadow-color) !important;
+}
+
+.shadow-hover-to-xl:hover {
   -webkit-box-shadow: 0 1rem 2.125rem var(--shadow-color) !important;
           box-shadow: 0 1rem 2.125rem var(--shadow-color) !important;
 }

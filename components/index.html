@@ -181,7 +181,7 @@
         </div>
         <h5 class="title mt-xl pt-m">Advanced</h5>
         <p class="pb-l">
-            You can style those button above by yourself. You can see example below:
+            You can style these buttons above by yourself. You can see example below:
         </p>
         <h6 class="title">Button Coloring</h6>
         <div class="flex my-m items-align-center ">
@@ -305,8 +305,65 @@
                 </p>
             </div>
         </div>
-        <p class="mt-l">
+        <p class="mt-l mb-xl">
             The <code>font-size</code>s can also be changed. By changing <code>font-size</code>s, it can affect the button's size!
+        </p>
+        <h6 class="title">Additional</h6>
+        <p class="mb-l">
+            By using BebyKit's utilities, a modified button can also be created. See examples below:
+        </p>
+        <div class="row">
+            <div class="column">
+                <a class="p-s r-m light-text font-m red-bg shadow-m unselectable shadow-hover-to-xl">button</a>
+                <a class="p-s r-m light-bg font-m b-xs shadow-l unselectable shadow-hover-to-m">button</a>
+                <a class="p-s r-m white-bg bg-enhanced-3 font-m b-s b-orange b-inset shadow-xl unselectable shadow-hover-to-n">button</a>
+            </div>
+            <div class="column mt-xl">
+            <div class="block">
+                <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                    <span class="code-language">HTML</span>
+                </div>
+                <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                    <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m light-text font-m red-bg shadow-m unselectable shadow-hover-to-xl"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m light-bg font-m b-xs shadow-l unselectable shadow-hover-to-m"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m white-bg bg-enhanced-3 font-m b-s b-orange b-inset shadow-xl unselectable shadow-hover-to-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+                </div>
+            </div>
+            </div>
+            <div class="column mt-l">
+                <p>
+                    You can create buttons by your own like these. But, if you prefer to choose this styling way, then you have to set the <code>:hover</code> state, <code>:active</code> state, etc., by your own. And these buttons are also can be selected if user tries to drag text in it.
+                    So you have to tackle this problem by using <code>unselectable</code> and also add <code>selectable-none</code> to prevent the texts inside being selected.
+                </p>
+            </div>
+        </div>
+        <p class="mb-m">
+            <br>
+            <br>
+            We can also make outline button without its outline. Look at examples below:
+            <a class="btn-outline btn-black b-n r-s">button</a>
+            <a class="btn-outline btn-green b-n r-s">button</a>
+            <a class="btn-outline btn-red b-n r-s">button</a>
+            <a class="btn-circle-outline btn-red b-n"><i class="bk-block font-xl"></i></a>
+            <a class="btn-circle-outline btn-black b-n"><i class="bk-code font-xl"></i></a>
+        </p>
+        <div class="block">
+            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
+                <span class="code-language">HTML</span>
+            </div>
+            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
+                <pre>
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black r-s b-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-green r-s b-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red r-s" b-n</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red b-n"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-block font-xl"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black b-n"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-code font-xl"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
+</pre>
+            </div>
+        </div>
+        <p class="my-m">
+            To apply this, simply add <code>b-n</code> which stand for <code>border-none</code>. This will surely remove any border from buttons.
         </p>
         <hr class="my-l">
         <h2 class="title mt-xl mb-l">Button Group</h2>
