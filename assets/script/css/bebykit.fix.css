@@ -3421,10 +3421,10 @@ button[type="submit"]:hover {
 .btn-outline {
   background-color: transparent !important;
   padding: calc(var(--xs-padding-container) + 2px) calc(var(--xs-padding-container) * 2.85);
-  border-radius: 1px;
+  border-radius: 2px;
   -webkit-transition: var(--f-transition-value);
-  -o-transition: var(--f-transition-value);
-  transition: var(--f-transition-value);
+       -o-transition: var(--f-transition-value);
+          transition: var(--f-transition-value);
   color: var(--queen-blue) !important;
   border: 1px solid var(--queen-blue);
   -webkit-box-shadow: none !important;
@@ -3507,31 +3507,6 @@ button[type="submit"]:hover {
   width: var(--xl-circle-btn-radius) !important;
   max-height: var(--xl-circle-btn-radius) !important;
   height: var(--xl-circle-btn-radius) !important;
-}
-
-.btn-outline.xs-outline,
-.btn-group-outline.xs-outline {
-  border-width: 1px !important;
-}
-
-.btn-outline.s-outline,
-.btn-group-outline.s-outline {
-  border-width: 2px !important;
-}
-
-.btn-outline.m-outline,
-.btn-group-outline.m-outline {
-  border-width: 3px !important;
-}
-
-.btn-outline.l-outline,
-.btn-group-outline.l-outline {
-  border-width: 5px !important;
-}
-
-.btn-outline.xl-outline,
-.btn-group-outline.xl-outline {
-  border-width: 8px !important;
 }
 
 .btn-outline:hover,
@@ -3812,24 +3787,28 @@ a.link:hover {
   text-decoration: underline;
 }
 
+.btn-xs,
 .btn.btn-xs,
 .btn-outline.btn-xs,
 button.btn-xs {
   padding: calc(var(--xs-padding-container) + 2px) calc(var(--xs-padding-container) * 2.85)
 }
 
+.btn-s,
 .btn.btn-s,
 .btn-outline.btn-s,
 button.btn-s {
   padding: calc(var(--s-padding-container) + 1px) calc(var(--s-padding-container) * 2.05);
 }
 
+.btn-m,
 .btn.btn-m,
 .btn-outline.btn-m,
 button.btn-m {
   padding: calc(var(--m-padding-container) - 9.6px) calc(var(--m-padding-container) * 0.96);
 }
 
+.btn-l,
 .btn.btn-l,
 .btn-outline.btn-l,
 button.btn-l {
@@ -3841,7 +3820,7 @@ button.btn-l {
 button.btn-xl { 
   padding: calc(var(--xl-padding-container) - 23.6px) calc(var(--xl-padding-container) * 0.60);
 }
-
+/* 
 .btn-group,
 .btn-group-outline {
   display: -webkit-box;
@@ -3899,9 +3878,61 @@ button.btn-xl {
   padding: 0 !important;
 }
 
+.btn-group.pt-xs,
+.btn-group.pt-s,
+.btn-group.pt-m,
+.btn-group.pt-l,
+.btn-group.pt-xl,
+.btn-group-outline.pt-xs,
+.btn-group-outline.pt-s,
+.btn-group-outline.pt-m,
+.btn-group-outline.pt-l,
+.btn-group-outline.pt-xl {
+  padding-top: 0 !important;
+}
+
+.btn-group.pr-xs,
+.btn-group.pr-s,
+.btn-group.pr-m,
+.btn-group.pr-l,
+.btn-group.pr-xl,
+.btn-group-outline.pr-xs,
+.btn-group-outline.pr-s,
+.btn-group-outline.pr-m,
+.btn-group-outline.pr-l,
+.btn-group-outline.pr-xl {
+  padding-right: 0 !important;
+}
+
+.btn-group.pb-xs,
+.btn-group.pb-s,
+.btn-group.pb-m,
+.btn-group.pb-l,
+.btn-group.pb-xl,
+.btn-group-outline.pb-xs,
+.btn-group-outline.pb-s,
+.btn-group-outline.pb-m,
+.btn-group-outline.pb-l,
+.btn-group-outline.pb-xl {
+  padding-bottom: 0 !important;
+}
+
+.btn-group.pl-xs,
+.btn-group.pl-s,
+.btn-group.pl-m,
+.btn-group.pl-l,
+.btn-group.pl-xl,
+.btn-group-outline.pl-xs,
+.btn-group-outline.pl-s,
+.btn-group-outline.pl-m,
+.btn-group-outline.pl-l,
+.btn-group-outline.pl-xl {
+  padding-left: 0 !important;
+}
+
 .btn-group.btn-xs > .btn,
 .btn-group-outline.btn-xs > .btn {
-  padding: calc(var(--xs-padding-container) * 3) calc(var(--xs-padding-container) * 2.5);
+  padding: calc(var(--s-padding-container) * 2) calc(var(--s-padding-container) * 2);
 }
 
 .btn-group.btn-s > .btn,
@@ -3935,16 +3966,9 @@ button.btn-xl {
 @media only screen and (max-width: 768px) {
   .btn-group,
   .btn-group-outline {
-    /* -ms-overflow-style: none;
-    scrollbar-width: none; */
     max-width: 100%;
     overflow-x: auto;
   }
-/* 
-  .btn-group::-webkit-scrollbar,
-  .btn-group-outline::-webkit-scrollbar {
-    display: none !important;
-  } */
 }
 
 .btn-group > .btn:first-child,
@@ -3957,10 +3981,6 @@ button.btn-xl {
 .btn-group-outline > .btn:last-child {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
-}
-
-.btn-group.btn-rounded {
-  border-radius: 45px;
 }
 
 .btn-group.btn-rounded > .btn:first-child,
@@ -4050,7 +4070,7 @@ button.btn-xl {
   opacity: 1.0 !important;
   -webkit-filter: none !important;
           filter: none !important;
-}
+} */
 
 .clear-float {
   clear: both;
