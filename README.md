@@ -2,7 +2,7 @@
 
 Front-end Utilities
 
-Made with ❤️ by all the _BebyKit_'s Developer whose participated.
+Made with ❤️ by all the BebyKit Team and all of the contributors.
 ### Description
 
 Welcome onboard Front-end Developer, here you can express yourself freely by contributing to our Open-source Front-end framework. If you think it is nice for others to see it, then why not contribute it? Don't let your imagination slipped away before you can even realize it to the world.
