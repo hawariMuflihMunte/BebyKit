@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../assets/script/css/bebykit.fix.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+    <script src="../jquery-3.6.0.min.js"></script>
 
     <meta property="og:title" content="BebyKit" />
     <meta property="og:type" content="website" />
@@ -24,846 +25,278 @@
     <link rel="stylesheet" href="../style.css">
 
 </head>
-<body class="white-bg bg-enhanced-1">
-    <div class="fixed w-100 index-5">
-        <nav class="blue-bg px-m shadow-n flex content-align-center items-align-center">
-            <a href="../index.html" class="flex content-align-center items-align-center">
+<body class="navbar-fixed-on white-bg bg-enhanced-1">
+
+    <div class="navbar-fixed w-100 index-5">
+        <nav class="collapsible-nav px-m">
+            <a href="../index.html" class="flex w-auto pr-m py-xs r-m content-justify-space-between items-align-center light-bg">
                 <img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/image/logo/BebyKit.png" style="max-width: 45px; height: auto;" oncontextmenu="return false;">
+                <span class="text-l blue-text">BebyKit</span>
             </a>
-            <a class="menu-drop hidden-m-to-upper">
-                <i class="bk-th font-s"></i>
-            </a>
-            <ul class="flex content-justify-space-between items-align-center hidden-s-to-lower change-color">
-                <li>
-                    <div class="dropdown transparent-bg r-s mr-m">
-                        <button class="btn btn-s shadow-n">Documentation</button>
-                        <div class="dropdown-content light-bg blue-text">
-                            <a href="../index.html" class="content-justify-center"><i class="bk-home"></i></a>
-                            <div class="divider"></div>
-                            <a href="../layout/index.html">Layout</a>
-                            <a href="index.html">Components</a>
-                            <a href="../utilities/index.html">Utilities</a>
-                            <a href="../forms/index.html">Forms</a>
-                            <a href="../icons/index.html">Icons</a>
-                            <a href="../typography/index.html">Typography</a>
+            <input type="checkbox" id="collapsible-nav" class="collapsible-nav-toggler">
+            <label for="collapsible-nav" class="collapsible-nav-label hidden-l-to-upper"><i class="bk-menu"></i></label>
+            <div class="collapsible-nav-body">
+                <div class="collapsible-nav-content">
+                    <div class="collapsible shadow-n">
+                        <input type="checkbox" id="collapsible-nav-1" class="collapsible-toggler" checked>
+                        <label for="collapsible-nav-1" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Getting Started</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">Introduction</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="collapsible-nav-2" class="collapsible-toggler">
+                        <label for="collapsible-nav-2" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Layout</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">Container</a>
+                                    <a href="#!">Grid</a>
+                                    <a href="#!">Display</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="collapsible-nav-3" class="collapsible-toggler">
+                        <label for="collapsible-nav-3" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Components</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">Buttons</a>
+                                    <a href="#!">Table</a>
+                                    <a href="#!">Dropdown</a>
+                                    <a href="#!">Collapsible</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="collapsible-nav-4" class="collapsible-toggler">
+                        <label for="collapsible-nav-4" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Utilities</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">Padding</a>
+                                    <a href="#!">Margin</a>
+                                    <a href="#!">Radius</a>
+                                    <a href="#!">Border</a>
+                                    <a href="#!">Hidden</a>
+                                    <a href="#!">Visible</a>
+                                    <a href="#!">Invisible</a>
+                                    <a href="#!">Shadow</a>
+                                    <a href="#!">Text Shadow</a>
+                                    <a href="#!">Background Color</a>
+                                    <a href="#!">Text Color</a>
+                                    <a href="#!">Overflow</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="collapsible-nav-5" class="collapsible-toggler">
+                        <label for="collapsible-nav-5" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Forms</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">ABC</a>
+                                    <a href="#!">BCD</a>
+                                    <a href="#!">CDE</a>
+                                    <a href="#!">DEF</a>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="checkbox" id="collapsible-nav-6" class="collapsible-toggler">
+                        <label for="collapsible-nav-6" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">About</label>
+                        <div class="collapsible-body">
+                            <div class="collapsible-content py-n">
+                                <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                                    <a href="#!">Team</a>
+                                    <a href="#!">License</a>
+                                    <a href="#!">Translations</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </li>
-                <li><a href="../index.html#download" class="btn-outline btn-s btn-white r-xs"><i class="bk-download bk-xs"></i>&nbsp;&nbsp;Download</a></li>
-            </ul>
+                </div>
+            </div>
+            <div class="sidenav pt-m">
+            <div class="collapsible shadow-n">
+                <input type="checkbox" id="collapsible-sidenav-1" class="collapsible-toggler" checked>
+                <label for="collapsible-sidenav-1" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Getting Started</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">Introduction</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="collapsible-sidenav-2" class="collapsible-toggler">
+                <label for="collapsible-sidenav-2" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Layout</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">Container</a>
+                            <a href="#!">Grid</a>
+                            <a href="#!">Display</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="collapsible-sidenav-3" class="collapsible-toggler">
+                <label for="collapsible-sidenav-3" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Components</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">Buttons</a>
+                            <a href="#!">Table</a>
+                            <a href="#!">Dropdown</a>
+                            <a href="#!">Collapsible</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="collapsible-sidenav-4" class="collapsible-toggler">
+                <label for="collapsible-sidenav-4" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Utilities</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">Padding</a>
+                            <a href="#!">Margin</a>
+                            <a href="#!">Radius</a>
+                            <a href="#!">Border</a>
+                            <a href="#!">Hidden</a>
+                            <a href="#!">Visible</a>
+                            <a href="#!">Invisible</a>
+                            <a href="#!">Shadow</a>
+                            <a href="#!">Text Shadow</a>
+                            <a href="#!">Background Color</a>
+                            <a href="#!">Text Color</a>
+                            <a href="#!">Overflow</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="collapsible-sidenav-5" class="collapsible-toggler">
+                <label for="collapsible-sidenav-5" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">Forms</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">ABC</a>
+                            <a href="#!">BCD</a>
+                            <a href="#!">CDE</a>
+                            <a href="#!">DEF</a>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="collapsible-sidenav-6" class="collapsible-toggler">
+                <label for="collapsible-sidenav-6" class="collapsible-label transparent-bg grey-text text-lighter-2 py-xs">About</label>
+                <div class="collapsible-body">
+                    <div class="collapsible-content py-n">
+                        <div class="flex flex-column pl-m font-l grey-text text-lighter-2">
+                            <a href="#!">Team</a>
+                            <a href="#!">License</a>
+                            <a href="#!">Translations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidenav right">
+            <div class="flex flex-column items-align-flex-start pt-s">
+                <h4 class="subtitle mb-xs px-xs">On this page:</h4>
+                <div class="divider mb-s"></div>
+                <ul class="ml-xs">
+                    <li><a href="index.html#introduction" class="grey-text text-lighter-1">Introduction</a></li>
+                    <li><a href="index.html#quick-start" class="grey-text text-lighter-1">Quick Start</a></li>
+                    <li><a href="index.html#css" class="grey-text text-lighter-1 ml-s">CSS</a></li>
+                    <li><a href="index.html#html-setup" class="grey-text text-lighter-1 ml-s">HTML Setup</a></li>
+                    <li><a href="index.html#issues" class="grey-text text-lighter-1">Issues</a></li>
+                    <li><a href="index.html#support" class="grey-text text-lighter-1">Support</a></li>
+                </ul>
+            </div>
+        </div>
         </nav>
     </div>
 
-    <div class="container pt-xl mb-l">
-        <div class="pt-m"></div>
-        <h1 class="title">Components</h1>
-        <hr class="mb-xl">
-        <h2 class="title">Button</h2>
-        <p class="mb-m">
-            You can use built-in buttons from BebyKit. Or, you can also create your own button by changing button properties using
-            BebyKit's utilities (e.g. padding, margin, border, radius, etc).
+    <div class="content px-l py-m">
+        <h1 class="title mb-n" id="introduction">Introduction</h1>
+        <h4 class="subtitle">Get started to BebyKit CSS Framework</h4>
+        <div class="divider mb-xl"></div>
+        <h3 class="title" id="quick-start">Quick Start</h3>
+        <p class="mb-xl">
+            Want to add BebyKit in your project? Use jsDelivr which is free open-source CDN.
         </p>
-        <div class="block items-align-center p-m r-s b-xs b-grey b-lighter-3 overflow-hidden">
-            <div class="row">
-                <div class="column">
-                    <a class="btn">button</a>
-                    <a class="btn-outline r-s btn-red">button</a>
-                    <a class="btn orange-bg dark-text r-l">button</a>
-                </div>
-                <div class="column mt-m">
-                    <a class="btn-outline r-l">button</a>
-                    <a class="btn light-bg dark-text">button</a>
-                    <a class="btn dark-bg">button</a>
-                </div>
-                <div class="column mt-m">
-                    <a class="btn-circle"><i class="bk-heart"></i></a>
-                    <a class="btn-circle-outline btn-purple"><i class="bk-heart"></i></a>
-                    <a class="btn-circle-outline btn-green"><i class="bk-heart"></i></a>
-                </div>
-            </div>
-        </div>
-        <h5 class="title mt-xl">Normal Button</h5>
-        <div class="my-m">
-            <p>
-                BebyKit's buttons are soft and interactive. Once you pressed it, you can see the state changed to brighter.
-                Indicating that the button was pressed.
-            </p>
-        </div>
-        <a class="btn">button</a>
-        <a class="btn red-bg">button</a>
-        <a class="btn purple-bg">button</a>
-        <div class="my-m"></div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn red-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn purple-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <h5 class="title mt-xl">Normal Circular Button</h5>
-        <div class="my-m">
-            <p>
-                This button is worked only on icons. You can't put text inside of it.
-            </p>
-        </div>
-        <a class="btn-circle"><i class="bk-th"></i></a>
-        <a class="btn-circle red-bg"><i class="bk-th-outline"></i></a>
-        <a class="btn-circle light-bg dark-text"><i class="bk-menu"></i></a>
-        <div class="my-m"></div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle red-bg"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th-outline"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle light-bg dark-text</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-menu"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <h5 class="title mt-xl">Outline Button</h5>
-        <div class="my-m">
-            <p>
-                Outline buttons are cool stuff coming from BebyKit. These buttons background are transparent when they are not being hovered, and change their background color based on text color.
-                You can customize them too!
-            </p>
-        </div>
-        <a class="btn-outline r-s">button</a>
-        <a class="btn-outline btn-red r-s">button</a>
-        <a class="btn-outline b-n btn-black r-l">button</a>
-        <div class="my-m"></div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black b-n r-l"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">button</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <h5 class="title mt-xl">Outline Circular Button</h5>
-        <div class="my-m">
-            <p>
-                Outlined version of Circular Button from above.
-                Only works on icons. Text inside of it will overflow its parent size.
-            </p>
-        </div>
-        <a class="btn-circle-outline"><i class="bk-th"></i></a>
-        <a class="btn-circle-outline btn-red"><i class="bk-th-outline"></i></a>
-        <a class="btn-circle-outline btn-green b-n"><i class="bk-menu"></i></a>
-        <div class="my-m"></div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-red"</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-th-outline"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-green b-n</span>&gt;<span class="grey-text text-lighter-3"><span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-menu"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <h5 class="title mt-xl pt-m">Advanced</h5>
-        <p class="pb-l">
-            You can style these buttons above by yourself. You can see example below:
+        <h5 class="title" id="css">CSS</h5>
+        <p class="mb-s">
+            Put this code below in your <code class="shadow-n p-n transparent-bg blue-text">&lt;head&gt;</code> to get quick start with BebyKit framework
         </p>
-        <h6 class="title">Button Coloring</h6>
-        <div class="flex my-m items-align-center ">
-            <p>from default</p>&nbsp;&nbsp;<a class="btn">button</a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn green-bg bg-lighter-3 dark-text">button</a>
-        </div>
         <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
+            <div class="code-language-wrapper dark-bg rtl-s block p-xs rtr-s">
+                <span class="code-language text-xs py-xs px-s">HTML</span>
             </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn green-bg bg-lighter-3 dark-text"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <div class="flex mt-xl mb-m items-align-center">
-            <p>from default</p>&nbsp;&nbsp;<a class="btn-outline r-s">button</a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-outline btn-pink r-s">button</a>
-        </div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline r-s"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline r-s btn-pink"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            <div class="dark-bg py-s px-xs mb-s rbl-s rbr-s rtr-s overflow-auto">
+                <code class="shadow-n transparent-bg white-text text-enhanced-3 ">&lt;<span class="blue-text text-lighter-2">link</span> <span class="purple-text text-lighter-1">rel</span>=<span class="green-text text-lighter-3">"stylesheet"</span> <span class="purple-text text-lighter-1">href</span>=<span class="green-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>&gt;</code>
             </div>
         </div>
-        <p class="mt-m mb-xl">
-            If you are using <code>btn-outline</code> button, you have to choose it's color by using <code>btn-</code> and then its color-name. See example above.
-            <br>
-            <br>
-            This is also works on circle button. Where you can choose color by using <code>btn-</code> color-name.
+        <div class="divider mt-l mb-xl"></div>
+        <h5 class="title" id="html-setup">HTML Setup</h5>
+        <p class="mb-s">
+            Want to get BebyKit quick starter template? You can see example code below
         </p>
-        <div class="flex my-m items-align-center">
-            <p>from default</p>&nbsp;&nbsp;<a class="btn-circle"><i class="bk-music"></i></a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-circle green-bg bg-lighter-3 dark-text"><i class="bk-music"></i></a>
-        </div>
         <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
+            <div class="code-language-wrapper dark-bg rtl-s block p-xs rtr-s">
+                <span class="code-language text-xs py-xs px-s">HTML</span>
             </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle green-bg bg-lighter-3 dark-text"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
+            <div class="dark-bg py-s px-xs mb-s rbl-s rbr-s rtr-s overflow-auto">
+                <code class="shadow-n transparent-bg white-text text-enhanced-3">
+&lt;<span class="pink-text">!DOCTYPE html</span>&gt;
+&lt;<span class="blue-text text-lighter-1">html</span>&gt;
+  &lt;<span class="blue-text text-lighter-1">head</span>&gt;
+    &lt;<span class="blue-text text-lighter-1">title</span>&gt;<span class="light-text">My Project</span>&lt;/<span class="blue-text text-lighter-1">title</span>&gt;
+
+    <span class="grey-text text-lighter-2">&lt;!-- Import BebyKit --&gt;</span>
+    &lt;<span class="blue-text text-lighter-1">link</span> <span class="purple-text text-lighter-1">rel</span>=<span class="green-text text-lighter-3">"stylesheet"</span> <span class="purple-text text-lighter-1">href</span>=<span class="green-text text-lighter-3">"https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/script/css/bebykit.fix.css"</span>&gt;
+
+    <span class="grey-text text-lighter-2">&lt;!-- Responsive Meta --&gt;</span>
+    &lt;<span class="blue-text text-lighter-1">meta</span> <span class="purple-text text-lighter-1">name</span>=<span class="green-text text-lighter-3">"viewport"</span> <span class="purple-text text-lighter-1">content</span>=<span class="green-text text-lighter-3">"width=device-width, initial-scale=1.0"</span>/&gt;
+
+    <span class="grey-text text-lighter-2">&lt;!-- Additional Common Required Meta --&gt;</span>
+    &lt;<span class="blue-text text-lighter-1">meta</span> <span class="purple-text text-lighter-1">charset</span>=<span class="green-text text-lighter-3">"UTF-8"</span>&gt;
+    &lt;<span class="blue-text text-lighter-1">meta</span> <span class="purple-text text-lighter-1">http-equiv</span>=<span class="green-text text-lighter-3">"X-UA-Compatible"</span> <span class="purple-text text-lighter-1">content</span>=<span class="green-text text-lighter-3">"IE=edge"</span>&gt;
+
+    <span class="grey-text text-lighter-2">&lt;!-- Additional Dongle Font (optional)</span>
+    <span class="grey-text text-lighter-2">&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+    &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap"&gt;
+    </span><span class="grey-text text-lighter-2">Uncomment to apply Dongle font --&gt;</span>
+  &lt;/<span class="blue-text text-lighter-1">head</span>&gt;
+  &lt;<span class="blue-text text-lighter-1">body</span>&gt;
+    &lt;<span class="blue-text text-lighter-1">h1</span> <span class="purple-text text-lighter-1">class</span>=<span class="green-text text-lighter-3">"title"</span>&gt;<span class="light-text">Hello World!</span>&lt;/<span class="blue-text text-lighter-1">h1</span>&gt;
+  &lt;/<span class="blue-text text-lighter-1">body</span>&gt;
+&lt;/<span class="blue-text text-lighter-1">html</span>&gt;</code>
             </div>
         </div>
-        <div class="flex mt-xl mb-m items-align-center">
-            <p>from default</p>&nbsp;&nbsp;<a class="btn-circle-outline"><i class="bk-music"></i></a>&nbsp;&nbsp;to&nbsp;&nbsp;<a class="btn-circle-outline btn-pink"><i class="bk-music"></i></a>
-        </div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-circle-outline btn-pink"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-music"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <p class="mt-m mb-xl">
-            If the button has a background color, then you can apply background colors such as <code>green-bg</code>, <code>red-bg bg-lighter-3</code> or <code>blue-bg bg-darker-2</code>.
-            But, if the button doesn't have any background colors such as outlined button, then you can't apply a background color to its. But you can tackle this problem by using <code>btn-red</code> or <code>btn-white</code> to make the outline and hovered state changed to your styling.
-        </p>
-        <h5 class="title">Sizing</h5>
+        <div class="divider mt-l mb-xl"></div>
+        <h4 class="title" id="issues">Issues</h4>
         <p>
-            BebyKit has its built-in sizes for buttons. You can modify them by using utilities or simply just by following our built-in sizes.
-            The sizes for buttons start from <code>xs</code>, <code>s</code>, <code>m</code>, <code>l</code>, <code>xl</code>.
-            Look at their differences below:
+            Found a bug/issue on documentation? You can help BebyKit team by contributing or let BebyKit team know this issue so BebyKit knows where to figure out the issues.
         </p>
-        <div class="row">
-            <div class="column">
-                <a class="btn btn-xs">xs</a>
-                <a class="btn btn-s">s</a>
-                <a class="btn btn-m">m</a>
-                <a class="btn btn-l">l</a>
-                <a class="btn btn-xl">xl</a>
-            </div>
-            <div class="column mt-l">
-                <div class="block overflow-auto">
-                    <a class="btn-outline r-m btn-xs">xs</a>
-                    <a class="btn-outline r-m btn-s">s</a>
-                    <a class="btn-outline r-m btn-m">m</a>
-                    <a class="btn-outline r-m btn-l">l</a>
-                    <a class="btn-outline r-m btn-xl">xl</a>
-                </div>
-            </div>
-            <div class="column mt-l">
-                <a class="btn-circle r-m btn-xs">xs</a>
-                <a class="btn-circle r-m btn-s">s</a>
-                <a class="btn-circle r-m btn-m">m</a>
-                <a class="btn-circle r-m btn-l">l</a>
-                <a class="btn-circle r-m btn-xl">xl</a>
-            </div>
-            <div class="column mt-l">
-                <a class="btn-circle-outline btn-xs">xs</a>
-                <a class="btn-circle-outline btn-s">s</a>
-                <a class="btn-circle-outline btn-m">m</a>
-                <a class="btn-circle-outline btn-l">l</a>
-                <a class="btn-circle-outline btn-xl">xl</a>
-            </div>
-            <div class="column mt-l">
-                <p>
-                    The default size for BebyKit's Buttons is <code>xs</code> size!
-                    <br>
-                    <a class="btn">xs#1</a>
-                    <a class="btn-outline btn-green r-s">xs#2</a>
-                    <a class="btn-circle"><i class="bk-block"></i></a>
-                    <a class="btn-circle-outline btn-green"><i class="bk-block"></i></a>
-                </p>
-            </div>
-            <div class="column mt-l">
-                <p>
-                    Let's see what happened if we change the <code>font-size</code> inside the buttons...
-                    <br>
-                    <a class="btn font-l">xs#1</a>
-                    <a class="btn-outline btn-green r-s font-xl">xs#2</a>
-                    <a class="btn-circle"><i class="bk-block text-m"></i></a>
-                    <a class="btn-circle-outline btn-green"><i class="bk-block text-xl"></i></a>
-                    <br>
-                    <br>
-                    The first one, using <code>font-l</code>, second use <code>font-xl</code>, and three use <code>text-m</code> and the last one, four use <code>text-xl</code>.
-                    <br>
-                    <br>
-                    <span class="red-text">*</span>Note:
-                    To change icon's size, you have to deal with the icon by your own. Set the <code>font-size</code> inside the <code>i</code> class attribute.
-                </p>
-            </div>
+        <div class="flex flex-row pt-s">
+            <a href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="btn-outline" target="_blank">Github</a>
+            <div class="mx-s"></div>
+            <a href="https://gitter.im/BebyKit/community?utm_source=share-link&utm_medium=link&utm_campaign=share-link" class="btn-outline" target="_blank">Gitter</a>
+            <div class="mx-s"></div>
+            <a href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="btn-outline" target="_blank">whatsapp</a>
         </div>
-        <p class="mt-l mb-xl">
-            The <code>font-size</code>s can also be changed. By changing <code>font-size</code>s, it can affect the button's size!
-        </p>
-        <h6 class="title">Additional</h6>
-        <p class="mb-l">
-            By using BebyKit's utilities, a modified button can also be created. See examples below:
-        </p>
-        <div class="row">
-            <div class="column">
-                <a class="p-s r-m light-text font-m red-bg shadow-m unselectable shadow-hover-to-xl">button</a>
-                <a class="p-s r-m light-bg font-m b-xs shadow-l unselectable shadow-hover-to-m">button</a>
-                <a class="p-s r-m white-bg bg-enhanced-3 font-m b-s b-orange b-inset shadow-xl unselectable shadow-hover-to-n">button</a>
-            </div>
-            <div class="column mt-xl">
-            <div class="block">
-                <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                    <span class="code-language">HTML</span>
-                </div>
-                <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                    <pre>
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m light-text font-m red-bg shadow-m unselectable shadow-hover-to-xl"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m light-bg font-m b-xs shadow-l unselectable shadow-hover-to-m"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"p-s r-m white-bg bg-enhanced-3 font-m b-s b-orange b-inset shadow-xl unselectable shadow-hover-to-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-                </div>
-            </div>
-            </div>
-            <div class="column mt-l">
-                <p>
-                    You can create buttons by your own like these. But, if you prefer to choose this styling way, then you have to set the <code>:hover</code> state, <code>:active</code> state, etc., by your own. And these buttons are also can be selected if user tries to drag text in it.
-                    So you have to tackle this problem by using <code>unselectable</code> and also add <code>selectable-none</code> to prevent the texts inside being selected.
-                </p>
-            </div>
-        </div>
-        <p class="mb-m">
-            <br>
-            <br>
-            You can also make outline button without its outline. Look at examples below:
-            <br>
-            <a class="btn-outline btn-black b-n r-s">button</a>
-            <a class="btn-outline btn-green b-n r-s">button</a>
-            <a class="btn-outline btn-red b-n r-s">button</a>
-            <a class="btn-circle-outline btn-red b-n"><i class="bk-block font-xl"></i></a>
-            <a class="btn-circle-outline btn-black b-n"><i class="bk-code font-xl"></i></a>
-        </p>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black r-s b-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-green r-s b-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red r-s b-n"</span>&gt;<span class="light-text">button</span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-red b-n"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-block font-xl"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-&lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn-outline btn-black b-n"</span>&gt;<span class="light-text">&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-code font-xl"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;</span></span></span>&lt;/<span class="orange-text text-lighter-1">a</span>&gt;</pre>
-            </div>
-        </div>
-        <p class="my-m">
-            To apply this, simply add <code>b-n</code> which stand for <code>border-none</code>. This will surely remove any border from buttons.
-        </p>
-        <hr class="my-l">
-        <h2 class="title pt-l">Table</h2>
+        <div class="divider mt-l mb-xl"></div>
+        <h4 class="title" id="support">Support the Project</h4>
         <p>
-            There is various way to make table responsive in BebyKit, one of the easiest way is by creating a <code>table-responsive</code> as a <code>table</code> parent's. Then, the table will have a scroll action
-            if content overflow the viewport size.
-            <br>
-            <br>
-            Look at example below:
-            <br>
-            <br>
+            Hope you have enjoyed using BebyKit. If you feel BebyKit has helped you out and want to support BebyKit team, you can donate to BebyKit team's PayPal or Saweria. Any amount would help BebyKit's development and would keep the continue of BebyKit development.
         </p>
-        <div class="table-responsive">
-            <table class="table-bordered table-striped font-s">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Field</th>
-                        <th>Email</th>
-                        <th class="br-n text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>20</td>
-                        <td>Front-end</td>
-                        <td>john.doe@bebykit.css</td>
-                        <td class="text-center">
-                            <a class="btn"><i class="bk-pen"></i></a>
-                            <a class="btn"><i class="bk-trash"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="my-xl">
-            It is highly recommended to have <code>table-responsive</code> as a <code>table</code>'s parent. If you don't apply this, your table content will overflow its parent.
-            <br>
-            <br>
-            Actually, you can use a table without using <code>table-responsive</code> as a <code>table</code>'s parent. But the content inside of it is highly recommended not more than 2 header <code>thead</code> (if the table data is not large).
-        </p>
-        <h3 class="title mt-xl">Normal Table</h3>
-        <p class="mb-m">
-            BebyKit built-in default table display is like this:
-        </p>
-        <div class="table-responsive">
-            <table class="font-s">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Field</th>
-                        <th>Email</th>
-                        <th class="br-n text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>20</td>
-                        <td>Front-end</td>
-                        <td>john.doe@bebykit.css</td>
-                        <td class="text-center">
-                            <a class="btn"><i class="bk-pen"></i></a>
-                            <a class="btn"><i class="bk-trash"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="my-xl">
-            Use semantic table tags such as <code>thead</code>, <code>tbody</code>, <code>tfoot</code> to get the best results.
-        </p>
-        <div class="block">
-                <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                    <span class="code-language">HTML</span>
-                </div>
-                <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                    <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Age</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Field</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Email</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;<span class="light-text">Action</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Front-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">john.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
+        <div class="flex flex-row pt-m">
+            <div class="flex flex-column mr-l">
+                <p>Paypal:</p>
+                <a href="#!" class="btn-outline">donate</a>
+            </div>
+            <div class="flex flex-column">
+                <p>Saweria:</p>
+                <a href="#!" class="btn-outline">donate</a>
             </div>
         </div>
-        <h3 class="title pt-l mt-xl mb-l">Bordered Table</h3>
-        <p class="mb-l">
-            Just add <code>table-bordered</code> to the <code>table</code> tag to make the table bordered.
-        </p>
-        <div class="table-responsive">
-            <table class="table-bordered font-s">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Age</th>
-                        <th>Field</th>
-                        <th>Email</th>
-                        <th class="br-n text-center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John Doe</td>
-                        <td>20</td>
-                        <td>Front-end</td>
-                        <td>john.doe@bebykit.css</td>
-                        <td class="text-center">
-                            <a class="btn"><i class="bk-pen"></i></a>
-                            <a class="btn"><i class="bk-trash"></i></a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="my-l"></div>
-        <div class="block">
-            <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-                <span class="code-language">HTML</span>
-            </div>
-            <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-                <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span> <span class="yellow-text">class</span>=<span class="yellow-text text text-lighter-3">"table-bordered"</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Age</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Field</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Email</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;<span class="light-text">Action</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Front-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">john.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-            </div>
-        </div>
-    <h3 class="title mt-m pt-xl">Additional</h3>
-    <p class="mb-l">
-        There are also additional styling for <code>table</code>s.
-    </p>
-    <h5 class="title">Striped Table</h5>
-    <p class="mb-l">
-        Striped table can be applied in all <code>table</code>s style. As shown below:
-    </p>
-    <div class="table-responsive mb-xl">
-        <table class="table-bordered table-striped font-s">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Field</th>
-                    <th>Email</th>
-                    <th class="text-center">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>20</td>
-                    <td>Front-end</td>
-                    <td>john.doe@bebykit.css</td>
-                    <td class="text-center">
-                        <a class="btn"><i class="bk-pen"></i></a>
-                        <a class="btn"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>20</td>
-                    <td>Back-end</td>
-                    <td>jane.doe@bebykit.css</td>
-                    <td class="text-center">
-                        <a class="btn"><i class="bk-pen"></i></a>
-                        <a class="btn"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="block">
-        <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-            <span class="code-language">HTML</span>
-        </div>
-        <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-            <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span> <span class="yellow-text">class</span>=<span class="yellow-text text text-lighter-3">"table-bordered"</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Age</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Field</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Email</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;<span class="light-text">Action</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Front-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">john.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Jane Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Back-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">jane.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-        </div>
-    </div>
-    <p class="mt-m mb-xl">
-        Add <code>table-striped</code> inside the <code>table</code>'s class to apply striped table.
-    </p>
-    <div class="table-responsive">
-        <table class="table-striped font-s">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Field</th>
-                    <th>Email</th>
-                    <th class="text-center">Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>20</td>
-                    <td>Front-end</td>
-                    <td>john.doe@bebykit.css</td>
-                    <td class="text-center">
-                        <a class="btn"><i class="bk-pen"></i></a>
-                        <a class="btn"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>20</td>
-                    <td>Front-end</td>
-                    <td>jane.doe@bebykit.css</td>
-                    <td class="text-center">
-                        <a class="btn"><i class="bk-pen"></i></a>
-                        <a class="btn"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="my-l"></div>
-    <div class="block">
-        <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-            <span class="code-language">HTML</span>
-        </div>
-        <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-            <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span> <span class="yellow-text">class</span>=<span class="yellow-text text text-lighter-3">"table-striped"</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Age</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Field</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Email</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;<span class="light-text">Action</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Front-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">john.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Jane Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">20</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Back-end</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">jane.doe@bebykit.css</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"text-center"</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-pen"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                    &lt;<span class="orange-text text-lighter-1">a</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"btn"</span>&gt;&lt;<span class="orange-text text-lighter-1">i</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"bk-trash"</span>&gt;&lt;/<span class="orange-text text-lighter-1">i</span>&gt;&lt;/<span class="orange-text text-lighter-1">a</span>&gt;
-                &lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-        </div>
-    </div>
-    <h5 class="title mt-xl pt-l">Table Without Border</h5>
-    <p class="mb-l">
-        A <code>table</code> without border can be applied. But, it needs stripe to make them easier to read / identify the data inside of the <code>table</code>.
-        Add <code>no-border</code> class to apply, as shown below:
-    </p>
-    <div class="table-responsive">
-        <table class="no-border font-s">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>B</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="block">
-        <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-            <span class="code-language">HTML</span>
-        </div>
-        <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-            <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span> <span class="yellow-text">class</span>=<span class="yellow-text text text-lighter-3">"no-border"</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Class</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">A</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Jane Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">B</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-        </div>
-    </div>
-    <p class="my-xl">
-        It is highly recommended to use <code>table-striped</code> to make the <code>table</code> easier to read. As shown below:
-    </p>
-    <div class="table-responsive white-bg bg-enhanced-2">
-        <table class="no-border table-striped font-s">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>A</td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>B</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="my-l"></div>
-    <div class="block">
-        <div class="code-language-wrapper dark-bg rtl-s block p-s rtr-s">
-            <span class="code-language">HTML</span>
-        </div>
-        <div class="dark-bg py-l px-s mb-s rbl-s rbr-s rtr-s white-text text-enhanced-3 overflow-auto selectable-all">
-            <pre>&lt;<span class="orange-text">div</span> <span class="yellow-text">class</span>=<span class="yellow-text text-lighter-3">"table-responsive"</span>&gt;
-    &lt;<span class="orange-text text-lighter-1">table</span> <span class="yellow-text">class</span>=<span class="yellow-text text text-lighter-3">"no-border table-striped"</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">thead</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Name</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">th</span>&gt;<span class="light-text">Class</span>&lt;/<span class="orange-text text-lighter-1">th</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">thead</span>&gt;
-        &lt;<span class="orange-text text-lighter-1">tbody</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">John Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">A</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-            &lt;<span class="orange-text text-lighter-1">tr</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">Jane Doe</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-                &lt;<span class="orange-text text-lighter-1">td</span>&gt;<span class="light-text">B</span>&lt;/<span class="orange-text text-lighter-1">td</span>&gt;
-            &lt;/<span class="orange-text text-lighter-1">tr</span>&gt;
-        &lt;/<span class="orange-text text-lighter-1">tbody</span>&gt;
-    &lt;/<span class="orange-text text-lighter-1">table</span>&gt;
-&lt;/<span class="orange-text">div</span>&gt;</pre>
-        </div>
-    </div>
-    <h5 class="title mt-xl pt-m">Fluid Table</h5>
-    <p class="mb-l">
-        Make a <code>table</code> responsive and display differently as usual tables. See example below:
-    </p>
-    <div class="table-responsive">
-        <table class="table-bordered table-striped table-center table-fluid font-s">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                    <th>Grade</th>
-                    <th>Email</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>A</td>
-                    <td>9th</td>
-                    <td>john.doe@bebykit.css</td>
-                    <td>
-                        <a class="btn-circle-outline"><i class="bk-pen"></i></a>
-                        <a class="btn-circle-outline"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Jane Doe</td>
-                    <td>B</td>
-                    <td>9th</td>
-                    <td>jane.doe@bebykit.css</td>
-                    <td>
-                        <a class="btn-circle-outline"><i class="bk-pen"></i></a>
-                        <a class="btn-circle-outline"><i class="bk-trash"></i></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p class="mt-xl">
-        Set your window width or viewport to the smallest breakpoint ( <code>xs</code> / <code>max-width: 576px</code> ) or open this table via mobile device.
-    </p>
-    <p class="mt-m mb-xl">
-        To make the <code>table</code> go fluid relatively to viewport's sizes, add <code>table-fluid</code> to the <code>table</code>'s class inside.
-    </p>
-    <hr class="my-xl">
-    <h2 class="title pt-m mb-l">Dropdown</h2>
-    <div class="dropdown r-m">
-        <a class="btn">dropdown</a>
-        <div class="dropdown-content">
-            <a>john doe</a>
-            <a>jane doe</a>
-            <a>josh dan</a>
-        </div>
-    </div>
-    <div class="dropdown red-bg r-m">
-        <a class="btn">dropdown</a>
-        <div class="dropdown-content">
-            <a>john doe</a>
-            <a>jane doe</a>
-            <a>josh dan</a>
-        </div>
-    </div>
-    <div class="dropdown purple-bg r-l">
-        <a class="btn">dropdown</a>
-        <div class="dropdown-content light-text">
-            <a>john doe</a>
-            <a>jane doe</a>
-            <a>josh dan</a>
-        </div>
-    </div>
-    <div class="py-xl"></div>
     </div>
 
     <footer class="blue-bg pt-xl pb-s px-m">
@@ -877,6 +310,22 @@
                     Made with <i class="bk-heart-filled text-xs"></i> by BebyKit team and all of the contributors.
                 </p>
                 <p>Current version: v1.0.3</p>
+                <div class="mt-l hidden">
+                    <h5 class="title light-text">Support the Project</h5>
+                    <p>
+                        Hope you have enjoyed using BebyKit. If you feel BebyKit has helped you out and want to support BebyKit team, you can donate to BebyKit team's PayPal or Saweria. Any amount would help BebyKit's development and would keep the continue of BebyKit development.
+                    </p>
+                    <div class="flex flex-row pt-m">
+                        <div class="flex flex-column mr-l">
+                            <p>Paypal:</p>
+                            <a href="#!" class="btn-outline btn-white">donate</a>
+                        </div>
+                        <div class="flex flex-column">
+                            <p>Saweria:</p>
+                            <a href="#!" class="btn-outline btn-white">donate</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="column xs-12 m-6 pt-l hidden-m-to-upper">
                 <div class="row">
@@ -939,7 +388,7 @@
         </div>
     </footer>
 
-<script src="../script.js" type="text/javascript"></script>
+<!-- <script src="../script.js" type="text/javascript"></script> -->
 
 </body>
 </html>

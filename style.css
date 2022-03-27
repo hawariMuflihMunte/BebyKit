@@ -102,41 +102,76 @@
     transition: 200ms linear;
 }
 
-.fixed nav ul,
-.fixed nav ul li {
-    padding: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+.sidenav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    min-width: 100px;
+    max-width: 15%;
+    width: 15%;
+    min-height: 50px;
+    max-height: 100%;
+    height: max-content;
+    background-color: var(--light);
+    border-right: 1px solid rgba(0,0,0,0.15);
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    border-bottom-right-radius: 3px;
+    z-index: 480;
 }
 
-@media only screen and (max-width: 768px) {
-    .fixed nav {
-        position: relative;
+.sidenav.right {
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    left: 85%;
+    min-width: 100px;
+    max-width: 15%;
+    width: 15%;
+    min-height: 50px;
+    max-height: 100%;
+    height: max-content;
+    background-color: transparent;
+    padding: 8px 2px 10px 4px;
+    z-index: 480;
+    border: none !important;
+    font-size: 1rem;
+}
+
+/* @media only screen and (max-width: 992px) {
+    .sidenav,
+    .sidenav.right {
+        display: none !important;
+    }
+} */
+
+.content {
+    min-width: 69.66666%;
+    max-width: 70%;
+    width: 70%;
+    z-index: 240;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* -- */
+/* @media only screen and (max-width: 992px) {
+    .sidenav,
+    .sidenav.right {
+        display: none !important;
     }
 
-    .fixed nav ul {
-        --shadow-color: rgba(0,0,0,0.13);
-        position: absolute;
-        left: 0;
-        top: 50px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: column nowrap;
-                flex-flow: column nowrap;
-        z-index: var(--index-4);
-        background-color: var(--queen-blue);
-        color: var(--light);
+    .sidenav + .content {
+        min-width: 99.66666%;
+        max-width: 100%;
         width: 100%;
-        -webkit-box-shadow: 0 4px 4px 1px var(--shadow-color);
-                box-shadow: 0 4px 4px 1px var(--shadow-color);
-        border-top: 1px solid var(--shadow-color);
-        padding-top: 8px !important;
     }
-    
-
-    .fixed nav ul li:first-child {
-        -webkit-box-ordinal-group: 10000;
-            -ms-flex-order: 9999;
-                order: 9999;
-    }
+} */
+/* -- */
+.sidenav input[type="checkbox"].collapsible-toggler:hover + .collapsible-label,
+.sidenav input[type="checkbox"].collapsible-toggler:checked + .collapsible-label {
+  color: var(--dark) !important;
 }
