@@ -46,6 +46,87 @@
         <h1 class="title">Forms</h1>
         <hr class="mb-l">
         <h4 class="title">Input</h4>
+        <div class="form-input-field">
+            <input type="text" class="w-auto" id="name-test#1" placeholder="">
+            <label for="name-test#1">Default Label</label>
+        </div>
+        <div class="divider"></div>
+        <div class="form-input-field form-label-float">
+            <input type="text" class="w-auto" id="name-test#2" placeholder="">
+            <label for="name-test#2">Floating Label (default)</label>
+        </div>
+        <div class="form-input-field form-label-float form-xs" style="--form-color: #7AD34A;">
+            <input type="text" class="w-auto" id="name-test#2#1" placeholder="">
+            <label for="name-test#2#1">Floating Label (xs)</label>
+        </div>
+        <div class="form-input-field form-label-float form-s" style="--form-color: #ACC1D7;">
+            <input type="text" class="w-auto" id="name-test#2#2" placeholder="">
+            <label for="name-test#2#2">Floating Label (s)</label>
+        </div>
+        <div class="form-input-field form-label-float form-m">
+            <input type="text" class="w-auto" id="name-test#2#3" placeholder="" style="--form-color: #ECACB6;">
+            <label for="name-test#2#3">Floating Label (m)</label>
+        </div>
+        <div class="form-input-field form-label-float form-l">
+            <input type="text" class="w-auto" id="name-test#2#4" placeholder="" style="--form-color: #72247F;">
+            <label for="name-test#2#4">Floating Label (l)</label>
+        </div>
+        <div class="form-input-field form-label-float form-xl">
+            <input type="text" class="w-auto" id="name-test#2#5" placeholder="" style="--form-color: #D38FE0;">
+            <label for="name-test#2#5">Floating Label (xl)</label>
+        </div>
+        <div class="divider"></div>
+        <div class="form-input-field form-label-static" style="--form-color: #ACC1D7;">
+            <input type="text" class="w-auto" id="name-test#3" placeholder="Email Address">
+            <label for="name-test#3"><i class="bk-mail"></i></label>
+        </div>
+        <div class="form-input-field form-label-static" style="--form-color: red;">
+            <input type="password" class="w-auto" id="name-test#4" placeholder="Password">
+            <label for="name-test#4"><i class="bk-lock"></i></label>
+        </div>
+        <div class="form-input-field form-s form-label-static" style="--form-color: brown;">
+            <input type="password" class="w-auto" id="name-test#5" placeholder="Password">
+            <label for="name-test#5"><i class="bk-lock"></i></label>
+        </div>
+        <div class="form-input-field form-m form-label-static password-square" style="--form-color: navy;">
+            <input type="password" class="w-auto" id="name-test#6" placeholder="Password">
+            <label for="name-test#6"><i class="bk-lock"></i></label>
+        </div>
+        <div class="form-input-field form-l form-label-static" style="--form-color: black;">
+            <input type="password" class="w-auto" id="name-test#7" placeholder="Password">
+            <label for="name-test#7"><i class="bk-lock"></i></label>
+        </div>
+        <div class="form-input-field form-xl form-label-static" style="--form-color: #FFA733;">
+            <input type="password" class="w-auto" id="name-test#8" placeholder="Password">
+            <label for="name-test#8"><i class="bk-lock"></i></label>
+        </div>
+        <div class="form-input-field form-m form-label-static with-button" style="--form-color: #EA484E;">
+            <input type="text" class="w-auto" id="name-test#9" placeholder="Username" value="bebykitcss">
+            <label for="name-test#9"><i class="bk-user-add-outline"></i></label>
+            <a class="btn red-bg"><i class="bk-search font-xs"></i></a>
+        </div>
+        <div class="form-input-field form-m form-label-static with-button" style="--form-color: #FFA733;">
+            <input type="text" class="w-auto" id="name-test#10" placeholder="Username" value="bebykitcss">
+            <label for="name-test#10"><i class="bk-user-add-outline"></i></label>
+            <a class="btn orange-bg">search</a>
+        </div>
+        <div class="form-input-field form-m form-label-static" style="--form-color: #FFA733;" disabled>
+            <input type="text" class="w-auto" id="name-test#11" placeholder="Username" value="bebykitcss">
+            <label for="name-test#11"><i class="bk-user-add-outline"></i></label>
+        </div>
+        <div class="divider my-xl"></div>
+        <div class="form-input-field with-textarea">
+            <textarea id="textarea-test#1" placeholder=""></textarea>
+            <label for="textarea-test#1">Type....</label>
+        </div>
+        <div class="form-input-field with-textarea form-label-float" style="--form-color: gold;">
+            <textarea id="textarea-test#2" placeholder=""></textarea>
+            <label for="textarea-test#2">Type....</label>
+        </div>
+        <div class="form-input-field with-textarea textarea-responsive" style="--form-color: darkblue;">
+            <textarea id="textarea-test#3" placeholder=""></textarea>
+            <label for="textarea-test#3">Type....</label>
+        </div>
         <div class="form-input-field form-xs">
             <input type="text" class="w-auto" value="1">
         </div>
@@ -94,11 +175,208 @@
         <input type="date" class="w-auto my-s" placeholder="date" style="--form-outline-color: red;">
         <input type="datetime-local" class="w-auto my-s" placeholder="datetime-local">
         <input type="time" class="w-auto my-s" placeholder="time">
+        <select id="select-test#1">
+            <option value="jan">January</option>
+            <option value="feb">February</option>
+            <option value="mar">March</option>
+            <optgroup label="Mid Year">
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">Juny</option>
+            </optgroup>
+        </select>
+        <div class="form-input-field with-select red-bg">
+            <select id="select-test#2" style="--form-text-color: white;">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="mar">March</option>
+                <optgroup label="Mid Year">
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">Juny</option>
+                </optgroup>
+            </select>
+        </div>
         <h4 class="title mt-xl pt-m">Others</h4>
         <label class="flex items-align-center">
-            <p class="mr-s">Range</p>
-            <input type="range" class="input-m">
+            <p class="mr-s">Range (default)</p>
+            <input type="range">
         </label>
+        <label class="flex items-align-center">
+            <p class="mr-s">Range (xs)</p>
+            <input type="range" class="form-xs">
+        </label>
+        <label class="flex items-align-center">
+            <p class="mr-s">Range (s)</p>
+            <input type="range" class="form-s">
+        </label>
+        <label class="flex items-align-center">
+            <p class="mr-s">Range (m)</p>
+            <input type="range" class="form-m">
+        </label>
+        <label class="flex items-align-center">
+            <p class="mr-s">Range (l)</p>
+            <input type="range" class="form-l">
+        </label>
+        <label class="flex items-align-center">
+            <p class="mr-s">Range (xl)</p>
+            <input type="range" class="form-xl">
+        </label>
+        <hr class="my-m">
+        <div class="form-input-field with-range">
+            <label>
+                <span class="label-title">Range Slider (default)</span>
+                <input type="range" style="--form-circle: red;">
+            </label>
+        </div>
+        <div class="form-input-field with-range form-xs">
+            <label>
+                <span class="label-title">Range Slider (xs)</span>
+                <input type="range" style="--form-circle: black;">
+            </label>
+        </div>
+        <div class="form-input-field with-range form-s">
+            <label>
+                <span class="label-title">Range Slider (s)</span>
+                <input type="range" style="--form-circle: rgb(38, 148, 88);">
+            </label>
+        </div>
+        <div class="form-input-field with-range form-m">
+            <label>
+                <span class="label-title">Range Slider (m)</span>
+                <input type="range" style="--form-circle: rgb(255, 0, 140);">
+            </label>
+        </div>
+        <div class="form-input-field with-range form-l">
+            <label>
+                <span class="label-title">Range Slider (l)</span>
+                <input type="range" style="--form-circle: rgba(196, 170, 23, 0.89);">
+            </label>
+        </div>
+        <div class="form-input-field with-range form-xl">
+            <label>
+                <span class="label-title">Range Slider (xl)</span>
+                <input type="range">
+            </label>
+        </div>
+        <div class="my-m">
+            <p>Squared</p>
+            <div class="form-input-field with-range range-square">
+                <label>
+                    <span class="label-title">Range Slider (default)</span>
+                    <input type="range" style="--form-circle: red;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xs range-square">
+                <label>
+                    <span class="label-title">Range Slider (xs)</span>
+                    <input type="range" style="--form-circle: black;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-s range-square">
+                <label>
+                    <span class="label-title">Range Slider (s)</span>
+                    <input type="range" style="--form-circle: rgb(38, 148, 88);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-m range-square">
+                <label>
+                    <span class="label-title">Range Slider (m)</span>
+                    <input type="range" style="--form-circle: rgb(255, 0, 140);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-l range-square">
+                <label>
+                    <span class="label-title">Range Slider (l)</span>
+                    <input type="range" style="--form-circle: rgba(196, 170, 23, 0.89);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xl range-square">
+                <label>
+                    <span class="label-title">Range Slider (xl)</span>
+                    <input type="range">
+                </label>
+            </div>
+        </div>
+        <div class="my-m">
+            <p>Inset Normal</p>
+            <div class="form-input-field with-range range-inset">
+                <label>
+                    <span class="label-title">Range Slider (default)</span>
+                    <input type="range" style="--form-circle: red;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xs range-inset">
+                <label>
+                    <span class="label-title">Range Slider (xs)</span>
+                    <input type="range" style="--form-circle: black;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-s range-inset">
+                <label>
+                    <span class="label-title">Range Slider (s)</span>
+                    <input type="range" style="--form-circle: rgb(38, 148, 88);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-m range-inset">
+                <label>
+                    <span class="label-title">Range Slider (m)</span>
+                    <input type="range" style="--form-circle: rgb(255, 0, 140);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-l range-inset">
+                <label>
+                    <span class="label-title">Range Slider (l)</span>
+                    <input type="range" style="--form-circle: rgba(196, 170, 23, 0.89);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xl range-inset">
+                <label>
+                    <span class="label-title">Range Slider (xl)</span>
+                    <input type="range">
+                </label>
+            </div>
+        </div>
+        <div class="my-m">
+            <p>Inset Squared</p>
+            <div class="form-input-field with-range range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (default)</span>
+                    <input type="range" style="--form-circle: red;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xs range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (xs)</span>
+                    <input type="range" style="--form-circle: black;">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-s range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (s)</span>
+                    <input type="range" style="--form-circle: rgb(38, 148, 88);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-m range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (m)</span>
+                    <input type="range" style="--form-circle: rgb(255, 0, 140);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-l range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (l)</span>
+                    <input type="range" style="--form-circle: rgba(196, 170, 23, 0.89);">
+                </label>
+            </div>
+            <div class="form-input-field with-range form-xl range-square range-inset">
+                <label>
+                    <span class="label-title">Range Slider (xl)</span>
+                    <input type="range">
+                </label>
+            </div>
+        </div>
+        <p>Hello</p>
         <hr class="w-30 ml-n hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
         <hr class="w-10 ml-n hidden-m-to-lower">
