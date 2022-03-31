@@ -387,23 +387,126 @@
             <label>
                 <span class="label-title">HTML</span>
                 <input type="radio" name="radio-text#1">
-                <span class="radio-button"></span>
             </label>
         </div>
         <div class="form-input-field with-radio" style="--form-color: red;">
             <label>
                 <span class="label-title label-right">CSS</span>
                 <input type="radio" name="radio-text#1">
-                <span class="radio-button"></span>
             </label>
         </div>
         <div class="form-input-field with-radio" style="--form-color: black;">
             <label>
                 <span class="label-title label-left">JS</span>
                 <input type="radio" name="radio-text#1">
-                <span class="radio-button"></span>
             </label>
         </div>
+        <div class="form-input-field with-radio" style="--form-color: orange;" disabled>
+            <label>
+                <span class="label-title">JS (disabled)</span>
+                <input type="radio" name="radio-text#1">
+            </label>
+        </div>
+        <div class="divider my-s"></div>
+        <form method="post">
+            <fieldset>
+                <legend>Biodata:</legend>
+                <div class="form-input-field form-label-static" style="--form-color: rgba(223,12,8,0.41);">
+                    <input type="text" name="data#1" id="data#1" placeholder="Full Name" value="Full Name">
+                    <label for="data#1"><i class="bk-user"></i></label>
+                </div>
+                <div class="form-input-field form-label-static" style="--form-color: rgba(223,12,8,0.41);">
+                    <input type="text" name="data#2" id="data#2" placeholder="Home Address" value="Home Address">
+                    <label for="data#2"><i class="bk-home"></i></label>
+                </div>
+                <div class="row">
+                    <div class="column xs-12 s-6">
+                        <div class="form-input-field form-label-static" style="--form-color: rgba(223,12,8,0.41);">
+                            <input type="text" name="data#3" id="data#3" placeholder="Email Address" value="Email Address">
+                            <label for="data#3"><i class="bk-mail"></i></label>
+                        </div>
+                    </div>
+                    <div class="column xs-12 s-6">
+                        <div class="form-input-field form-label-static" style="--form-color: rgba(223,12,8,0.41);">
+                            <input type="text" name="data#4" id="data#4" placeholder="Password" value="Password">
+                            <label for="data#4"><i class="bk-lock-filled"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider mt-m"></div>
+                <div class="block mt-s">
+                    <p class="text-s pb-s">Gender:</p>
+                    <div class="form-input-field with-radio" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <input type="radio" name="data#5" id="data#5" checked>
+                            <span class="label-title">Male</span>
+                        </label>
+                    </div>
+                    <div class="form-input-field with-radio" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Female</span>
+                            <input type="radio" name="data#5" id="data#5">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-radio" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Other</span>
+                            <input type="radio" name="data#5" id="data#5">
+                        </label>
+                    </div>
+                </div>
+                <div class="block my-s">
+                    <p class="text-s pb-s">Interests:</p>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Technology</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Sport</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Industry</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Movie</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Government</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <div class="form-input-field with-checkbox" style="--form-color: rgba(223,12,8,0.41);">
+                        <label>
+                            <span class="label-title">Military</span>
+                            <input type="checkbox" name="data#6" id="data#6">
+                        </label>
+                    </div>
+                    <p class="text-s my-s">If you have other interests, you can list them below:</p>
+                    <div class="form-input-field with-textarea textarea-responsive" style="--form-color: rgba(223,12,8,0.41);">
+                        <textarea name="data#6" id="data#6"  style="--form-color: rgba(223,12,8,0.41);"></textarea>
+                    </div>
+                </div>
+                <div class="mt-xs mb-m">
+                    <button type="submit" class="py-s shadow-hover-to-xs" style="background-color: rgba(223,12,8,0.41);"><i class="bk-direction"></i></button>
+                </div>
+                <div class="flex p-s b-xs b-grey b-lighter-3 r-s w-auto">
+                    <button type="reset" style="background-color: rgba(223,12,8,0.41);"><i class="bk-cw"></i></button>
+                    <p class="text-s ml-s grey-text text-lighter-2">Reset Form<i class="bk-cw"></i> | &nbsp;<span style="color: rgba(223,12,8,0.63);">Danger Zone</span></p>
+                </div>
+            </fieldset>
+        </form>
         <div class="divider my-s"></div>
         <label class="input-field">
             <input type="radio" name="radio-input">
