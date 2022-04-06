@@ -185,8 +185,28 @@
                 <option value="jun">Juny</option>
             </optgroup>
         </select>
+        <div class="form-input-field">
+            <input type="search" list="test">
+            <datalist id="test">
+                <option value="RED">
+                <option value="GREEN">
+                <option value="BLUE">
+            </datalist>
+        </div>
         <div class="form-input-field with-select red-bg">
-            <select id="select-test#2" style="--form-text-color: white;">
+            <select id="select-test#2">
+                <option value="jan">January</option>
+                <option value="feb">February</option>
+                <option value="mar">March</option>
+                <optgroup label="Mid Year">
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">Juny</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="form-input-field with-select dark-bg" style="width: 95px;">
+            <select id="select-test#2">
                 <option value="jan">January</option>
                 <option value="feb">February</option>
                 <option value="mar">March</option>
@@ -493,9 +513,9 @@
                             <input type="checkbox" name="data#6" id="data#6">
                         </label>
                     </div>
-                    <p class="text-s my-s">If you have other interests, you can list them below:</p>
-                    <div class="form-input-field with-textarea textarea-responsive" style="--form-color: rgba(223,12,8,0.41);">
-                        <textarea name="data#6" id="data#6"  style="--form-color: rgba(223,12,8,0.41);"></textarea>
+                    <p class="text-s pt-s">If you have other interests, you can list them below:</p>
+                    <div class="form-input-field with-textarea" style="--form-color: rgba(223,12,8,0.41);">
+                        <textarea name="data#6" id="data#6" class="w-100 vertical-resize" style="--form-color: rgba(223,12,8,0.41);"></textarea>
                     </div>
                 </div>
                 <div class="mt-xs mb-m">
@@ -557,6 +577,38 @@
         <div class="block mt-s">
             <p>File</p>
             <input type="file">
+            <div class="divider my-m"></div>
+            <div class="form-input-field with-file">
+                <label>
+                    <input type="file">
+                    <span class="file-action">
+                        <span class="file-action-icon">
+                            <i class="bk-upload"></i>
+                        </span>
+                        <div class="file-action-label">
+                            Choose a file
+                        </div>
+                    </span>
+                </label>
+            </div>
+            <div id="test" class="form-input-field with-file" style="--form-color: red; --form-text-color: white;">
+                <label>
+                    <input type="file">
+                    <span class="file-action">
+                        <span class="file-action-icon">
+                            <i class="bk-upload"></i>
+                        </span>
+                        <div class="file-action-label">
+                            Choose a file...
+                        </div>
+                        <span class="file-action-name">000000000000000000000000000000000000000000000000000000000000000000000000000000</span>
+                    </span>
+                </label>
+            </div>
+            <div class="form-input-field with-file" style="--form-range: 4px;">
+                <label for="file-input#2">Upload File</label>
+                <input type="file" id="file-input#2">
+            </div>
         </div>
         <hr class="w-30 ml-n mt-s hidden-m-to-upper">
         <hr class="w-20 ml-n hidden-s-to-lower hidden-l-to-upper">
@@ -621,5 +673,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const fileInput = document.querySelector('#test input[type=file]');
+        fileInput.onchange = () => {
+            if (fileInput.files.length > 0) {
+                const fileName = document.querySelector('#test .file-action-name');
+                fileName.textContent = fileInput.files[0].name;
+            }
+        }
+    </script>
 </body>
 </html>

@@ -161,6 +161,7 @@
   --form-color: var(--form-outline-color);
   --form-text-color: #666666;
   --form-circle: var(--queen-blue);
+  --form-range: -10px;
   --font-family-default: 'Dongle', sans-serif;
   --font-family-sans-serif: sans-serif;
   --font-family-monospace: monospace;
@@ -8161,6 +8162,22 @@ table.table-bordered tbody td:not(:last-child) {
   position: sticky !important;
 }
 
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.45em;
+  padding-bottom: 0.85em;
+  padding-left: 0.95em;
+  padding-right: 0.95em;
+  border: 2px solid rgba(0,0,0,0.17);
+  border-radius: 3px;
+}
+
+fieldset legend {
+  font-size: 1.23rem;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="email"],
@@ -8295,7 +8312,6 @@ input[type="url"]:focus-within {
 }
 
 input[type="color"] {
-  /* margin: 2px; */
   outline: none;
   border: none;
 }
@@ -8306,9 +8322,153 @@ input[type="color"]:hover {
 
 input[type="hidden"] {
   display: none !important;
-  visibility: none !important;
+}
+/* 
+input[type="file"]::-webkit-file-upload-button {
+  -webkit-appearance: none;
+          appearance: none;
+  display: none;
 }
 
+input[type="file"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.form-input-field.with-file {
+  --form-color-text: rgba(0,0,0,0.64);
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  padding: 12px;
+  width: max-content;
+  max-width: 100%;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.18);
+  color: var(--form-color-text);
+  border-radius: 3px;
+  transition: 220ms ease;
+  background-color: var(--light);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-input-field.with-file label {
+  position: absolute;
+  bottom: 50%;
+  transform: translate(-10px, 50%);
+  border-right: 1px solid currentColor;
+  z-index: 240;
+  padding: 12px 10px 12px 12px;
+  cursor: pointer;
+  display: block;
+  width: max-content;
+  color: inherit;
+  background-color: inherit;
+}
+
+.form-input-field.with-file:hover {
+  box-shadow: 0 0 2px rgba(0,0,0,0.17);
+}
+
+.form-input-field.with-file input[type="file"] {
+  --form-range: var(--form-range);
+  cursor: pointer;
+  color: inherit;
+  position: relative;
+  left: var(--form-range);
+}
+*/
+
+.form-input-field.with-file {
+  display: flex;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  position: relative;
+  min-width: 1px;
+  max-width: 100%;
+  width: max-content;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1px;
+}
+
+.form-input-field.with-file label input[type="file"] {
+  appearance: none;
+  display: none;
+}
+
+.form-input-field.with-file label,
+.form-input-field.with-file label .file-action {
+  position: relative;
+  min-width: 1px;
+  max-width: 100%;
+  width: max-content;
+  cursor: pointer;
+  display: flex;
+  font-size: 1.12rem;
+  transition: 230ms ease;
+}
+
+.form-input-field.with-file label {
+  --form-text-color: var(--light);
+  background-color: var(--form-color);
+  color: var(--form-text-color);
+  border-radius: 3px;
+  padding: 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.19);
+  width: 100%;
+  overflow: hidden;
+  width: max-content;
+  max-width: 100%;
+  display: flex;
+}
+
+.form-input-field.with-file label:hover {
+  box-shadow: 0 0 2px rgba(0,0,0,0.14);
+}
+
+.form-input-field.with-file label .file-action {
+  display: flex;
+  column-gap: 5px;
+}
+
+.form-input-field.with-file label .file-action .file-action-icon,
+.form-input-field.with-file label .file-action .file-action-label {
+  font-size: inherit;
+}
+
+.form-input-field.with-file label .file-action .file-action-icon {
+  padding: 11px 2px 11px 12px;
+}
+
+.form-input-field.with-file label .file-action .file-action-label {
+  padding: 11px 18px 11px 4px;
+  max-width: 100%;
+  width: max-content;
+  display: block;
+}
+
+.form-input-field.with-file label .file-action .file-action-name {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--light) !important;
+  color: var(--dark);
+  padding: 11px 2px;
+  max-width: 80%;
+  width: 80%;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.18);
+  color: rgba(0,0,0,0.78);
+}
+
+/* 
 input[type="file"] {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -8316,7 +8476,7 @@ input[type="file"] {
   display: inline-flex;
   border: none;
   outline: none;
-  /* margin: 6px; */
+  / * margin: 6px; * /
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -8356,7 +8516,7 @@ input[type="file"]:hover,
 ::-webkit-file-upload-button:hover {
   -webkit-box-shadow: 0 0 0.1em var(--shadow-color);
           box-shadow: 0 0 0.1em var(--shadow-color);
-}
+} */
 
 label {
   -webkit-user-select: none;
@@ -8797,50 +8957,6 @@ textarea {
   font-size: 13.444445px;
   resize: both;
   overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-}
-
-.form-input-field.with-textarea textarea.textarea-responsive,
-.form-input-field.with-textarea.textarea-responsive textarea {
-  --shadow-color: rgba(0,0,0,0.23);
-  --form-color: var(--shadow-color);
-  border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  resize: none !important;
-  outline: none !important;
-  background-color: rgba(255, 255, 255, 0.169) !important;
-  min-height: 16px;
-  max-width: 100%;
-  padding: 8px 0 2px 0 !important;
-  -webkit-border-radius: 0 !important;
-          border-radius: 0 !important;
-  font-size: 14px !important;
-  overflow-y: hidden !important;
-  -webkit-transition: 96ms linear;
-  -o-transition: 96ms linear;
-  transition: 96ms linear;
-  border-bottom: 1px solid var(--form-color) !important;
-}
-
-.form-input-field.with-textarea.textarea-responsive {
-  width: auto;
-}
-
-.form-input-field.with-textarea.textarea-responsive label {
-  --form-text-color: rgba(0,0,0,0.667);
-  color: var(--form-text-color);
-  top: 9px;
-  left: 5px;
-  font-size: 15px;
-} 
-
-.form-input-field.with-textarea.textarea-responsive textarea:hover,
-.form-input-field.with-textarea.textarea-responsive textarea:focus,
-.form-input-field.with-textarea.textarea-responsive textarea:focus-within {
-  --form-color: var(--queen-blue);
-  border-bottom: 3px solid var(--form-color) !important;
 }
 
 .form-input-field textarea.both-resize,
@@ -8886,19 +9002,6 @@ textarea:focus-within {
 .form-input-field.with-textarea textarea:focus ~ label,
 .form-input-field.with-textarea textarea:not(:placeholder-shown) ~ label {
   opacity: 1.0;
-}
-
-.form-input-field.with-textarea.textarea-responsive textarea:not(:-moz-placeholder-shown) ~ label {
-  opacity: 0.0;
-}
-
-.form-input-field.with-textarea.textarea-responsive textarea:not(:-ms-input-placeholder) ~ label {
-  opacity: 0.0;
-}
-
-.form-input-field.with-textarea.textarea-responsive textarea:focus ~ label,
-.form-input-field.with-textarea.textarea-responsive textarea:not(:placeholder-shown) ~ label {
-  opacity: 0.0;
 }
 
 .form-input-field.with-textarea.form-label-float textarea:not(:-moz-placeholder-shown) ~ label {
@@ -9199,6 +9302,7 @@ input[type="checkbox"]:hover {
   text-align: right !important;
 }
 
+/* Range (slider) input */
 input[type="range"] {
   --form-color: rgba(0,0,0,0.15);
   position: relative;
@@ -9509,39 +9613,37 @@ input[type="color"]:hover {
   filter: brightness(94.66666%);
 }
 
-fieldset {
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.45em;
-  padding-bottom: 0.85em;
-  padding-left: 0.95em;
-  padding-right: 0.95em;
-  border: 2px solid rgba(0,0,0,0.17);
-}
-
 /* On Fixing */
 select {
-  display: inline-block;
-  -webkit-appearance: none;
+  display: block;
+  /* -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none;
+          appearance: none; */
   position: relative;
   border: none;
   outline: none;
-  background-color: var(--queen-blue);
-  color: var(--light) !important;
-  height: 39px;
-  max-height: 39px;
-  padding-left: 13px;
-  font-size: 14px;
+  background-image: none;
+  background-color: var(--light);
+  color: var(--dark);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  padding: 10px 12px;
+  font-size: 1.119rem;
+  min-width: max-content;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  max-width: 100%;
   cursor: pointer;
-  vertical-align: middle;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  transition: 440ms ease;
+  overflow: hidden;
+}
+
+select:hover,
+select:focus,
+select:focus-within {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.13);
 }
 
 select option,
@@ -9550,56 +9652,27 @@ select option:hover {
 }
 
 .form-input-field.with-select {
-  --select-border: rgba(0,0,0,0.31);
-  position: relative;
-  padding: 0;
-  margin: 0;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  border: 1px solid var(--select-border);
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  overflow: hidden;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  max-width: 100%;
+  width: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 3px;
 }
 
-.form-input-field.with-select select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  /* background-color: transparent; */
-  background-image: none;
-  border: none;
-  -webkit-border-radius: 0 !important;
-          border-radius: 0 !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  color: var(--form-text-color) !important;
+.form-input-field.with-select:hover,
+.form-input-field.with-select:focus,
+.form-input-field.with-select:focus-within {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.13);
 }
 
-/* 
-.form-input-field.with-select select option,
-.form-input-field.with-select select option optgroup[label],
-.form-input-field.with-select select option > * {
-  --form-text-color: rgba(0,0,0,0.58);
-  background-color: var(--light) !important;
-  color: var(--form-text-color) !important;
-} */
-/* 
-.form-input-field.with-select select::after {
-  pointer-events: none;
-  position: absolute;
-  content: ""; */
-  /* top: 50%;
-  left: 85%; */
-  /* color: black;
-  width: 4px;
-  height: 4px;
-  z-index: 480;
-  background-color: var(--form-text-color);
-} */
+.form-input-field.with-select > select {
+  --form-text-color: var(--light);
+  background-color: inherit !important;
+  color: inherit !important;
+  color: var(--form-text-color);
+  min-width: 5px;
+  max-width: 100%;
+  width: 100%;
+}
 
 .sidebar {
   --shadow-color: rgba(0, 0, 0, 0.27);
