@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BebyKit</title>
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="bebykit.css">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        html {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            padding-top: 50px;
+        }
+
+        .fixed-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            padding: 2px 18px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                justify-content: center;
+            }
+        }
+
+        nav a img {
+            display: block;
+            max-width: 40px;
+        }
+
+        nav ul {
+            margin-right: 56px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            column-gap: 25px;
+        }
+
+        nav ul li {
+            display: flex;
+            align-items: center;
+            align-content: center;
+        }
+
+        nav ul li a {
+            color: #45699090;
+        }
+
+        nav ul li a:not(.button):hover {
+            color: #456990;
+        }
+
+        .border-small {
+            border: 1px solid currentColor;
+        }
+
+        #transparent {
+            overflow: hidden;
+            position: relative;
+        }
+
+        #transparent span {
+            position: relative;
+            padding: 4px;
+            z-index: 2;
+        }
+
+        #transparent img {
+            max-width: 100%;
+            height: 100px;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            z-index: 1;
+        }
+
+        #current-color {
+            position: relative;
+        }
+
+        #current-color span {
+            position: relative;
+            left: -105px;
+            color: #fff;
+        }
+
+        #mobile-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            place-content: center;
+            height: 50px;
+            box-shadow: 0 -2px 3px rgba(0,0,0,0.16);
+            font-size: 20px;
+            padding-top: 9px;
+        }
+
+        #mobile-nav ul {
+            display: flex;
+            position: relative;
+            top: -7px;
+            -webkit-transition: all 360ms ease;
+            -o-transition: all 360ms ease;
+            transition: all 360ms ease;
+        }
+
+        #mobile-nav ul li a {
+            display: flex;
+            align-items: center;
+        }
+
+        #mobile-nav ul li.active a {
+            transform: translateY(-2px);
+            font-size: larger;
+            color: #456990;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-navbar">
+        <nav class="background-light shadow-small">
+            <a href="bebykit.html">
+                <img src="assets/image/BebyKit.png">
+            </a>
+            <ul class="font-small hidden-small-to-smaller">
+                <li><a href="#!"><i class="bi-house"></i>&nbsp; Home</a></li>
+                <li><a href="#!"><i class="bi-info-square"></i>&nbsp; About</a></li>
+                <li><a href="#!"><i class="bi-file-code"></i>&nbsp; Docs</a></li>
+                <li><a href="#!" class="button-medium button-outline text-blue-3">Download</a></li>
+            </ul>
+            <div id="mobile-nav" class="hidden-medium-to-larger background-light">
+                <ul>
+                    <li><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">About</span></a></li>
+                    <li class="active"><a href="#!"><i class="bi-house"></i>&nbsp;<span style="font-size: 15px;">Home</span></a></li>
+                    <li><a href="#!"><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
+                    <li><a href="#!" style="font-size: 14px;" class="button radius-1"><i class="bi-download"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container padding-y-8">
+        <h1 class="text-blue-2">Lorem Ipsum</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ducimus dolorem nobis!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi.</p>
+        <hr class="background-blue-2">
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="padding-y-2 padding-x-6 background-light radius-3 shadow-small">
+            <h4 class="text-grey-3">Color Palette</h4>
+            <div class="block padding-bottom-6 margin-top-decrease-3">
+                <div class="column">
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-blue-1 padding-4">blue-1</div>
+                            <div class="field background-blue-2 padding-4">blue-2</div>
+                            <div class="field background-blue-3 padding-4">blue-3</div>
+                            <div class="field background-blue-4 padding-4">blue-4</div>
+                            <div class="field background-blue-5 padding-4">blue-5</div>
+                            <div class="field background-blue-6 padding-4">blue-6</div>
+                            <div class="field background-blue-7 padding-4">blue-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-purple-1 padding-4">purple-1</div>
+                            <div class="field background-purple-2 padding-4">purple-2</div>
+                            <div class="field background-purple-3 padding-4">purple-3</div>
+                            <div class="field background-purple-4 padding-4">purple-4</div>
+                            <div class="field background-purple-5 padding-4">purple-5</div>
+                            <div class="field background-purple-6 padding-4">purple-6</div>
+                            <div class="field background-purple-7 padding-4">purple-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-red-1 padding-4">red-1</div>
+                            <div class="field background-red-2 padding-4">red-2</div>
+                            <div class="field background-red-3 padding-4">red-3</div>
+                            <div class="field background-red-4 padding-4">red-4</div>
+                            <div class="field background-red-5 padding-4">red-5</div>
+                            <div class="field background-red-6 padding-4">red-6</div>
+                            <div class="field background-red-7 padding-4">red-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-pink-1 padding-4">pink-1</div>
+                            <div class="field background-pink-2 padding-4">pink-2</div>
+                            <div class="field background-pink-3 padding-4">pink-3</div>
+                            <div class="field background-pink-4 padding-4">pink-4</div>
+                            <div class="field background-pink-5 padding-4">pink-5</div>
+                            <div class="field background-pink-6 padding-4">pink-6</div>
+                            <div class="field background-pink-7 padding-4">pink-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-yellow-1 padding-4">yellow-1</div>
+                            <div class="field background-yellow-2 padding-4">yellow-2</div>
+                            <div class="field background-yellow-3 padding-4">yellow-3</div>
+                            <div class="field background-yellow-4 padding-4">yellow-4</div>
+                            <div class="field background-yellow-5 padding-4">yellow-5</div>
+                            <div class="field background-yellow-6 padding-4">yellow-6</div>
+                            <div class="field background-yellow-7 padding-4">yellow-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-orange-1 padding-4">orange-1</div>
+                            <div class="field background-orange-2 padding-4">orange-2</div>
+                            <div class="field background-orange-3 padding-4">orange-3</div>
+                            <div class="field background-orange-4 padding-4">orange-4</div>
+                            <div class="field background-orange-5 padding-4">orange-5</div>
+                            <div class="field background-orange-6 padding-4">orange-6</div>
+                            <div class="field background-orange-7 padding-4">orange-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-green-1 padding-4">green-1</div>
+                            <div class="field background-green-2 padding-4">green-2</div>
+                            <div class="field background-green-3 padding-4">green-3</div>
+                            <div class="field background-green-4 padding-4">green-4</div>
+                            <div class="field background-green-5 padding-4">green-5</div>
+                            <div class="field background-green-6 padding-4">green-6</div>
+                            <div class="field background-green-7 padding-4">green-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-grey-1 padding-4">grey-1</div>
+                            <div class="field background-grey-2 padding-4">grey-2</div>
+                            <div class="field background-grey-3 padding-4">grey-3</div>
+                            <div class="field background-grey-4 padding-4">grey-4</div>
+                            <div class="field background-grey-5 padding-4">grey-5</div>
+                            <div class="field background-grey-6 padding-4">grey-6</div>
+                            <div class="field background-grey-7 padding-4">grey-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-62">
+                        <div class="column border-small radius-2">
+                            <div class="field background-inherit padding-4">inherit</div>
+                            <div class="field background-current-color padding-4" id="current-color">current-color<span>current-color</span></div>
+                            <div class="field background-white padding-4">white</div>
+                            <div class="field background-black padding-4">black</div>
+                            <div class="field background-transparent padding-4" id="transparent">
+                                <span class="background-dark text-light radius-3">transparent</span>
+                                <img src="assets/image/transparent.png">
+                            </div>
+                            <div class="field background-light padding-4">light</div>
+                            <div class="field background-dark padding-4">dark</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="padding-y-4 padding-x-3">
+            <h2 class="text-blue-2">Button</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae qui! Doloremque, voluptatem!</p>
+            <h4 class="text-blue-2">Normal Button</h4>
+            <div class="padding-5 margin-top-4 border-1 radius-top-left-4 radius-top-right-4 border-grey-1">
+                <div class="display-inline-block">
+                    <button class="button">mini</button>
+                    <input type="button" value="small" class="button-small">
+                    <a class="button-medium">medium</a>
+                    <button class="button-large">large</button>
+                    <input type="button" value="maxi" class="button-maxi">
+                </div>
+            </div>
+            <div class="padding-5 margin-bottom-10 background-light shadow-small radius-bottom-left-4 radius-bottom-right-4 text-grey-3">
+                <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button"</span>&gt;mini&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"small"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-small"</span> /&gt;
+&lt;<span class="text-blue-4">a</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-medium"</span>&gt;medium&lt;/<span class="text-blue-4">a</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-large"</span>&gt;large&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"maxi"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-maxi"</span> /&gt;</code></pre>
+            </div>
+            <h4 class="text-blue-2">Outline Button</h4>
+            <div class="padding-5 margin-top-8 border-1 radius-top-left-4 radius-top-right-4 border-grey-1">
+                <div class="display-inline-block">
+                    <button class="button-outline">mini</button>
+                    <input type="button" value="small" class="button-small button-outline">
+                    <a class="button-medium button-outline">medium</a>
+                    <button class="button-large button-outline">large</button>
+                    <input type="button" value="maxi" class="button-maxi button-outline">
+                </div>
+            </div>
+            <div class="padding-5 margin-bottom-10 background-light shadow-small radius-bottom-left-4 radius-bottom-right-4 overflow-auto text-grey-3">
+                <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline"</span>&gt;mini&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"small"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-small button-outline"</span> /&gt;
+&lt;<span class="text-blue-4">a</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-medium button-outline"</span>&gt;medium&lt;/<span class="text-blue-4">a</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-large button-outline"</span>&gt;large&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"maxi"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-maxi button-outline"</span> /&gt;</code></pre>
+            </div>
+            <h4 class="text-blue-2">Passive Outline Button</h4>
+            <div class="padding-5 margin-top-8 border-1 radius-top-left-4 radius-top-right-4 border-grey-1">
+                <div class="display-inline-block">
+                    <button class="button-outline button-passive">mini</button>
+                    <input type="button" value="small" class="button-small button-outline button-passive">
+                    <a class="button-medium button-outline button-passive">medium</a>
+                    <button class="button-large button-outline button-passive">large</button>
+                    <input type="button" value="maxi" class="button-maxi button-outline button-passive">
+                </div>
+            </div>
+            <div class="padding-5 margin-bottom-8 background-light shadow-small radius-bottom-left-4 radius-bottom-right-4 overflow-auto text-grey-3">
+                <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;mini&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"small"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-small button-outline button-passive"</span> /&gt;
+&lt;<span class="text-blue-4">a</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-medium button-outline button-passive"</span>&gt;medium&lt;/<span class="text-blue-4">a</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-large button-outline button-passive"</span>&gt;large&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">input</span> <span class="text-purple-5">type</span>=<span class="text-pink-4">"button"</span> <span class="text-purple-5">value</span>=<span class="text-pink-4">"maxi"</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button-maxi button-outline button-passive"</span> /&gt;</code></pre>
+            </div>
+        </section>
+        <p>You can apply icons inside button</p>
+        <div class="padding-5 margin-top-8 border-1 radius-top-left-4 radius-top-right-4 border-grey-1">
+            <div class="display-inline-block">
+                <button class="button-outline button-passive">send <i class="bi-send icon-right"></i></button>
+                <button class="button-outline button-passive">cancel <i class="bi-x icon-right"></i></button>
+                <button class="button-outline button-passive"><i class="bi-arrow-clockwise icon-left"></i> repeat</button>
+                <button class="button-outline button-passive"><i class="bi-x"></i></button>
+            </div>
+        </div>
+        <div class="padding-5 margin-bottom-8 background-light shadow-small radius-bottom-left-4 radius-bottom-right-4 overflow-auto text-grey-3">
+            <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;send &lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-send icon-right"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt;&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;cancel &lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-x icon-right"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt;&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;&lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-arrow-clockwise icon-left"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt; repeat&lt;/<span class="text-blue-4">button</span>&gt;
+&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;&lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-x"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt;&lt;/<span class="text-blue-4">button</span>&gt;</code></pre>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="display-block margin-y-6 padding-4 background-light shadow-mini 12 small-6hadow-hover-maxi radius-2">
+        <p>shadow-i</p>
+    </div>
+    <div class="display-block margin-y-6 padding-4 background-light shadow-small shadow-hover-large radius-2">
+        <p>shadow-ii</p>
+    </div>
+    <div class="display-block margin-y-6 padding-4 background-light shadow-medium shadow-hover-medium radius-2">
+        <p>shadow-iii</p>
+    </div>
+    <div class="display-block margin-y-6 padding-4 background-light shadow-large shadow-hover-small radius-2">
+        <p>shadow-iv</p>
+    </div>
+    <div class="display-block margin-y-6 padding-4 background-light shadow-maxi shadow-hover-mini 12 small-6adius-2">
+        <p>shadow-v</p>
+    </div>
+    <div class="display-block padding-y-4 padding-x-3">
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+        <h3>Heading3</h3>
+        <h4>Heading4</h4>
+        <h5>Heading5</h5>
+        <h6>Heading6</h6>
+    </div> -->
+    <!-- <div class="display-block padding-y-10 padding-x-3">
+        <a class="button background-purple-4">button</a>
+        <a class="button-small">button</a>
+        <a class="button-medium"><i class="bi-braces-asterisk"></i> button</a>
+        <a class="button-large">button</a>
+        <a class="button-maxi">button</a>
+        <a class="button-maxi" disabled>button</a>
+    </div>
+    <div class="display-block padding-y-10 padding-x-3">
+        <div class="display-inline-block background-red-6 padding-3">
+            <a class="button button-outline text-black">button</a>
+            <a class="button-small button-outline text-dark">button</a>
+        </div>
+        <a class="button-small button-outline text-dark">button</a>
+        <a class="button-medium button-outline">button</a>
+        <a class="button-medium button-outline" disabled>button</a>
+        <a class="button-large button-outline"><i class="bi-box"></i> button</a>
+        <a class="button-maxi button-outline text-red">button</a>
+    </div>
+    <div class="display-block padding-y-10 padding-x-3">
+        <a class="button button-outline button-passive background-purple-4"><i class="bi-back"></i> button</a>
+        <a class="button-small button-outline button-passive"><i class="bi-fan"></i> button</a>
+        <a class="button-medium button-outline button-passive"><i class="bi-app"></i> button</a>
+        <a class="button-medium button-outline button-passive" disabled><i class="bi-app"></i> button #</a>
+        <a class="button-large button-outline button-passive"><i class="bi-basket3"></i> button</a>
+        <a class="button-maxi button-outline button-passive"><i class="bi-bluetooth"></i> button</a>
+    </div> -->
+</body>
+</html>
