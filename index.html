@@ -48,7 +48,7 @@
 
         @media only screen and (max-width: 768px) {
             nav {
-                justify-content: center;
+                justify-content: space-evenly;
             }
         }
 
@@ -154,6 +154,7 @@
             <a href="bebykit.html">
                 <img src="assets/image/BebyKit.png">
             </a>
+            <a href="#!" class="button"><i class="bi-download"></i></a>
             <ul class="font-small hidden-small-to-smaller">
                 <li><a href="#!"><i class="bi-house"></i>&nbsp; Home</a></li>
                 <li><a href="#!"><i class="bi-info-square"></i>&nbsp; About</a></li>
@@ -165,7 +166,6 @@
                     <li><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">About</span></a></li>
                     <li class="active"><a href="#!"><i class="bi-house"></i>&nbsp;<span style="font-size: 15px;">Home</span></a></li>
                     <li><a href="#!"><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
-                    <li><a href="#!" style="font-size: 14px;" class="button radius-1"><i class="bi-download"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -175,8 +175,43 @@
         <h1 class="text-blue-2">Lorem Ipsum</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ducimus dolorem nobis!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi.</p>
-        <hr class="background-blue-2">
-        <hr>
+        <hr class="margin-y-8">
+        <div class="background-light padding-6 radius-4 shadow-small">
+            <h5 class="margin-top-4 margin-bottom-8 text-grey-3">Media Breakpoints</h5>
+            <div class="overflow-x-auto">
+                <table style="width: 100%; caption-side: bottom;" class="text-grey-3">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Dimension</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>mini</td>
+                            <td>0px - 576px</td>
+                        </tr>
+                        <tr>
+                            <td>small</td>
+                            <td>577px - 768px</td>
+                        </tr>
+                        <tr>
+                            <td>medium</td>
+                            <td>769px - 992px</td>
+                        </tr>
+                        <tr>
+                            <td>large</td>
+                            <td>993px - 1200px</td>
+                        </tr>
+                        <tr>
+                            <td>maxi</td>
+                            <td>1201px ~</td>
+                        </tr>
+                    </tbody>
+                    <caption>Media Breakpoints</caption>
+                </table>
+            </div>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         <div class="padding-y-2 padding-x-6 background-light radius-3 shadow-small">
             <h4 class="text-grey-3">Color Palette</h4>
