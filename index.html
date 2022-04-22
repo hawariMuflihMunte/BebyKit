@@ -30,6 +30,7 @@
         body {
             padding-top: 50px;
             background-color: #3069FF06;
+            overflow-x: hidden;
         }
 
         .fixed-navbar {
@@ -331,7 +332,7 @@
                 </li>
             </ul>
             <div class="flex items-center">
-                <button id="close-docs" class="button-outline button-passive"><i class="bi-x"></i></button>
+                <button id="close-docs" class="button-outline button-passive button-medium"><i class="bi-x"></i></button>
                 <p class="margin-left-5">Close docs</p>
             </div>
         </div>
@@ -342,7 +343,7 @@
             <a href="bebykit.html">
                 <img src="assets/image/BebyKit.png">
             </a>
-            <a href="#!" class="button hidden-medium-to-larger"><i class="bi-download"></i></a>
+            <a href="#download" class="button hidden-medium-to-larger"><i class="bi-download"></i></a>
             <ul class="font-small hidden-small-to-smaller">
                 <li><a href="#!"><i class="bi-house"></i>&nbsp; Home</a></li>
                 <li><a href="#!"><i class="bi-info-square"></i>&nbsp; Project</a></li>
@@ -406,6 +407,7 @@
             <br class="hidden-small-to-larger">
             <em class="hidden-small-to-larger"><b><u>Only 1 CSS file to use BebyKit!</u></b></em>
         </p>
+        <div id="download"><!-- Director-only --></div>
         <h5 class="text-grey-2 padding-top-9">CDN <i class="bi-link-45deg" style="font-size: 16px;"></i></h5>
         <p>
             Copy and paste this code below inside your project to get started.
@@ -582,13 +584,26 @@
             <div class="field mini-12">
                 <div class="display-block text-center-mini">
                     <h6 class="margin-bottom-5">Support the Project</h6>
+                    <p>
+                        If you liked the way BebyKit helps you in tackling your front-end projects,
+                        you can support BebyKit team to keep this project live as long as its useful for others.
+                    </p>
                     <button class="button-outline">donate &nbsp; <i class="bi-wallet"></i></button>
                 </div>
             </div>
-            <div class="field mini-12 padding-top-10">
-                <p>
-                    Current version: <b>v1.0.3</b>
+            <div class="field mini-12 padding-top-10 padding-bottom-8">
+                <p class="text-center-mini">
+                    Current version: <b><u>v1.0.3</u></b>
                 </p>
+                <p class="text-center-mini">
+                    Found bug? Help us improve this documentation by contributing in this open source project.
+                    <br>
+                    <br>
+                    <a href="#!" class="button-outline">Contribute &nbsp;<i class="bi-clipboard2-heart" style="font-size: 16px;"></i></a>
+                </p>
+            </div>
+            <div class="field mini-12 text-center">
+                <p>BebyKit &copy; 2022. <a href="#!" target="blank"><u>MIT</u></a> Licensed</p>
             </div>
         </div>
     </footer>
