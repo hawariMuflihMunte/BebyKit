@@ -14,9 +14,13 @@
     <!-- CSS Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
+    <!-- Montserrat font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- jQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
     <style type="text/css">
         html {
@@ -25,6 +29,7 @@
 
         body {
             padding-top: 50px;
+            background-color: #3069FF06;
         }
 
         .fixed-navbar {
@@ -146,15 +151,126 @@
             font-size: larger;
             color: #456990;
         }
+
+        #mobile-nav-content {
+            position: fixed;
+            top: 51px;
+            left: 0;
+            z-index: 10;
+            height: 85vh;
+            width: 100%;
+            background-color: rgba(0,0,0,0.56);
+            transition: 460ms ease;
+        }
+
+        .blur {
+            filter: blur(12px);
+        }
+
+        h1, h2, h3,
+        h4, h5, h6 {
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        table, table thead, table thead tr,
+        table, table tbody, table tbody tr {
+            border-color: rgba(0,0,0,0.32);
+        }
+
+        table thead th {
+            font-weight: 500;
+        }
+
+        table tbody td {
+            font-weight: 300;
+            word-break: keep-all;
+            line-break: strict;
+            white-space: nowrap;
+        }
+
+        footer {
+            /* height: 100px; */
+            position: relative;
+            bottom: 0;
+        }
+
+        @media only screen and (max-width: 768px) {
+            footer {
+                top: -20px !important;
+                margin-bottom: 30px;
+            }
+        }
+
+        details {
+            cursor: pointer;
+        }
+
+        details li {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
+    <div id="mobile-nav-content" class="padding-8 hidden hidden-medium-to-larger">
+        <div class="background-light padding-6 radius-3 overflow-y-auto" style="max-height: calc(100% - 32px);">
+            <h5 class="margin-bottom-6">Docs <i class="bi-file-code" style="font-size: 16px;"></i></h6>
+            <div class="background-grey-1 margin-y-3" style="width: 100%; height: 1px;"></div>
+            <ul type="none" class="padding-none overflow-y-auto overflow-x-hidden" style="max-height: 41vh;">
+                <li class="margin-bottom-5">
+                    <details>
+                        <summary class="text-blue-4">Layout & Components</summary>
+                        <ul type="none">
+                            <li><a href="#!">Display</a></li>
+                            <li><a href="#!">Container</a></li>
+                            <li><a href="#!">Column System</a></li>
+                            <li><a href="#!">Button</a></li>
+                            <li><a href="#!">Table</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="margin-bottom-5">
+                    <details>
+                        <summary class="text-blue-4">Typography</summary>
+                        <ul type="none">
+                            <li><a href="#!">Heading</a></li>
+                            <li><a href="#!">Font Sizing</a></li>
+                            <li><a href="#!">Text Alignment</a></li>
+                            <li><a href="#!">Text Coloring</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="margin-bottom-5">
+                    <details>
+                        <summary class="text-blue-4">Utilities</summary>
+                        <ul type="none">
+                            <li><a href="#!">Overflow</a></li>
+                            <li><a href="#!">Hidden</a></li>
+                            <li><a href="#!">Padding</a></li>
+                            <li><a href="#!">Margin</a></li>
+                            <li><a href="#!">Border</a></li>
+                            <li><a href="#!">Radius</a></li>
+                            <li><a href="#!">Background Coloring</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+            <div>
+                <button id="close-docs" class="button-outline button-passive"><i class="bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+
     <div class="fixed-navbar">
         <nav class="background-light shadow-small">
             <a href="bebykit.html">
                 <img src="assets/image/BebyKit.png">
             </a>
-            <a href="#!" class="button"><i class="bi-download"></i></a>
+            <a href="#!" class="button hidden-medium-to-larger"><i class="bi-download"></i></a>
             <ul class="font-small hidden-small-to-smaller">
                 <li><a href="#!"><i class="bi-house"></i>&nbsp; Home</a></li>
                 <li><a href="#!"><i class="bi-info-square"></i>&nbsp; About</a></li>
@@ -163,148 +279,119 @@
             </ul>
             <div id="mobile-nav" class="hidden-medium-to-larger background-light">
                 <ul>
-                    <li><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">About</span></a></li>
-                    <li class="active"><a href="#!"><i class="bi-house"></i>&nbsp;<span style="font-size: 15px;">Home</span></a></li>
-                    <li><a href="#!"><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
+                    <li id="about"><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">About</span></a></li>
+                    <li id="home" class="active"><a href="#!"><i class="bi-house"></i>&nbsp;<span style="font-size: 15px;">Home</span></a></li>
+                    <li id="docs"><a><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
                 </ul>
             </div>
+            <script>
+                $(document).ready(function(){
+                    $("#mobile-nav #docs").click(function(){
+                        if ($("#mobile-nav-content").hasClass("hidden")) {
+                            $("#mobile-nav-content").removeClass("hidden");
+                        } else {
+                            $("#mobile-nav-content").addClass("hidden");
+                        }
+                    });
+
+                    $("#close-docs").click(function(){
+                        $("#mobile-nav-content").addClass("hidden");
+                    });
+                });
+            </script>
         </nav>
     </div>
 
-    <div class="container padding-y-8">
-        <h1 class="text-blue-2">Lorem Ipsum</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ducimus dolorem nobis!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi.</p>
-        <hr class="margin-y-8">
-        <div class="background-light padding-6 radius-4 shadow-small">
-            <h5 class="margin-top-4 margin-bottom-8 text-grey-3">Media Breakpoints</h5>
-            <div class="overflow-x-auto">
-                <table style="width: 100%; caption-side: bottom;" class="text-grey-3">
-                    <thead>
-                        <tr>
-                            <th>Class</th>
-                            <th>Dimension</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>mini</td>
-                            <td>0px - 576px</td>
-                        </tr>
-                        <tr>
-                            <td>small</td>
-                            <td>577px - 768px</td>
-                        </tr>
-                        <tr>
-                            <td>medium</td>
-                            <td>769px - 992px</td>
-                        </tr>
-                        <tr>
-                            <td>large</td>
-                            <td>993px - 1200px</td>
-                        </tr>
-                        <tr>
-                            <td>maxi</td>
-                            <td>1201px ~</td>
-                        </tr>
-                    </tbody>
-                    <caption>Media Breakpoints</caption>
-                </table>
+    <div id="content" class="container padding-y-7">
+        <div class="display-block margin-x-auto text-grey-3">
+            <h1 class="text-blue-2 text-center">Responsive, Simple & Powerful</h1>
+            <div class="column margin-top-10 padding-top-6">
+                <div class="field mini-12 small-4 text-center margin-bottom-9">
+                    <i class="bi-hourglass-split display-block text-blue-2" style="font-size: 60px;"></i>
+                    <p>Time-saving</p>
+                </div>
+                <div class="field mini-12 small-4 text-center margin-bottom-9">
+                    <i class="bi-rulers display-block text-blue-2" style="font-size: 60px;"></i>
+                    <p>Responsive</p>
+                </div>
+                <div class="field mini-12 small-4 text-center margin-bottom-9">
+                    <i class="bi-building display-block text-blue-2" style="font-size: 60px;"></i>
+                    <p>Starting point</p>
+                </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <div class="padding-y-2 padding-x-6 background-light radius-3 shadow-small">
-            <h4 class="text-grey-3">Color Palette</h4>
+        <h4 class="text-center text-grey-2">Build website using BebyKit</h4>
+        <p class="text-center">Save your time and be more productive building websites display using BebyKit,
+            front-end open source toolkit, responsive column system, and soft-design default UI.
+        </p>
+        <div class="background-grey-1 margin-y-7" style="width: 100%; height: 1px;"></div>
+        <h2 class="text-blue-2 padding-top-10 padding-bottom-5 text-center-mini">Get Started</h2>
+        <p class="text-center-mini">
+            BebyKit is a powerful tool for front-end development, responsive and soft.
+            Using un-omitted classes name and easy-to-remember classes name to make ease of use.
+            <em class="hidden-mini-only"><b><u>Only 1 CSS file to use BebyKit!</u></b></em>
+            <br class="hidden-small-to-larger">
+            <br class="hidden-small-to-larger">
+            <em class="hidden-small-to-larger"><b><u>Only 1 CSS file to use BebyKit!</u></b></em>
+        </p>
+        <h5 class="text-grey-2 padding-top-9">CDN <i class="bi-link-45deg" style="font-size: 16px;"></i></h5>
+        <p>
+            Copy and paste this code below inside your project to get started.
+        </p>
+        <div class="padding-y-3 padding-x-5 margin-bottom-8 background-light shadow-small radius-3 overflow-auto text-grey-3">
+            <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;mini&lt;/<span class="text-blue-4">button</span>&gt;</code></pre>
+        </div>
+        <h5 class="text-grey-2 padding-top-9">Download <i class="bi-download" style="font-size: 16px;"></i></h5>
+        <p>
+            If you want to use <em>BebyKit</em> locally on your device, you can download it by clicking this button download button below:
+        </p>
+        <button class="button-outline">download &nbsp; <i class="bi-download"></i></button>
+        <h5 class="text-grey-2 padding-top-9">Breakpoints <i class="bi-display" style="font-size: 16px;"></i></h5>
+        <p>
+            BebyKit's built-in media breakpoints which you can use freely, responsive to its viewport window sizes.
+        </p>
+        <div class="overflow-x-auto">
+            <table style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Device(s)</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>mini</td>
+                        <td>Mobile</td>
+                        <td>~ 576px</td>
+                    </tr>
+                    <tr>
+                        <td>small</td>
+                        <td>Mobile ~ Tablet</td>
+                        <td>577px ~ 768px</td>
+                    </tr>
+                    <tr>
+                        <td>medium</td>
+                        <td>Tablet ~ Laptop</td>
+                        <td>769px ~ 992px</td>
+                    </tr>
+                    <tr>
+                        <td>large</td>
+                        <td>Laptop ~ Desktop</td>
+                        <td>993px ~ 1200px</td>
+                    </tr>
+                    <tr>
+                        <td>maxi</td>
+                        <td>Desktop ~ ( <em>larger dimension</em> )</td>
+                        <td>1201px ~</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="background-inherit radius-3 margin-top-10 padding-top-7">
+            <h5 class="text-grey-3 padding-bottom-5">Color Palette <i class="bi-palette" style="font-size: 16px;"></i></h5>
             <div class="block padding-bottom-6 margin-top-decrease-3">
                 <div class="column">
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-blue-1 padding-4">blue-1</div>
-                            <div class="field background-blue-2 padding-4">blue-2</div>
-                            <div class="field background-blue-3 padding-4">blue-3</div>
-                            <div class="field background-blue-4 padding-4">blue-4</div>
-                            <div class="field background-blue-5 padding-4">blue-5</div>
-                            <div class="field background-blue-6 padding-4">blue-6</div>
-                            <div class="field background-blue-7 padding-4">blue-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-purple-1 padding-4">purple-1</div>
-                            <div class="field background-purple-2 padding-4">purple-2</div>
-                            <div class="field background-purple-3 padding-4">purple-3</div>
-                            <div class="field background-purple-4 padding-4">purple-4</div>
-                            <div class="field background-purple-5 padding-4">purple-5</div>
-                            <div class="field background-purple-6 padding-4">purple-6</div>
-                            <div class="field background-purple-7 padding-4">purple-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-red-1 padding-4">red-1</div>
-                            <div class="field background-red-2 padding-4">red-2</div>
-                            <div class="field background-red-3 padding-4">red-3</div>
-                            <div class="field background-red-4 padding-4">red-4</div>
-                            <div class="field background-red-5 padding-4">red-5</div>
-                            <div class="field background-red-6 padding-4">red-6</div>
-                            <div class="field background-red-7 padding-4">red-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-pink-1 padding-4">pink-1</div>
-                            <div class="field background-pink-2 padding-4">pink-2</div>
-                            <div class="field background-pink-3 padding-4">pink-3</div>
-                            <div class="field background-pink-4 padding-4">pink-4</div>
-                            <div class="field background-pink-5 padding-4">pink-5</div>
-                            <div class="field background-pink-6 padding-4">pink-6</div>
-                            <div class="field background-pink-7 padding-4">pink-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-yellow-1 padding-4">yellow-1</div>
-                            <div class="field background-yellow-2 padding-4">yellow-2</div>
-                            <div class="field background-yellow-3 padding-4">yellow-3</div>
-                            <div class="field background-yellow-4 padding-4">yellow-4</div>
-                            <div class="field background-yellow-5 padding-4">yellow-5</div>
-                            <div class="field background-yellow-6 padding-4">yellow-6</div>
-                            <div class="field background-yellow-7 padding-4">yellow-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-orange-1 padding-4">orange-1</div>
-                            <div class="field background-orange-2 padding-4">orange-2</div>
-                            <div class="field background-orange-3 padding-4">orange-3</div>
-                            <div class="field background-orange-4 padding-4">orange-4</div>
-                            <div class="field background-orange-5 padding-4">orange-5</div>
-                            <div class="field background-orange-6 padding-4">orange-6</div>
-                            <div class="field background-orange-7 padding-4">orange-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-green-1 padding-4">green-1</div>
-                            <div class="field background-green-2 padding-4">green-2</div>
-                            <div class="field background-green-3 padding-4">green-3</div>
-                            <div class="field background-green-4 padding-4">green-4</div>
-                            <div class="field background-green-5 padding-4">green-5</div>
-                            <div class="field background-green-6 padding-4">green-6</div>
-                            <div class="field background-green-7 padding-4">green-7</div>
-                        </div>
-                    </div>
-                    <div class="field mini-12 small-6 medium-3">
-                        <div class="column">
-                            <div class="field background-grey-1 padding-4">grey-1</div>
-                            <div class="field background-grey-2 padding-4">grey-2</div>
-                            <div class="field background-grey-3 padding-4">grey-3</div>
-                            <div class="field background-grey-4 padding-4">grey-4</div>
-                            <div class="field background-grey-5 padding-4">grey-5</div>
-                            <div class="field background-grey-6 padding-4">grey-6</div>
-                            <div class="field background-grey-7 padding-4">grey-7</div>
-                        </div>
-                    </div>
                     <div class="field mini-12 small-62">
                         <div class="column border-small radius-2">
                             <div class="field background-inherit padding-4">inherit</div>
@@ -319,10 +406,114 @@
                             <div class="field background-dark padding-4">dark</div>
                         </div>
                     </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-blue-1 padding-4 radius-top-left-2 radius-top-right-2">blue-1</div>
+                            <div class="field background-blue-2 padding-4">blue-2</div>
+                            <div class="field background-blue-3 padding-4">blue-3</div>
+                            <div class="field background-blue-4 padding-4">blue-4</div>
+                            <div class="field background-blue-5 padding-4">blue-5</div>
+                            <div class="field background-blue-6 padding-4">blue-6</div>
+                            <div class="field background-blue-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">blue-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-purple-1 padding-4 radius-top-left-2 radius-top-right-2">purple-1</div>
+                            <div class="field background-purple-2 padding-4">purple-2</div>
+                            <div class="field background-purple-3 padding-4">purple-3</div>
+                            <div class="field background-purple-4 padding-4">purple-4</div>
+                            <div class="field background-purple-5 padding-4">purple-5</div>
+                            <div class="field background-purple-6 padding-4">purple-6</div>
+                            <div class="field background-purple-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">purple-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-red-1 padding-4 radius-top-left-2 radius-top-right-2">red-1</div>
+                            <div class="field background-red-2 padding-4">red-2</div>
+                            <div class="field background-red-3 padding-4">red-3</div>
+                            <div class="field background-red-4 padding-4">red-4</div>
+                            <div class="field background-red-5 padding-4">red-5</div>
+                            <div class="field background-red-6 padding-4">red-6</div>
+                            <div class="field background-red-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">red-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-pink-1 padding-4 radius-top-left-2 radius-top-right-2">pink-1</div>
+                            <div class="field background-pink-2 padding-4">pink-2</div>
+                            <div class="field background-pink-3 padding-4">pink-3</div>
+                            <div class="field background-pink-4 padding-4">pink-4</div>
+                            <div class="field background-pink-5 padding-4">pink-5</div>
+                            <div class="field background-pink-6 padding-4">pink-6</div>
+                            <div class="field background-pink-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">pink-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-yellow-1 padding-4 radius-top-left-2 radius-top-right-2">yellow-1</div>
+                            <div class="field background-yellow-2 padding-4">yellow-2</div>
+                            <div class="field background-yellow-3 padding-4">yellow-3</div>
+                            <div class="field background-yellow-4 padding-4">yellow-4</div>
+                            <div class="field background-yellow-5 padding-4">yellow-5</div>
+                            <div class="field background-yellow-6 padding-4">yellow-6</div>
+                            <div class="field background-yellow-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">yellow-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-orange-1 padding-4 radius-top-left-2 radius-top-right-2">orange-1</div>
+                            <div class="field background-orange-2 padding-4">orange-2</div>
+                            <div class="field background-orange-3 padding-4">orange-3</div>
+                            <div class="field background-orange-4 padding-4">orange-4</div>
+                            <div class="field background-orange-5 padding-4">orange-5</div>
+                            <div class="field background-orange-6 padding-4">orange-6</div>
+                            <div class="field background-orange-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">orange-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-green-1 padding-4 radius-top-left-2 radius-top-right-2">green-1</div>
+                            <div class="field background-green-2 padding-4">green-2</div>
+                            <div class="field background-green-3 padding-4">green-3</div>
+                            <div class="field background-green-4 padding-4">green-4</div>
+                            <div class="field background-green-5 padding-4">green-5</div>
+                            <div class="field background-green-6 padding-4">green-6</div>
+                            <div class="field background-green-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">green-7</div>
+                        </div>
+                    </div>
+                    <div class="field mini-12 small-6 medium-3">
+                        <div class="column">
+                            <div class="field background-grey-1 padding-4 radius-top-left-2 radius-top-right-2">grey-1</div>
+                            <div class="field background-grey-2 padding-4">grey-2</div>
+                            <div class="field background-grey-3 padding-4">grey-3</div>
+                            <div class="field background-grey-4 padding-4">grey-4</div>
+                            <div class="field background-grey-5 padding-4">grey-5</div>
+                            <div class="field background-grey-6 padding-4">grey-6</div>
+                            <div class="field background-grey-7 padding-4 radius-bottom-left-2 radius-bottom-right-2">grey-7</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="padding-y-4 padding-x-3">
+    </div>
+    <footer class="background-light padding-x-9 padding-y-3 border-top-1 border-top-grey-1">
+        <div class="column">
+            <div class="field mini-12">
+                <div class="display-block text-center-mini">
+                    <h6 class="margin-bottom-5">Support the Project</h6>
+                    <button class="button-outline">donate &nbsp; <i class="bi-wallet"></i></button>
+                </div>
+            </div>
+            <div class="field mini-12 padding-top-10">
+                <p>
+                    Current version: <b>v1.0.3</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+        <!-- <section class="padding-y-4 padding-x-3">
             <h2 class="text-blue-2">Button</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus.</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus, vitae qui! Doloremque, voluptatem!</p>
@@ -393,7 +584,7 @@
 &lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;&lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-arrow-clockwise icon-left"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt; repeat&lt;/<span class="text-blue-4">button</span>&gt;
 &lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;&lt;<span class="text-blue-4">i</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"bi-x"</span>&gt;&lt;/<span class="text-blue-4">i</span>&gt;&lt;/<span class="text-blue-4">button</span>&gt;</code></pre>
         </div>
-    </div>
+    </div> -->
 
 
 
