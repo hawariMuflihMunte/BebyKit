@@ -1456,6 +1456,11 @@ a {
 }
 
 /* Radius Top Left */
+.radius-top-left-none {
+  -webkit-border-top-left-radius: 0 !important;
+          border-top-left-radius: 0 !important;
+}
+
 .radius-top-left-mini {
   -webkit-border-top-left-radius: 5% !important;
           border-top-left-radius: 5% !important;
@@ -1532,6 +1537,11 @@ a {
 }
 
 /* Radius Top Right */
+.radius-top-right-none {
+  -webkit-border-top-right-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+}
+
 .radius-top-right-mini {
   -webkit-border-top-right-radius: 5% !important;
           border-top-right-radius: 5% !important;
@@ -1608,6 +1618,11 @@ a {
 }
 
 /* Radius Bottom Right */
+.radius-bottom-right-none {
+  -webkit-border-bottom-right-radius: 0 !important;
+          border-bottom-right-radius: 0 !important;
+}
+
 .radius-bottom-right-mini {
   -webkit-border-bottom-right-radius: 5% !important;
           border-bottom-right-radius: 5% !important;
@@ -1684,6 +1699,11 @@ a {
 }
 
 /* Radius Bottom Left */
+.radius-bottom-left-none {
+  -webkit-border-bottom-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+}
+
 .radius-bottom-left-mini {
   -webkit-border-bottom-left-radius: 5% !important;
           border-bottom-left-radius: 5% !important;
@@ -5940,8 +5960,8 @@ a {
 }
 
 .shadow-small {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) !important;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) !important;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16) !important;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16) !important;
 }
 
 .shadow-medium {
@@ -5983,8 +6003,8 @@ a {
 }
 
 .shadow-hover-small:hover {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) !important;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14) !important;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16) !important;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16) !important;
 }
 
 .shadow-hover-medium:hover {
@@ -6004,6 +6024,7 @@ a {
 /* ====* Shadow :hover *==== */
 
 /* ======* Utilities *====== */
+
 
 /* Format Tag */
 hr {
@@ -6639,3 +6660,27 @@ table tbody tr:last-child {
 
 
 /* ======* Components *====== */
+
+
+/* Forms */
+input {
+  outline: none;
+  border: none;
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.18);
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: 420ms ease;
+}
+
+input:focus {
+  box-shadow: inset 0 0 1px 1px var(--queen-blue);
+}
+
+/* input:user-valid {
+  box-shadow: inset 0 0 1px 1px var(--sap-green);
+} */
+
+input:user-invalid {
+  box-shadow: inset 0 0 1px 1px var(--permanent-geranium-lake);
+}
+/* ====* Forms *==== */
