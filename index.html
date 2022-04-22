@@ -44,16 +44,30 @@
             width: 100%;
             height: 50px;
             overflow: hidden;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            align-content: center;
-            justify-content: space-between;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-align-content: center;
+                -ms-flex-line-pack: center;
+                    align-content: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
             padding: 2px 18px;
         }
 
         @media only screen and (max-width: 768px) {
             nav {
-                justify-content: space-evenly;
+                -webkit-box-pack: space-evenly;
+                -webkit-justify-content: space-evenly;
+                    -ms-flex-pack: space-evenly;
+                        justify-content: space-evenly;
             }
         }
 
@@ -64,16 +78,31 @@
 
         nav ul {
             margin-right: 56px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
             list-style: none;
-            justify-content: space-around;
-            column-gap: 25px;
+            -webkit-justify-content: space-around;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+            -webkit-column-gap: 25px;
+               -moz-column-gap: 25px;
+                    column-gap: 25px;
         }
 
         nav ul li {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
-            align-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-align-content: center;
+                -ms-flex-line-pack: center;
+                    align-content: center;
         }
 
         nav ul li a {
@@ -124,15 +153,22 @@
             left: 0;
             width: 100%;
             z-index: 999;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
             place-content: center;
             height: 50px;
-            box-shadow: 0 -2px 3px rgba(0,0,0,0.16);
+            -webkit-box-shadow: 0 -2px 3px rgba(0,0,0,0.16);
+                    box-shadow: 0 -2px 3px rgba(0,0,0,0.16);
             font-size: 20px;
             padding-top: 9px;
         }
 
         #mobile-nav ul {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
             position: relative;
             top: -7px;
@@ -142,29 +178,40 @@
         }
 
         #mobile-nav ul li a {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
-            align-items: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
         }
 
         #mobile-nav ul li.active a {
-            transform: translateY(-2px);
+            -webkit-transform: translateY(-2px);
+                -ms-transform: translateY(-2px);
+                    transform: translateY(-2px);
             font-size: larger;
             color: #456990;
         }
 
-        #mobile-nav-content {
+        #docs-content {
             position: fixed;
             top: 51px;
             left: 0;
             z-index: 10;
-            height: 85vh;
+            height: 100vh;
             width: 100%;
             background-color: rgba(0,0,0,0.56);
+            -webkit-transition: 460ms ease;
+            -o-transition: 460ms ease;
             transition: 460ms ease;
         }
 
         .blur {
-            filter: blur(12px);
+            -webkit-filter: blur(12px);
+                    filter: blur(12px);
         }
 
         h1, h2, h3,
@@ -213,13 +260,37 @@
             margin-top: 15px;
             margin-bottom: 15px;
         }
+
+        .flex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+
+        .items-center {
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
+        }
+
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <div id="mobile-nav-content" class="padding-8 hidden hidden-medium-to-larger">
+    <div id="docs-content" class="padding-8 hidden">
         <div class="background-light padding-6 radius-3 overflow-y-auto" style="max-height: calc(100% - 32px);">
             <h5 class="margin-bottom-6">Docs <i class="bi-file-code" style="font-size: 16px;"></i></h6>
-            <div class="background-grey-1 margin-y-3" style="width: 100%; height: 1px;"></div>
+            <div class="background-grey-1 margin-top-2 margin-bottom-5" style="width: 100%; height: 1px;"></div>
+            <form action="" method="post">
+                <div class="flex">
+                    <input type="text" name="search-docs" id="search-docs" style="width: 100%;" class="radius-top-right-none radius-bottom-right-none" pattern="[a-zA-Z]{1,100}" placeholder="Search container, heading, typography ...">
+                    <button type="submit" class="button-small shadow-none margin-none radius-top-left-none radius-bottom-left-none"><i class="bi-search"></i></button>
+                </div>
+            </form>
             <ul type="none" class="padding-none overflow-y-auto overflow-x-hidden" style="max-height: 41vh;">
                 <li class="margin-bottom-5">
                     <details>
@@ -259,8 +330,9 @@
                     </details>
                 </li>
             </ul>
-            <div>
+            <div class="flex items-center">
                 <button id="close-docs" class="button-outline button-passive"><i class="bi-x"></i></button>
+                <p class="margin-left-5">Close docs</p>
             </div>
         </div>
     </div>
@@ -273,29 +345,29 @@
             <a href="#!" class="button hidden-medium-to-larger"><i class="bi-download"></i></a>
             <ul class="font-small hidden-small-to-smaller">
                 <li><a href="#!"><i class="bi-house"></i>&nbsp; Home</a></li>
-                <li><a href="#!"><i class="bi-info-square"></i>&nbsp; About</a></li>
-                <li><a href="#!"><i class="bi-file-code"></i>&nbsp; Docs</a></li>
+                <li><a href="#!"><i class="bi-info-square"></i>&nbsp; Project</a></li>
+                <li class="docs"><a href="#!"><i class="bi-file-code"></i>&nbsp; Docs</a></li>
                 <li><a href="#!" class="button-medium button-outline text-blue-3">Download</a></li>
             </ul>
             <div id="mobile-nav" class="hidden-medium-to-larger background-light">
                 <ul>
-                    <li id="about"><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">About</span></a></li>
+                    <li id="about"><a href="#!"><i class="bi-info-square"></i>&nbsp;<span style="font-size: 15px;">Project</span></a></li>
                     <li id="home" class="active"><a href="#!"><i class="bi-house"></i>&nbsp;<span style="font-size: 15px;">Home</span></a></li>
-                    <li id="docs"><a><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
+                    <li class="docs"><a><i class="bi-file-code"></i>&nbsp;<span style="font-size: 15px;">Docs</span></a></li>
                 </ul>
             </div>
             <script>
                 $(document).ready(function(){
-                    $("#mobile-nav #docs").click(function(){
-                        if ($("#mobile-nav-content").hasClass("hidden")) {
-                            $("#mobile-nav-content").removeClass("hidden");
+                    $("li.docs").click(function(){
+                        if ($("#docs-content").hasClass("hidden")) {
+                            $("#docs-content").removeClass("hidden");
                         } else {
-                            $("#mobile-nav-content").addClass("hidden");
+                            $("#docs-content").addClass("hidden");
                         }
                     });
 
                     $("#close-docs").click(function(){
-                        $("#mobile-nav-content").addClass("hidden");
+                        $("#docs-content").addClass("hidden");
                     });
                 });
             </script>
@@ -345,8 +417,15 @@
         <p>
             If you want to use <em>BebyKit</em> locally on your device, you can download it by clicking this button download button below:
         </p>
-        <button class="button-outline">download &nbsp; <i class="bi-download"></i></button>
-        <h5 class="text-grey-2 padding-top-9">Breakpoints <i class="bi-display" style="font-size: 16px;"></i></h5>
+        <button class="button-medium button-outline"><i class="bi-download"></i></button>
+        <h5 class="text-grey-2 padding-top-10 margin-top-8">Starter Template <i class="bi-columns" style="font-size: 16px;"></i></h5>
+        <p>
+            Quick start just by doing copy-n-paste this code below into your project.
+        </p>
+        <div class="padding-y-3 padding-x-5 margin-bottom-8 background-light shadow-small radius-3 overflow-auto text-grey-3">
+            <pre class="overflow-auto"><code>&lt;<span class="text-blue-4">button</span> <span class="text-purple-5">class</span>=<span class="text-pink-4">"button button-outline button-passive"</span>&gt;mini&lt;/<span class="text-blue-4">button</span>&gt;</code></pre>
+        </div>
+        <h5 class="text-grey-2 padding-top-10 margin-top-9">Breakpoints <i class="bi-display" style="font-size: 16px;"></i></h5>
         <p>
             BebyKit's built-in media breakpoints which you can use freely, responsive to its viewport window sizes.
         </p>
