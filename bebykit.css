@@ -6,81 +6,81 @@
     --pure-black: #000;
 
     /* Purple */
-    --pink-lavender: #E6BFED; /* lighter-3 */
+    --pink-lavender: #E6BFED; /* lighter-1 */
     --bright-lilac: #D38FE0; /* lighter-2 */
-    --french-mauve: #C66FD8; /* lighter-1 */
+    --french-mauve: #C66FD8; /* lighter-3 */
     --medium-orchid: #B94FCF;
     --dark-orchid: #AA36BF; /* darker-1 */
     --dark-magenta: #8E2D9F; /* darker-2 */
     --eminence: #72247F; /* darker-3 */
 
     /* Blue */
-    --light-steel-blue: #ACC1D7; /* lighter-3 */
-    --air-superiority-blue: #83A2C3; /* lighter-2 */
-    --glaucous: #5A83AF; /* lighter-1 */
+    --light-steel-blue: #ACC1D7; /* lighter-1 */
+    --glaucous: #5A83AF; /* lighter-2 */
+    --air-superiority-blue: #3a5877; /* lighter-3 */
     --queen-blue: #456990;
     --bdazzled-blue: #3C5B7C; /* darker-1 */
     --indigo-dye: #2E4760; /* darker-2 */
     --gunmetal: #1B2937; /* darker-3 */
 
     /* Red */
-    --light-coral: #F07F83; /* lighter-3 */
+    --light-coral: #F07F83; /* lighter-1 */
     --sizzling-red: #EC5B60; /* lighter-2 */
-    --red-salsa: #EA484E;/* lighter-1 */
+    --red-salsa: #EA484E;/* lighter-3 */
     --permanent-geranium-lake: #E5242A;
     --maximum-red: #DB1A20; /* darker-1 */
     --carnelian: #B7151B; /* darker-2 */
     --carmine: #921115; /* darker-3 */
 
     /* Pink */
-    --light-pink: #ECACB6; /* lighter-3 */
+    --light-pink: #ECACB6; /* lighter-1 */
     --mauvelous: #E89BA7; /* lighter-2 */
-    --shimmering-blush: #E17A89; /* lighter-1 */
+    --shimmering-blush: #E17A89; /* lighter-3 */
     --paradise-pink: #D9596C;
     --brick-red: #D2374F; /* darker-1 */
     --cardinal: #B72A3F; /* darker-2 */
     --crimson-ua: #962233; /* darker-3 */
 
     /* Yellow */
-    --jasmine: #F8E077; /* lighter-3 */
+    --jasmine: #F8E077; /* lighter-1 */
     --napies-yellow: #F7DC64; /* lighter-2 */
-    --yellow-munsell: #F5D33D; /* lighter-1 */
+    --yellow-munsell: #F5D33D; /* lighter-3 */
     --jonqull: #F3CA16;
     --gold-metallic: #D5B00B; /* darker-1 */
     --lemon-curry: #AE9009; /* darker-2 */
     --gold: #9B8008; /* darker-3 */
 
     /* Orange */
-    --deep-champagne: #FFD399; /* lighter-3 */
+    --deep-champagne: #FFD399; /* lighter-1 */
     --mellow-apricot: #FFC170; /* lighter-2 */
-    --yellow-orange: #FFA733; /* lighter-1 */
+    --yellow-orange: #FFA733; /* lighter-3 */
     --orange-peel: #FF9E1F;
     --tangerine: #F58B00; /* darker-1 */
     --fulvous: #E07F00; /* darker-2 */
     --liver-dogs: #B86800; /* darker-3 */
 
     /* Green */
-    --lime-green: #7AD34A; /* lighter-3 */
+    --lime-green: #7AD34A; /* lighter-1 */
     --green-ryb: #5CB52C; /* lighter-2 */
-    --slimy-green: #4B9424; /* lighter-1 */
+    --slimy-green: #4B9424; /* lighter-3 */
     --sap-green: #39721D;
     --lincoln-green: #316119; /* darker-1 */
     --forest-green-traditional: #214111; /* darker-2 */
     --phthalo-green: #102008; /* darker-3 */
 
     /* Brown */
-    --fawn: #E5AA70; /* lighter-3 */
+    --fawn: #E5AA70; /* lighter-1 */
     --camel: #C89356; /* lighter-2 */
-    --copper: #B97F3C; /* lighter-1 */
+    --copper: #B97F3C; /* lighter-3 */
     --golden-brown: #9A6932;
     --coyote-brown: #7B5428; /* darker-1 */
     --dark-brown: #5C3F1E; /* darker-2 */
     --cafe-noir: #3E2A14; /* darker-3 */
 
     /* Grey */
-    --spanish-grey: #999999; /* lighter-3 */
+    --spanish-grey: #999999; /* lighter-1 */
     --dim-grey: #666666; /* lighter-2 */
-    --davys-grey: #474747; /* lighter-1 */
+    --davys-grey: #474747; /* lighter-3 */
     --jet: #333333;
     --eerie-black: #1F1F1F; /* darker-1 */
     --eerie-black-darker: #141414; /* darker-2 */
@@ -2376,6 +2376,10 @@ a {
 
 .border-inherit {
   border-color: inherit !important;
+}
+
+.border-current-color {
+  border-color: currentColor !important;
 }
 
 .border-top-current-color {
@@ -5375,19 +5379,19 @@ a {
 }
 
 .background-blue-2 {
-  background-color: var(--air-superiority-blue) !important;
-}
-
-.text-blue-2 {
-  color: var(--air-superiority-blue) !important;
-}
-
-.background-blue-3 {
   background-color: var(--glaucous) !important;
 }
 
-.text-blue-3 {
+.text-blue-2 {
   color: var(--glaucous) !important;
+}
+
+.background-blue-3 {
+  background-color: var(--air-superiority-blue) !important;
+}
+
+.text-blue-3 {
+  color: var(--air-superiority-blue) !important;
 }
 
 .background-blue-5 {
@@ -5885,6 +5889,7 @@ a {
 .background-orange-6,
 .background-orange-7,
 .background-green,
+.background-green-4,
 .background-green-5,
 .background-green-6,
 .background-green-7,
@@ -5892,19 +5897,13 @@ a {
 .background-brown-6,
 .background-brown-7,
 .background-grey,
-.background-gray,
 .background-grey-1,
-.background-gray-1,
 .background-grey-2,
-.background-gray-2,
 .background-grey-3,
-.background-gray-3,
+.background-grey-4,
 .background-grey-5,
-.background-gray-5,
 .background-grey-6,
-.background-gray-6,
 .background-grey-7,
-.background-gray-7,
 .background-dark {
   color: var(--light);
 }
