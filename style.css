@@ -9,7 +9,8 @@ body {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 h1, h2, h3,
@@ -22,6 +23,8 @@ p {
 }
 
 nav, nav ul, nav a:not(.button), .footer-link {
+    -webkit-transition: all 375ms ease;
+    -o-transition: all 375ms ease;
     transition: all 375ms ease;
 }
 
@@ -46,7 +49,9 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
         justify-items: center; */
         margin-left: 50%;
         margin-right: 50%;
-        transform: translateX(-10px);
+        -webkit-transform: translateX(-10px);
+            -ms-transform: translateX(-10px);
+                transform: translateX(-10px);
     }
 
     nav ul.nav-default-link {
@@ -55,27 +60,38 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 
     nav ul.nav-mobile-link {
         background-color: inherit;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         position: fixed;
         bottom: -15px;
         left: 0;
         width: 100%;
         padding: 12px 0 19px 0;
-        box-shadow: 0 -2px 3px rgba(0,0,0,0.32);
+        -webkit-box-shadow: 0 -2px 3px rgba(0,0,0,0.32);
+                box-shadow: 0 -2px 3px rgba(0,0,0,0.32);
     }
 
     nav ul.nav-mobile-link li:nth-child(1) {
-        order: 5;
+        -webkit-box-ordinal-group: 6;
+            -ms-flex-order: 5;
+                order: 5;
     }
 
     nav ul.nav-mobile-link li:nth-child(2) {
-        order: 0;
+        -webkit-box-ordinal-group: 1;
+            -ms-flex-order: 0;
+                order: 0;
     }
 
 
     nav ul.nav-mobile-link li:nth-child(3) {
-        order: 10;
+        -webkit-box-ordinal-group: 11;
+            -ms-flex-order: 10;
+                order: 10;
     }
 
     .bottom-footer > footer {
@@ -83,6 +99,8 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
     }
 
     .legend-on-mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         position: fixed;
         bottom: 85px;
@@ -91,6 +109,8 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
         padding: 17px;
         border-radius: 50%;
         cursor: pointer;
+        -webkit-transition: 120ms linear;
+        -o-transition: 120ms linear;
         transition: 120ms linear;
     }
 
@@ -99,7 +119,11 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
     }
 
     .legend-on-mobile > span {
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
+        height: -webkit-max-content;
+        height: -moz-max-content;
         height: max-content;
     }
 
@@ -110,11 +134,15 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
         text-align: right;
         white-space: nowrap;
         cursor: default;
+        -webkit-transition: 750ms linear;
+        -o-transition: 750ms linear;
         transition: 750ms linear;
     }
 
     .hide-legend-on-mobile-content {
-        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+            -ms-transform: translateX(200px);
+                transform: translateX(200px);
     }
 }
 
@@ -123,6 +151,8 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 }
 
 .width-max-content {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 
@@ -140,7 +170,8 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 
 img[src*="indonesia-flag.svg"] {
     max-width: 20px;
-    box-shadow: 0 0 2px rgba(0,0,0,0.52);
+    -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.52);
+            box-shadow: 0 0 2px rgba(0,0,0,0.52);
     vertical-align: middle;
 }
 
@@ -195,21 +226,29 @@ img[src*="indonesia-flag.svg"] {
 }
 
 .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .justify-between {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 @media only screen and (max-width: 576px) {
     .justify-center-mini {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }   
 }
 
 .center-align {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .place-center {
@@ -217,17 +256,23 @@ img[src*="indonesia-flag.svg"] {
 }
 
 .flex.gap-x {
-    column-gap: 78px;
+    -webkit-column-gap: 78px;
+       -moz-column-gap: 78px;
+            column-gap: 78px;
 }
 
 @media only screen and (max-width: 768px) {
     .flex.gap-x {
-        column-gap: 48px !important;
+        -webkit-column-gap: 48px !important;
+           -moz-column-gap: 48px !important;
+                column-gap: 48px !important;
     }
 }
 
 .presentation-icon-in-home,
 .presentation-text-in-home {
+    -webkit-transition: all 235ms ease-in-out;
+    -o-transition: all 235ms ease-in-out;
     transition: all 235ms ease-in-out;
     cursor: pointer;
 }
@@ -242,7 +287,9 @@ img[src*="indonesia-flag.svg"] {
 }
 
 .presentation-icon-in-home:hover {
-    transform: scale(1.07, 1.07);
+    -webkit-transform: scale(1.07, 1.07);
+        -ms-transform: scale(1.07, 1.07);
+            transform: scale(1.07, 1.07);
 }
 
 /* Code */
@@ -256,23 +303,33 @@ img[src*="indonesia-flag.svg"] {
 .bk-code-header, .bk-code-header .right.bk-code-action,
 .bk-code-header-minimized, .bk-code-header-minimized .right.bk-code-action,
 .bk-code-file {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 
 .bk-code-header, .bk-code-header-minimized {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 /* Displayed when minimized */
 .bk-code-header-minimized {
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
-    column-gap: 80px;
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
 }
 
 .bk-code-header .right.bk-code-action,
 .bk-code-header-minimized .right.bk-code-action {
-    column-gap: 18px;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
 }
 
 .bk-code-header .right.bk-code-action span,
@@ -282,6 +339,8 @@ img[src*="indonesia-flag.svg"] {
     cursor: pointer;
     display: inline-block;
     color: darkgray;
+    -webkit-transition: 90ms ease;
+    -o-transition: 90ms ease;
     transition: 90ms ease;
 }
 
@@ -308,6 +367,8 @@ img[src*="indonesia-flag.svg"] {
 
 .bk-code-file .code-file > span i[class*="bi-filetype"],
 .bk-code-file .code-file > small {
+    -webkit-transition: 95ms ease-in-out;
+    -o-transition: 95ms ease-in-out;
     transition: 95ms ease-in-out;
 }
 
@@ -324,44 +385,77 @@ img[src*="indonesia-flag.svg"] {
 
 .button-special {
     overflow: visible;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     padding: 14px 20px;
     margin-top: 14px;
     margin-bottom: 14px;
 }
 
 .button-special i.bi-download {
-    animation-name: up-and-down-on-icon;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1000ms;
-    animation-direction: alternate;
-    animation-fill-mode: backwards;
-    animation-play-state: paused;
+    -webkit-animation-name: up-and-down-on-icon;
+            animation-name: up-and-down-on-icon;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 .button-special:hover i.bi-download {
-    animation-name: up-and-down-on-icon;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 1000ms;
-    animation-direction: alternate;
-    animation-fill-mode: backwards;
-    animation-play-state: running;
+    -webkit-animation-name: up-and-down-on-icon;
+            animation-name: up-and-down-on-icon;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 1000ms;
+            animation-duration: 1000ms;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
 }
 
 .button-special:active i.bi-download {
-    animation-play-state: paused;
-    transform: scale(1.10, 1.10);
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-transform: scale(1.10, 1.10);
+        -ms-transform: scale(1.10, 1.10);
+            transform: scale(1.10, 1.10);
+    -webkit-transition: 10ms linear !important;
+    -o-transition: 10ms linear !important;
     transition: 10ms linear !important;
 }
 
 /* Animation for download icon */
+@-webkit-keyframes up-and-down-on-icon {
+    to {
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+    }
+}
 @keyframes up-and-down-on-icon {
     to {
-        transform: translateY(-3px);
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
     }
 }
 
@@ -373,16 +467,22 @@ img[src*="indonesia-flag.svg"] {
     height: 100%;
     visibility: hidden;
     background-color: rgba(0,0,0,0.50);
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
 }
 
 .docs-indexer {
     visibility: visible;
     z-index: 1000;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
 }
 
 .docs-modal-content {
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
     overflow-x: hidden;
     overflow-y: auto;
@@ -394,6 +494,8 @@ img[src*="indonesia-flag.svg"] {
 
 .docs-modal-content * {
     /* Fasten the modal closing */
+    -webkit-transition: none !important;
+    -o-transition: none !important;
     transition: none !important;
 }
 
@@ -415,15 +517,26 @@ img[src*="indonesia-flag.svg"] {
 
 /* Badges on footer */
 .badges-collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
-    column-gap: 18px;
+    -webkit-column-gap: 18px;
+       -moz-column-gap: 18px;
+            column-gap: 18px;
     row-gap: 8px;
 }
 
 .flex-column {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
 }
 
 /* Media queries table */
@@ -433,6 +546,8 @@ img[src*="indonesia-flag.svg"] {
 }
 
 .highlight-table .background-blue-2 {
+    -webkit-transition: 195ms ease;
+    -o-transition: 195ms ease;
     transition: 195ms ease;
 }
 
