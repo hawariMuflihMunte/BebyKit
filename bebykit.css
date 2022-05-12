@@ -16,8 +16,8 @@
 
     /* Blue */
     --light-steel-blue: #ACC1D7; /* lighter-1 */
-    --glaucous: #5A83AF; /* lighter-2 */
-    --air-superiority-blue: #3a5877; /* lighter-3 */
+    --air-superiority-blue: #799bbe; /* lighter-2 */
+    --glaucous: #5A83AF; /* lighter-3 */
     --queen-blue: #456990;
     --bdazzled-blue: #3C5B7C; /* darker-1 */
     --indigo-dye: #2E4760; /* darker-2 */
@@ -5379,19 +5379,19 @@ a {
 }
 
 .background-blue-2 {
-  background-color: var(--glaucous) !important;
-}
-
-.text-blue-2 {
-  color: var(--glaucous) !important;
-}
-
-.background-blue-3 {
   background-color: var(--air-superiority-blue) !important;
 }
 
-.text-blue-3 {
+.text-blue-2 {
   color: var(--air-superiority-blue) !important;
+}
+
+.background-blue-3 {
+  background-color: var(--glaucous) !important;
+}
+
+.text-blue-3 {
+  color: var(--glaucous) !important;
 }
 
 .background-blue-5 {
@@ -5865,21 +5865,22 @@ a {
 }
 
 .background-black,
-.background-black.background-enhanced-1,
-.background-black.background-enhanced-2,
-.background-black.background-enhanced-3,
+.background-purple-4,
 .background-purple-5,
 .background-purple-6,
 .background-purple-7,
 .background-blue,
+.background-blue-4,
 .background-blue-5,
 .background-blue-6,
 .background-blue-7,
 .background-red,
+.background-red-4,
 .background-red-5,
 .background-red-6,
 .background-red-7,
 .background-pink,
+.background-pink-4,
 .background-pink-5,
 .background-pink-6,
 .background-pink-7,
@@ -5897,10 +5898,10 @@ a {
 .background-brown-6,
 .background-brown-7,
 .background-grey,
+.background-grey-4,
 .background-grey-1,
 .background-grey-2,
 .background-grey-3,
-.background-grey-4,
 .background-grey-5,
 .background-grey-6,
 .background-grey-7,
@@ -5909,10 +5910,6 @@ a {
 }
 
 .background-white,
-.background-white.background-enhanced-1,
-.background-white.background-enhanced-2,
-.background-white.background-enhanced-3,
-.background-purple,
 .background-purple-1,
 .background-purple-2,
 .background-purple-3,
@@ -5926,11 +5923,13 @@ a {
 .background-pink-2,
 .background-pink-3,
 .background-yellow,
+.background-yellow-4,
 .background-yellow-1,
 .background-yellow-2,
 .background-yellow-3,
 .background-yellow-5,
 .background-orange,
+.background-orange-4,
 .background-orange-1,
 .background-orange-2,
 .background-orange-3,
@@ -5938,6 +5937,7 @@ a {
 .background-green-2,
 .background-green-3,
 .background-brown,
+.background-brown-4,
 .background-brown-1,
 .background-brown-2,
 .background-brown-3,

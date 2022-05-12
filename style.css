@@ -1,5 +1,6 @@
 html {
     font-family: 'Monserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 body {
@@ -20,6 +21,10 @@ h4, h5, h6 {
 
 p {
     font-weight: 100;
+}
+
+nav {
+    display: flex;
 }
 
 nav, nav ul, nav a:not(.button), .footer-link {
@@ -44,14 +49,13 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 }
 
 @media only screen and (max-width: 576px) {
-    nav a {
-        /* justify-content: center;
-        justify-items: center; */
-        margin-left: 50%;
-        margin-right: 50%;
-        -webkit-transform: translateX(-10px);
-            -ms-transform: translateX(-10px);
-                transform: translateX(-10px);
+    .container {
+        width: 100% !important;
+    }
+
+    nav {
+        justify-content: center !important;
+        justify-items: center !important;
     }
 
     nav ul.nav-default-link {
@@ -71,8 +75,16 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
         left: 0;
         width: 100%;
         padding: 12px 0 19px 0;
+        max-height: 70px;
+        overflow-y: hidden;
         -webkit-box-shadow: 0 -2px 3px rgba(0,0,0,0.32);
                 box-shadow: 0 -2px 3px rgba(0,0,0,0.32);
+    }
+
+    nav ul.nav-mobile-link a.nav-mobile-link-anchor {
+        font-size: 27px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
 
     nav ul.nav-mobile-link li:nth-child(1) {
@@ -97,7 +109,7 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
     .bottom-footer > footer {
         padding-bottom: 110px !important;
     }
-
+    /* 
     .legend-on-mobile {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -143,7 +155,15 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
         -webkit-transform: translateX(200px);
             -ms-transform: translateX(200px);
                 transform: translateX(200px);
+    } */
+
+    h1, h2, h3, h4, h5, h6, p {
+        padding-left: 12px;
     }
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
 }
 
 .small-icon {
@@ -292,6 +312,15 @@ img[src*="indonesia-flag.svg"] {
             transform: scale(1.07, 1.07);
 }
 
+@media only screen and (max-width: 576px) {
+    .footer-link-wrapper {
+        justify-content: center !important;
+        justify-items: center !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+}
+
 /* Code */
 .bk-code-template {
     width: 100%;
@@ -317,12 +346,18 @@ img[src*="indonesia-flag.svg"] {
 
 /* Displayed when minimized */
 .bk-code-header-minimized {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-column-gap: 80px;
-       -moz-column-gap: 80px;
-            column-gap: 80px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 577px) {
+    .bk-code-header-minimized {
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+        -webkit-column-gap: 80px;
+           -moz-column-gap: 80px;
+                column-gap: 80px;
+    }
 }
 
 .bk-code-header .right.bk-code-action,
@@ -543,6 +578,12 @@ img[src*="indonesia-flag.svg"] {
 .highlight-table {
     width: 100%;
     white-space: nowrap;
+    font-size: 13px;
+    text-align: center;
+}
+
+.highlight-table > tbody > tr:hover {
+    filter: brightness(97.6666%);
 }
 
 .highlight-table .background-blue-2 {
@@ -553,4 +594,9 @@ img[src*="indonesia-flag.svg"] {
 
 .highlight-table .background-blue-2:hover {
     opacity: 0.82;
+}
+
+/* Color Palette */
+.color-wrapper {
+    column-gap: 23px;
 }
