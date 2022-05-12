@@ -159,15 +159,11 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 12px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     p {
         font-weight: 400;
-        font-size: 1.08rem;
     }
 }
 
