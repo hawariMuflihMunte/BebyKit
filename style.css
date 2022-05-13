@@ -24,6 +24,8 @@ p {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -54,7 +56,9 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
     }
 
     nav {
-        justify-content: center !important;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
         justify-items: center !important;
     }
 
@@ -159,12 +163,16 @@ nav ul li a:not(.button):hover, nav ul li a:not(.button):active,
 
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 12px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     p {
         font-weight: 400;
     }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: 300;
 }
 
 .hover-underline:hover {
@@ -319,10 +327,15 @@ img[src*="indonesia-flag.svg"] {
 
 @media only screen and (max-width: 576px) {
     .footer-link-wrapper {
-        justify-content: center !important;
+        -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+                justify-content: center !important;
         justify-items: center !important;
-        align-content: center !important;
-        align-items: center !important;
+        -ms-flex-line-pack: center !important;
+            align-content: center !important;
+        -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+                align-items: center !important;
     }
 }
 
@@ -421,6 +434,17 @@ img[src*="indonesia-flag.svg"] {
     background-color: #0D2D2D;
     color: rgba(190, 190, 190, 1.0);
     line-height: 1.4;
+}
+
+.code-value {
+    white-space: nowrap;
+}
+
+@media only screen and (min-width: 768px) {
+    footer > .block {
+        padding-left: 128px !important;
+        padding-right: 128px !important;
+    }
 }
 
 .button-special {
@@ -569,6 +593,24 @@ img[src*="indonesia-flag.svg"] {
     row-gap: 8px;
 }
 
+@media only screen and (max-width: 576px) {
+    .badges-collection {
+        width: 100% !important;
+        justify-content: center !important;
+        justify-items: center !important;
+        align-content: center !important;
+        align-items: center !important;
+    }
+
+    .badges-collection .flex {
+        justify-content: center !important;
+        justify-items: center !important;
+        align-content: center !important;
+        align-items: center !important;
+        text-align: center;
+    }
+}
+
 .flex-column {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -588,7 +630,8 @@ img[src*="indonesia-flag.svg"] {
 }
 
 .highlight-table > tbody > tr:hover {
-    filter: brightness(97.6666%);
+    -webkit-filter: brightness(90.5556%);
+            filter: brightness(90.5556%);
 }
 
 .highlight-table .background-blue-2 {
@@ -603,5 +646,7 @@ img[src*="indonesia-flag.svg"] {
 
 /* Color Palette */
 .color-wrapper {
-    column-gap: 23px;
+    -webkit-column-gap: 23px;
+       -moz-column-gap: 23px;
+            column-gap: 23px;
 }

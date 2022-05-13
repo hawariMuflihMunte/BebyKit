@@ -21,8 +21,11 @@
     <!-- BebyKit favicon -->
     <link rel="icon" href="assets/images/bebykit.ico" type="image/x-icon">
 
-    <!-- jQuery 3.6.0 -->
+    <!-- Import jQuery 3.6.0 -->
     <script src="jquery-3.6.0.min.js"></script>
+
+    <!-- Import clipboard.js -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 </head>
 <body class="overflow-x-hidden">
     <div class="fixed top-navbar">
@@ -36,7 +39,7 @@
                 <li><a href="index.html#installation" class="button-outline">unduh</a></li>
             </ul>
             <ul type="none" class="flex gap-x center-align nav-mobile-link">
-                <li><a href="index.html" class="nav-mobile-link-active home nav-mobile-link-anchor"><i class="bi-house"></i></a></li>
+                <li><a href="index.html" class="home nav-mobile-link-anchor"><i class="bi-house"></i></a></li>
                 <li><a class="docs nav-mobile-link-anchor"><i class="bi-book"></i></a></li>
                 <li><a href="index.html#installation" class="installation nav-mobile-link-anchor"><i class="bi-download"></i></a></li>
             </ul>
@@ -153,17 +156,38 @@
                 <div class="bk-code-file justify-between">
                     <span class="left code-file padding-x-5 padding-y-2 flex center-align"><span><i class="bi-filetype-html margin-right-4"></i></span><small>index.html</small><span class="close-code close-code-file"><i class="bi-app margin-left-4 hidden" title="show"></i><i class="bi-x margin-left-4" title="close"></i></span></span>
                     <span class="right flex padding-right-5">
-                        <span title="copy" style="color: darkgray;" class="code-copy"><i class="bi-clipboard"></i></span>
+                        <span class="code-copy-val" title="copy" style="color: darkgray;" class="code-copy"><i class="bi-clipboard"></i></span>
                     </span>
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
+                    <textarea class="code-value hidden">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nama Proyek</title>
+
+    <!-- impor bebykit.css dari jsDelivr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hawari-882/BebyKit@main/download/bebykit.min.css">
+
+    <!-- tag meta responsif & umum -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Hello, BebyKit!</h1>
+    </div>
+  </body>
+</html>
+                    </textarea>
                     <pre class="overflow-auto padding-x-3"><code>&lt;!<span class="text-purple-3">DOCTYPE</span> <span class="text-red-3">html</span>&gt;
 &lt;<span class="text-red-3">html</span>&gt;
   &lt;<span class="text-red-3">head</span>&gt;
     &lt;<span class="text-red-3">title</span>&gt;Nama Proyek&lt;/<span class="text-red-3">title</span>&gt;
 
     <span class="text-grey-1">&lt;!-- impor bebykit.css dari jsDelivr --&gt;</span>
-    &lt;<span class="text-red-3">link</span> <span class="text-yellow-4">rel</span>=<span class="text-green-2">"stylesheet"</span> <span class="text-yellow-4">href</span>=<span class="text-green-2">"..."</span>&gt;
+    &lt;<span class="text-red-3">link</span> <span class="text-yellow-4">rel</span>=<span class="text-green-2">"stylesheet"</span> <span class="text-yellow-4">href</span>=<span class="text-green-2">"https://cdn.jsdelivr.net/gh/hawari-882/BebyKit@main/download/bebykit.min.css"</span>&gt;
 
     <span class="text-grey-1">&lt;!-- tag meta responsif & umum --&gt;</span>
     &lt;<span class="text-red-3">meta</span> <span class="text-yellow-4">name</span>=<span class="text-green-2">"viewport"</span> <span class="text-yellow-4">content</span>=<span class="text-green-2">"width=device-width, initial-scale=1.0"</span>&gt;
@@ -199,11 +223,14 @@
                 <div class="bk-code-file justify-between">
                     <span class="left code-file padding-x-5 padding-y-2 flex center-align"><span><i class="bi-filetype-html margin-right-4"></i></span><small>index.html</small><span class="close-code close-code-file"><i class="bi-app margin-left-4 hidden" title="show"></i><i class="bi-x margin-left-4" title="close"></i></span></span>
                     <span class="right flex padding-right-5">
-                        <span title="copy" style="color: darkgray;" class="code-copy"><i class="bi-clipboard"></i></span>
+                        <span class="code-copy-val" title="copy" style="color: darkgray;" class="code-copy"><i class="bi-clipboard"></i></span>
                     </span>
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
-                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">link</span> <span class="text-yellow-4">rel</span>=<span class="text-green-2">"stylesheet"</span> <span class="text-yellow-4">href</span>=<span class="text-green-2">"..."</span>&gt;</code></pre>
+                    <textarea class="code-value hidden">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hawari-882/BebyKit@main/download/bebykit.min.css">
+                    </textarea>
+                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">link</span> <span class="text-yellow-4">rel</span>=<span class="text-green-2">"stylesheet"</span> <span class="text-yellow-4">href</span>=<span class="text-green-2">"https://cdn.jsdelivr.net/gh/hawari-882/BebyKit@main/download/bebykit.min.css"</span>&gt;</code></pre>
                 </div>
             </div><!-- CODE DISPLAY -->
             <h6 class="padding-top-10">Unduh BebyKit &nbsp;<i class="bi-download"></i></h6>
@@ -310,7 +337,7 @@
                     </tbody>
                 </table>
             </div>
-            <h5 class="text-brand-color padding-top-10">Penggunaan Kueri Media <i class="bi-aspect-ratio"></i></h5>
+            <h6 class="padding-top-10">Penggunaan Kueri Media <i class="bi-aspect-ratio"></i></h6>
             <div class="overflow-x-auto">
                 <table class="border-grey-2 highlight-table">
                     <thead class="border-grey-2">
@@ -474,7 +501,7 @@
                         <div class="field background-grey-7 padding-5">grey-7</div>
                     </div>
                 </div>
-                <div class="field mini-12 medium-4  padding-none margin-none">
+                <div class="field mini-12 medium-4 padding-none margin-none">
                     <div class="column shadow-small padding-none margin-none">
                         <div class="field background-inherit padding-5">inherit</div>
                         <div class="field background-current-color padding-5">
@@ -494,6 +521,9 @@
                         <div class="field background-dark padding-5">dark</div>
                     </div>
                 </div>
+            </div>
+            <div class="relative padding-top-10 margin-top-7 text-grey-3">
+                <h2 class="text-brand-color">Komunitas <i class="bi-people"></i></h2>
             </div>
         </div>
     </div>
@@ -532,8 +562,9 @@
                     <div class="field">
                         <h4 class="margin-top-8 margin-bottom-decrease-3 text-grey-2 text-center-mini">Komunitas <i class="bi-people"></i></h5>
                         <div class="flex-column margin-top-5 footer-link-wrapper">
-                            <a href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="footer-link flex center-align display-inline-block width-max-content"><i class="bi-whatsapp font-large"></i> Whatsapp</a>
-                            <a href="#!" class="footer-link flex center-align display-inline-block width-max-content"><i class="bi-github font-large"></i> GitHub</a>
+                            <a href="https://github.com/hawariMuflihMunte/BebyKit/issues" class="footer-link flex center-align display-inline-block width-max-content"><i class="bi-git font-large"></i> Isu / Bug</a>
+                            <a href="https://github.com/hawariMuflihMunte/BebyKit/discussions/1" class="footer-link flex center-align display-inline-block width-max-content"><i class="bi-github font-large"></i> Diskusi</a>
+                            <a href="https://chat.whatsapp.com/H9ocUvz3w30KypcX7xzyZa" class="footer-link flex center-align display-inline-block width-max-content"><i class="bi-whatsapp font-large"></i> BebyKit</a>
                         </div>
                     </div>
                 </div>
@@ -545,7 +576,7 @@
                 <div class="container padding-none margin-top-8 margin-bottom-decrease-7">
                     <hr>
                     <p class="text-center padding-none">
-                        BebyKit &copy; 2022. Lisensi <a href="https://raw.githubusercontent.com/hawariMuflihMunte/BebyKit/main/LICENSE"><u><strong style="font-weight: 600;">MIT</strong></u></a>
+                        BebyKit &copy; 2022. Lisensi <a href="https://raw.githubusercontent.com/hawariMuflihMunte/BebyKit/main/LICENSE" target="_blank"><u><strong style="font-weight: 600;">MIT</strong></u></a>
                     </p>
                 </div>
             </div>
@@ -608,22 +639,27 @@ $(document).ready(function(){
 //    });
 
    $(".docs").click(function(){
-        $("body").addClass("overflow-hidden");
+        $("html, body").addClass("overflow-hidden");
         $(".docs-modal").addClass("docs-indexer");
    });
 
    $(".close-docs-modal").click(function(){
-        $("body").removeClass("overflow-hidden");
+        $("html, body").removeClass("overflow-hidden");
         $(".docs-modal").removeClass("docs-indexer");
     });
 
-    if ($("a.home").hasClass("nav-mobile-link-active")) {
-        $("a.home").find("i.bi-house").toggleClass("bi-house-fill");
-    }
-
-    if ($("a.docs").hasClass("nav-mobile-link-active")) {
-        $("a.docs").find("i.bi-book").toggleClass("bi-book-fill");
-    }
+    $(".code-copy-val").click(function(){
+        var $codeVal =
+            $(this)
+                .parents(".bk-code-file")
+                .next(".bk-code-content")
+                .find(".code-value")
+                .val();
+        $("body").append($codeVal);
+        $codeVal.select();
+        document.execCommand("copy");
+        $codeVal.remove();
+    });
 });
 </script>
 </body>
