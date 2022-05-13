@@ -220,6 +220,10 @@ img[src*="indonesia-flag.svg"] {
     position: absolute;
 }
 
+.sticky {
+    position: sticky;
+}
+
 .top-0 {
     top: 0;
 }
@@ -434,10 +438,6 @@ img[src*="indonesia-flag.svg"] {
     background-color: #0D2D2D;
     color: rgba(190, 190, 190, 1.0);
     line-height: 1.4;
-}
-
-.code-value {
-    white-space: nowrap;
 }
 
 @media only screen and (min-width: 768px) {
