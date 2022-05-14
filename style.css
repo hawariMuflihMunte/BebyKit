@@ -661,4 +661,13 @@ img[src*="indonesia-flag.svg"] {
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
+
+    
+    strong {
+        font-weight: 500 !important;
+    }
+}
+
+strong {
+    font-weight: 600 !important;
 }

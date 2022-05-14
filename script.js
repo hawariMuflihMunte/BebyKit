@@ -43,10 +43,10 @@ $(document).ready(function(){
             .nextAll()
             .toggleClass("hidden");
         // Hide copy image when the code content is not displayed
-        $(this)
-            .parents(".bk-code-file")
-            .find(".code-copy")
-            .toggleClass("hidden");
+        // $(this)
+        //     .parents(".bk-code-file")
+        //     .find(".code-copy")
+        //     .toggleClass("hidden");
    });
 
 //    $(".legend-on-mobile").click(function(){

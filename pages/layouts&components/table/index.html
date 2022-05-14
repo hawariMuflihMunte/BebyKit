@@ -102,12 +102,11 @@
     </div>
     <div class="relative padding-top-8">
         <div class="container text-grey-3">
-            <h2 class="text-brand-color">Container</h2>
+            <h2 class="text-brand-color">Tabel</h2>
             <hr class="margin-bottom-10">
             <p>
-                <code>container</code> digunakan untuk memusatkan konten ke tengah agar konten dapat terlihat dan dapat dibaca dengan jelas oleh pengguna.
-                <br>
-                Kamu dapat melihat contoh perbedaan unsur yang menggunakan <code>container</code> ataupun yang tidak memakai <code>container</code> dibawah:
+                Tabel biasa digunakan untuk menampilkan data dengan rapi agar user dapat dengan mudah memahami data yang disajikan.
+                Tampilan default tabel <span class="text-brand-color">BebyKit</span> memiliki border di segala sisi.
             </p>
             <div class="bk-code-template shadow-small"><!-- CODE DISPLAY -->
                 <!-- Display this below **menu** when the code display is minimized -->
@@ -133,28 +132,63 @@
                     </span> -->
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
-                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"container"</span>&gt;
-    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
-&lt;/<span class="text-red-3">div</span>&gt;
-
-&lt;<span class="text-red-3">div</span>&gt;
-    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"overflow-x-auto"</span>&gt;
+    &lt;<span class="text-red-3">table</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"font-mini highlight-table"</span> <span class="text-yellow-4">style</span>=<span class="text-green-2">"width: 100%;"</span>&gt;
+        &lt;<span class="text-red-3">thead</span>&gt;
+            &lt;<span class="text-red-3">tr</span>&gt;
+                &lt;<span class="text-red-3">th</span>&gt;Nama&lt;/<span class="text-red-3">th</span>&gt;
+                &lt;<span class="text-red-3">th</span>&gt;Jenis Kelamin&lt;/<span class="text-red-3">th</span>&gt;
+                &lt;<span class="text-red-3">th</span>&gt;Bidang&lt;/<span class="text-red-3">th</span>&gt;
+            &lt;/<span class="text-red-3">tr</span>&gt;
+        &lt;/<span class="text-red-3">thead</span>&gt;
+        &lt;<span class="text-red-3">tbody</span>&gt;
+            &lt;<span class="text-red-3">tr</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Abdul&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Pria&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Front-end&lt;/<span class="text-red-3">td</span>&gt;
+            &lt;/<span class="text-red-3">tr</span>&gt;
+            &lt;<span class="text-red-3">tr</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Meli&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Wanita&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Full-stack&lt;/<span class="text-red-3">td</span>&gt;
+            &lt;/<span class="text-red-3">tr</span>&gt;
+            &lt;<span class="text-red-3">tr</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Aiman&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Pria&lt;/<span class="text-red-3">td</span>&gt;
+                &lt;<span class="text-red-3">td</span>&gt;Back-end&lt;/<span class="text-red-3">td</span>&gt;
+            &lt;/<span class="text-red-3">tr</span>&gt;
+        &lt;/<span class="text-red-3">tbody</span>&gt;
+    &lt;/<span class="text-red-3">table</span>&gt;
 &lt;/<span class="text-red-3">div</span>&gt;</code></pre>
                 </div>
             </div><!-- CODE DISPLAY -->
-            <div class="display-block border-y-1 border-y-grey-1 padding-y-10">
-                <div class="container">
-                    <div class="background-dark radius-2 radius-none-on-small shadow-small padding-5 text-center">
-                        <p>Konten <code>container</code> akan selalu terpusat di tengah layar.</p>
-                    </div>
-                </div>
-                <div class="display-block background-grey-3 radius-2 radius-none-on-small padding-5 margin-top-10 shadow-small text-justify hidden-mini-only">
-                    <p>Konten yang tidak dibungkus dengan <code>class</code> <code>container</code> tidak terpusat di tengah.</p>
-                </div>
-                <div class="display-block background-grey-3 radius-2 radius-none-on-small padding-y-5 padding-x-2-on-small margin-top-10 shadow-small text-justify hidden-small-to-larger">
-                    <p>Konten yang tidak dibungkus dengan <code>class</code> <code>container</code> tidak terpusat di tengah.</p>
-                </div>
-            </div>
+        <div class="overflow-x-auto margin-y-10 padding-y-4">
+            <table class="font-mini highlight-table" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Bidang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abdul</td>
+                        <td>Pria</td>
+                        <td>Front-end</td>
+                    </tr>
+                    <tr>
+                        <td>Meli</td>
+                        <td>Wanita</td>
+                        <td>Full-stack</td>
+                    </tr>
+                    <tr>
+                        <td>Aiman</td>
+                        <td>Pria</td>
+                        <td>Back-end</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <div class="relative padding-none margin-top-10 bottom-footer">
