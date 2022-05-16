@@ -23,7 +23,7 @@ Selamat datang di proyek _front-end_ ini. Kamu bisa bantu kembangkan _BebyKit_ m
 - Celebrate your contribute to open-source project 😄 -->
 
 Instruksi:
-- Pertama sekali, bingatin _repo_ ini!
+- Pertama sekali, bintagin _repo_ ini!
 - Kemudian, _fork_ repo ini
 - _clone_ repo yang sudah di _fork_
 - Mulailah mengoding...
