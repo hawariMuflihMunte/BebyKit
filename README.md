@@ -1,4 +1,6 @@
-
+<a href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hawariMuflihMunte/BebyKit?color=red&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/hawariMuflihMunte/BebyKit?style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/hawariMuflihMunte/BebyKit?color=yellow&style=flat-square"></a>
+<br/>
+<br/>
 
 ## BebyKit
 
@@ -23,7 +25,7 @@ Selamat datang di proyek _front-end_ ini. Kamu bisa bantu kembangkan _BebyKit_ m
 - Celebrate your contribute to open-source project 😄 -->
 
 Instruksi:
-- Pertama sekali, bintagin _repo_ ini!
+- Pertama sekali, bintangin _repo_ ini!
 - Kemudian, _fork_ repo ini
 - _clone_ repo yang sudah di _fork_
 - Mulailah mengoding...
