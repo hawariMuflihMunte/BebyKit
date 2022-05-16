@@ -102,12 +102,34 @@
     </div>
     <div class="relative padding-top-8">
         <div class="container text-grey-3">
-            <h2 class="text-brand-color">Peletakan Teks</h2>
+            <h2 class="text-brand-color">Overflow</h2>
             <hr class="margin-bottom-10">
             <p>
-                Peletakan teks (-<small>dalam bahasa Inggris: <em>Text Alignment</em></small>) merupakan cara untuk menempatkan teks agar teks dapat tampil
-                pada arah yang diinginkan.
+                <code>overflow</code> berfungsi untuk menampilkan atau tidak menampilkan elemen yang melebihi dari ukuran wadahnya.
+                <br>
+                Untuk lebih jelasnya, dapat dilihat pada contoh dibawah:
+                <br>
             </p>
+            <div class="flex padding-x-2-on-small">
+                <div class="display-block overflow-auto border-1 border-grey-1 padding-none" style="min-width: 100px; max-width: 150px; width: 18vw; height: 80px;">
+                    <h6 class="margin-none padding-3 text-blue-5"><code>overflow-auto</code></h6>
+                    <p class="padding-3">
+                        Konten dapat dilihat dengan cara scrolling!
+                    </p>
+                </div>
+                <div class="display-block margin-left-5 overflow-scroll border-1 border-grey-1 padding-none" style="max-width: 100px; height: 80px;">
+                    <h6 class="margin-none padding-3 text-blue-5"><code>overflow-scroll</code></h6>
+                    <p class="padding-3">
+                        Konten dapat dilihat dengan cara scrolling!
+                    </p>
+                </div>
+                <div class="display-block margin-left-5 overflow-hidden border-1 border-grey-1 padding-none" style="max-width: 100px; height: 80px;">
+                    <h6 class="margin-none padding-3 text-blue-5"><code>overflow-hidden</code></h6>
+                    <p class="padding-3">
+                        Konten dapat dilihat dengan cara scrolling!
+                    </p>
+                </div>
+            </div>
             <div class="bk-code-template shadow-small"><!-- CODE DISPLAY -->
                 <!-- Display this below **menu** when the code display is minimized -->
                 <div class="bk-code-header-minimized hidden background-dark padding-x-4 padding-y-3">
@@ -132,17 +154,51 @@
                     </span> -->
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
-                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">p</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"text-left"</span>&gt;~ Kiri&lt;/<span class="text-red-3">p</span>&gt;
-&lt;<span class="text-red-3">p</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"text-center"</span>&gt;Tengah&lt;/<span class="text-red-3">p</span>&gt;
-&lt;<span class="text-red-3">p</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"text-right"</span>&gt;Kanan ~&lt;/<span class="text-red-3">p</span>&gt;</code></pre>
+                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"overflow-auto"</span>&gt;
+    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+&lt;/<span class="text-red-3">div</span>&gt;
+
+&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"overflow-scroll"</span>&gt;
+    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+&lt;/<span class="text-red-3">div</span>&gt;
+
+&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"overflow-hidden"</span>&gt;
+    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+&lt;/<span class="text-red-3">div</span>&gt;</code></pre>
                 </div>
             </div><!-- CODE DISPLAY -->
-            <div class="display-block border-y-1 border-y-grey-1 padding-y-10">
-                <div class="display-block background-blue-5 radius-2 radius-none-on-small padding-y-5 padding-x-6 padding-x-2-on-small shadow-small text-justify">
-                    <p class="text-left">~ Kiri <i class="bi-arrow-left"></i></p>
-                    <p class="text-center"><i class="bi-arrow-left"></i> Tengah <i class="bi-arrow-right"></i></p>
-                    <p class="text-right"><i class="bi-arrow-right"></i> Kanan ~</p>
-                </div>
+            <div class="padding-y-4">
+                <h5>Tambahan</h5>
+                <p>
+                    <code>overflow</code> dapat diterapkan pada sumbu <code>X</code> atau sumbu <code>Y</code>.
+                    <br>
+                    Contohnya:
+                    <div class="flex-column padding-x-2-on-small">
+                        <p>
+                            sumbu-<code>X</code>
+                        </p>
+                        <div class="flex-column overflow-x-hidden border-1" style="max-width: 100px; max-height: 30px; white-space: nowrap;">
+                            <h6 class="margin-none">overflow-x-hidden</h6>
+                        </div>
+                    </div>
+                    <div class="flex-column padding-x-2-on-small margin-y-6">
+                        <p>
+                            sumbu-<code>Y</code>
+                        </p>
+                        <div class="flex-column overflow-y-hidden border-1" style="max-width: 100px; white-space: nowrap;">
+                            <h6 class="margin-none">overflow-y-hidden</h6>
+                        </div>
+                    </div>
+                </p>
+                <p class="margin-top-10 padding-top-3">
+                    <div class="flex padding-x-2-on-small"><code>auto</code>&nbsp;&nbsp;<i class="bi-arrow-right-circle"></i>&nbsp;&nbsp;Elemen akan mementukan secara otomatis penanganan konten yang melebihi ukuran wadahnya.</div>
+                </p>
+                <p class="margin-top-10 padding-top-3">
+                    <div class="flex padding-x-2-on-small"><code>scroll</code>&nbsp;&nbsp;<i class="bi-arrow-right-circle"></i>&nbsp;&nbsp;Wadah akan langsung merespon konten yang berlebih dengan memberikan hak scrolling.</div>
+                </p>
+                <p class="margin-top-10 padding-top-3">
+                    <div class="flex padding-x-2-on-small"><code>hidden</code>&nbsp;&nbsp;<i class="bi-arrow-right-circle"></i>&nbsp;&nbsp;Wadah tidak akan menampilkan konten yang melebihi ukuran dari wadahnya.</div>
+                </p>
             </div>
         </div>
     </div>
