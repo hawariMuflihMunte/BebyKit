@@ -1,4 +1,4 @@
-<a href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hawariMuflihMunte/BebyKit?color=red&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/hawariMuflihMunte/BebyKit?style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/hawariMuflihMunte/BebyKit?color=yellow&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/hawariMuflihMunte/BebyKit?color=green&style=flat-square"></a>
+<a href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hawariMuflihMunte/BebyKit?color=red&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/hawariMuflihMunte/BebyKit?style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/hawariMuflihMunte/BebyKit?color=yellow&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/hawariMuflihMunte/BebyKit?color=green&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/discussions"><img alt="GitHub discussions" src="https://img.shields.io/github/discussions/hawariMuflihMunte/BebyKit?style=flat-square"></a>
 <br/>
 <br/>
 
@@ -9,12 +9,12 @@ _Framework CSS Ringan_
 
 <!-- Made with ❤️ by all the _BebyKit_'s team. -->
 <!-- #### Description -->
-#### Deskripsi
+#### 📍 Deskripsi
 
 Selamat datang di proyek _front-end_ ini. Kamu bisa bantu kembangkan _BebyKit_ menjadi lebih baik lagi dengan mengembangkan kreativitas kamu di proyek _open source_ ini.
 
 <!-- #### Contribution Guideline -->
-#### Cara Kontribusi
+#### 📍 Cara Kontribusi
 <!-- Instruction
 - At the very first step, star this repo!
 - Fork this repo
