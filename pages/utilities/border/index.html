@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BebyKit | Beranda</title>
+    <title>BebyKit | Border</title>
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -102,7 +102,7 @@
     </div>
     <div class="relative padding-top-8">
         <div class="container text-grey-3">
-            <h2 class="text-brand-color">Margin</h2>
+            <h2 class="text-brand-color">Border</h2>
             <hr class="margin-bottom-10">
             <p>
                 <code>margin</code> digunakan untuk memberikan jarak diluar konten.
@@ -110,30 +110,37 @@
                 Seperti contoh dibawah ini:
                 <br>
             </p>
-            <div class="flex padding-x-2-on-small">
-                <div class="display-block width-max-content border-2 border-grey-2 padding-5 margin-right-5 radius-2">
-                    <div class="display-block background-blue-4 padding-6"></div>
+            <div class="flex padding-x-2-on-small overflow-x-auto">
+                <div class="flex-column">
+                    <div class="display-block width-max-content border-1 border-grey-2 padding-5 margin-right-5 radius-2">
+                        <div class="display-block background-blue-4 padding-6"></div>
+                    </div>
                 </div>
-                <div class="display-block width-max-content border-2 border-grey-2 padding-5 margin-right-5 radius-2">
-                    <div class="display-block background-blue-4 padding-6"></div>
+                <div class="flex-column">
+                    <div class="display-block width-max-content border-2 border-blue-2 padding-5 margin-right-5 radius-2">
+                        <div class="display-block background-blue-4 padding-6"></div>
+                    </div>
                 </div>
-                <div class="display-block width-max-content border-2 border-grey-2 padding-5 margin-right-5 radius-2">
-                    <div class="display-block background-blue-4 padding-6"></div>
+                <div class="flex-column">
+                    <div class="display-block width-max-content border-top-5 border-bottom-8 border-red-2 padding-5 margin-right-5 radius-2">
+                        <div class="display-block background-blue-4 padding-6"></div>
+                    </div>
                 </div>
-                <div class="display-block width-max-content border-2 border-grey-2 padding-5 radius-2">
-                    <div class="display-block background-blue-4 padding-6"></div>
+                <div class="flex-column">
+                    <div class="display-block width-max-content border-top-5 border-right-8 border-bottom-8 border-left-3 border-top-red-2 border-right-blue-5 border-bottom-yellow-3 border-left-orange-6 padding-5 margin-right-5 radius-2">
+                        <div class="display-block background-blue-4 padding-6"></div>
+                    </div>
                 </div>
             </div>
             <p>
-                Pada contoh diatas, ketiga elemen memiliki jarak yang berbeda. Elemen pertama memiliki jarak lebih pendek dibanding dengan
-                jarak elemen kedua ke elemen ketiga. Itu dikarenakan elemen kedua memiliki <code>class</code> yang beda dibanding elemen pertama.
+                Tiap elemen diatass memiliki <code>border</code> yang berbeda-beda.
                 <br>
-                <br>
-                Berikut <code>class</code> <span class="text-brand-color">BebyKit</span> yang dapat digunakan untuk memberikan <code>margin</code>
-                pada elemen HTML kamu:
+                Hal ini dikarenakan <code>class</code> <span class="text-brand-color">BebyKit</span> memiliki
+                <code>class</code> yang dapat memberikan styling (<em>warna & ukuran</em>) terhadap masing-masing 4 sisi <code>border</code> yang berbeda.
                 <br>
                 <br>
             </p>
+            <h5>Ukuran Border</h5>
             <div class="overflow-x-auto">
                 <table class="highlight-table" style="width: 100%;">
                     <thead>
@@ -149,112 +156,112 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="background-blue-1"><code>padding-none</code></td>
-                            <td class="background-light"><code>padding-x-none</code></td>
-                            <td class="background-blue-1"><code>padding-y-none</code></td>
-                            <td class="background-light"><code>padding-top-none</code></td>
-                            <td class="background-blue-1"><code>padding-right-none</code></td>
-                            <td class="background-light"><code>padding-bottom-none</code></td>
-                            <td class="background-blue-1"><code>padding-left-none</code></td>
+                            <td class="background-blue-1"><code>border-none</code></td>
+                            <td class="background-light"><code>border-x-none</code></td>
+                            <td class="background-blue-1"><code>border-y-none</code></td>
+                            <td class="background-light"><code>border-top-none</code></td>
+                            <td class="background-blue-1"><code>border-right-none</code></td>
+                            <td class="background-light"><code>border-bottom-none</code></td>
+                            <td class="background-blue-1"><code>border-left-none</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-auto</code></td>
-                            <td class="background-light"><code>padding-x-auto</code></td>
-                            <td class="background-blue-1"><code>padding-y-auto</code></td>
-                            <td class="background-light"><code>padding-top-auto</code></td>
-                            <td class="background-blue-1"><code>padding-right-auto</code></td>
-                            <td class="background-light"><code>padding-bottom-auto</code></td>
-                            <td class="background-blue-1"><code>padding-left-auto</code></td>
+                            <td class="background-blue-1"><code>border-auto</code></td>
+                            <td class="background-light"><code>border-x-auto</code></td>
+                            <td class="background-blue-1"><code>border-y-auto</code></td>
+                            <td class="background-light"><code>border-top-auto</code></td>
+                            <td class="background-blue-1"><code>border-right-auto</code></td>
+                            <td class="background-light"><code>border-bottom-auto</code></td>
+                            <td class="background-blue-1"><code>border-left-auto</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-1</code></td>
-                            <td class="background-light"><code>padding-x-1</code></td>
-                            <td class="background-blue-1"><code>padding-y-1</code></td>
-                            <td class="background-light"><code>padding-top-1</code></td>
-                            <td class="background-blue-1"><code>padding-right-1</code></td>
-                            <td class="background-light"><code>padding-bottom-1</code></td>
-                            <td class="background-blue-1"><code>padding-left-1</code></td>
+                            <td class="background-blue-1"><code>border-1</code></td>
+                            <td class="background-light"><code>border-x-1</code></td>
+                            <td class="background-blue-1"><code>border-y-1</code></td>
+                            <td class="background-light"><code>border-top-1</code></td>
+                            <td class="background-blue-1"><code>border-right-1</code></td>
+                            <td class="background-light"><code>border-bottom-1</code></td>
+                            <td class="background-blue-1"><code>border-left-1</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-2</code></td>
-                            <td class="background-light"><code>padding-x-2</code></td>
-                            <td class="background-blue-1"><code>padding-y-2</code></td>
-                            <td class="background-light"><code>padding-top-2</code></td>
-                            <td class="background-blue-1"><code>padding-right-2</code></td>
-                            <td class="background-light"><code>padding-bottom-2</code></td>
-                            <td class="background-blue-1"><code>padding-left-2</code></td>
+                            <td class="background-blue-1"><code>border-2</code></td>
+                            <td class="background-light"><code>border-x-2</code></td>
+                            <td class="background-blue-1"><code>border-y-2</code></td>
+                            <td class="background-light"><code>border-top-2</code></td>
+                            <td class="background-blue-1"><code>border-right-2</code></td>
+                            <td class="background-light"><code>border-bottom-2</code></td>
+                            <td class="background-blue-1"><code>border-left-2</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-3</code></td>
-                            <td class="background-light"><code>padding-x-3</code></td>
-                            <td class="background-blue-1"><code>padding-y-3</code></td>
-                            <td class="background-light"><code>padding-top-3</code></td>
-                            <td class="background-blue-1"><code>padding-right-3</code></td>
-                            <td class="background-light"><code>padding-bottom-3</code></td>
-                            <td class="background-blue-1"><code>padding-left-3</code></td>
+                            <td class="background-blue-1"><code>border-3</code></td>
+                            <td class="background-light"><code>border-x-3</code></td>
+                            <td class="background-blue-1"><code>border-y-3</code></td>
+                            <td class="background-light"><code>border-top-3</code></td>
+                            <td class="background-blue-1"><code>border-right-3</code></td>
+                            <td class="background-light"><code>border-bottom-3</code></td>
+                            <td class="background-blue-1"><code>border-left-3</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-4</code></td>
-                            <td class="background-light"><code>padding-x-4</code></td>
-                            <td class="background-blue-1"><code>padding-y-4</code></td>
-                            <td class="background-light"><code>padding-top-4</code></td>
-                            <td class="background-blue-1"><code>padding-right-4</code></td>
-                            <td class="background-light"><code>padding-bottom-4</code></td>
-                            <td class="background-blue-1"><code>padding-left-4</code></td>
+                            <td class="background-blue-1"><code>border-4</code></td>
+                            <td class="background-light"><code>border-x-4</code></td>
+                            <td class="background-blue-1"><code>border-y-4</code></td>
+                            <td class="background-light"><code>border-top-4</code></td>
+                            <td class="background-blue-1"><code>border-right-4</code></td>
+                            <td class="background-light"><code>border-bottom-4</code></td>
+                            <td class="background-blue-1"><code>border-left-4</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-5</code></td>
-                            <td class="background-light"><code>padding-x-5</code></td>
-                            <td class="background-blue-1"><code>padding-y-5</code></td>
-                            <td class="background-light"><code>padding-top-5</code></td>
-                            <td class="background-blue-1"><code>padding-right-5</code></td>
-                            <td class="background-light"><code>padding-bottom-5</code></td>
-                            <td class="background-blue-1"><code>padding-left-5</code></td>
+                            <td class="background-blue-1"><code>border-5</code></td>
+                            <td class="background-light"><code>border-x-5</code></td>
+                            <td class="background-blue-1"><code>border-y-5</code></td>
+                            <td class="background-light"><code>border-top-5</code></td>
+                            <td class="background-blue-1"><code>border-right-5</code></td>
+                            <td class="background-light"><code>border-bottom-5</code></td>
+                            <td class="background-blue-1"><code>border-left-5</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-6</code></td>
-                            <td class="background-light"><code>padding-x-6</code></td>
-                            <td class="background-blue-1"><code>padding-y-6</code></td>
-                            <td class="background-light"><code>padding-top-6</code></td>
-                            <td class="background-blue-1"><code>padding-right-6</code></td>
-                            <td class="background-light"><code>padding-bottom-6</code></td>
-                            <td class="background-blue-1"><code>padding-left-6</code></td>
+                            <td class="background-blue-1"><code>border-6</code></td>
+                            <td class="background-light"><code>border-x-6</code></td>
+                            <td class="background-blue-1"><code>border-y-6</code></td>
+                            <td class="background-light"><code>border-top-6</code></td>
+                            <td class="background-blue-1"><code>border-right-6</code></td>
+                            <td class="background-light"><code>border-bottom-6</code></td>
+                            <td class="background-blue-1"><code>border-left-6</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-7</code></td>
-                            <td class="background-light"><code>padding-x-7</code></td>
-                            <td class="background-blue-1"><code>padding-y-7</code></td>
-                            <td class="background-light"><code>padding-top-7</code></td>
-                            <td class="background-blue-1"><code>padding-right-7</code></td>
-                            <td class="background-light"><code>padding-bottom-7</code></td>
-                            <td class="background-blue-1"><code>padding-left-7</code></td>
+                            <td class="background-blue-1"><code>border-7</code></td>
+                            <td class="background-light"><code>border-x-7</code></td>
+                            <td class="background-blue-1"><code>border-y-7</code></td>
+                            <td class="background-light"><code>border-top-7</code></td>
+                            <td class="background-blue-1"><code>border-right-7</code></td>
+                            <td class="background-light"><code>border-bottom-7</code></td>
+                            <td class="background-blue-1"><code>border-left-7</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-8</code></td>
-                            <td class="background-light"><code>padding-x-8</code></td>
-                            <td class="background-blue-1"><code>padding-y-8</code></td>
-                            <td class="background-light"><code>padding-top-8</code></td>
-                            <td class="background-blue-1"><code>padding-right-8</code></td>
-                            <td class="background-light"><code>padding-bottom-8</code></td>
-                            <td class="background-blue-1"><code>padding-left-8</code></td>
+                            <td class="background-blue-1"><code>border-8</code></td>
+                            <td class="background-light"><code>border-x-8</code></td>
+                            <td class="background-blue-1"><code>border-y-8</code></td>
+                            <td class="background-light"><code>border-top-8</code></td>
+                            <td class="background-blue-1"><code>border-right-8</code></td>
+                            <td class="background-light"><code>border-bottom-8</code></td>
+                            <td class="background-blue-1"><code>border-left-8</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-9</code></td>
-                            <td class="background-light"><code>padding-x-9</code></td>
-                            <td class="background-blue-1"><code>padding-y-9</code></td>
-                            <td class="background-light"><code>padding-top-9</code></td>
-                            <td class="background-blue-1"><code>padding-right-9</code></td>
-                            <td class="background-light"><code>padding-bottom-9</code></td>
-                            <td class="background-blue-1"><code>padding-left-9</code></td>
+                            <td class="background-blue-1"><code>border-9</code></td>
+                            <td class="background-light"><code>border-x-9</code></td>
+                            <td class="background-blue-1"><code>border-y-9</code></td>
+                            <td class="background-light"><code>border-top-9</code></td>
+                            <td class="background-blue-1"><code>border-right-9</code></td>
+                            <td class="background-light"><code>border-bottom-9</code></td>
+                            <td class="background-blue-1"><code>border-left-9</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>padding-10</code></td>
-                            <td class="background-light"><code>padding-x-10</code></td>
-                            <td class="background-blue-1"><code>padding-y-10</code></td>
-                            <td class="background-light"><code>padding-top-10</code></td>
-                            <td class="background-blue-1"><code>padding-right-10</code></td>
-                            <td class="background-light"><code>padding-bottom-10</code></td>
-                            <td class="background-blue-1"><code>padding-left-10</code></td>
+                            <td class="background-blue-1"><code>border-10</code></td>
+                            <td class="background-light"><code>border-x-10</code></td>
+                            <td class="background-blue-1"><code>border-y-10</code></td>
+                            <td class="background-light"><code>border-top-10</code></td>
+                            <td class="background-blue-1"><code>border-right-10</code></td>
+                            <td class="background-light"><code>border-bottom-10</code></td>
+                            <td class="background-blue-1"><code>border-left-10</code></td>
                         </tr>
                     </tbody>
                 </table>
@@ -284,12 +291,20 @@
                     </span> -->
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
-                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"margin-1"</span>&gt;
-    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"display-block border-top-5 border-right-8 border-bottom-8 border-left-3 border-top-red-2 border-right-blue-5 border-bottom-yellow-3 border-left-orange-6 padding-5 margin-right-5 radius-2"</span> <span class="text-yellow-4">style</span>=<span class="text-green-2">"width: max-content;"</span>&gt;
+    &lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"display-block background-blue-4 padding-6"</span>&gt;
+        <span class="text-grey-1">&lt;!-- konten --&gt;</span>
+    &lt;/<span class="text-red-3">div</span>&gt;
 &lt;/<span class="text-red-3">div</span>&gt;</code></pre>
                 </div>
             </div><!-- CODE DISPLAY -->
-            <div class="padding-y-3"></div>
+            <div class="padding-y-3">
+                <p>
+                    Referensi Warna:
+                    <br>
+                    <a href="../../../index.html#colors">Lihat Selengkapnya <i class="bi-palette"></i></a>
+                </p>
+            </div>
         </div>
     </div>
     <div class="relative padding-none margin-top-10 bottom-footer">
