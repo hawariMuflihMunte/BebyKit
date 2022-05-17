@@ -32,3 +32,5 @@ Instruksi:
 - _commit_ dan _push_ hasil codinganmu
 - Buka diskusi, diskusikan hasil codinganmu. Apabila banyak yang setuju, maka hasil codinganmu akan menjadi pembaruan bagi proyek _open source_ ini.
 - Selamat, kamu sudah berkontribusi di proyek _open source_.
+
+----
