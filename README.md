@@ -1,44 +1,36 @@
-# BebyKit
+<a href="https://github.com/hawariMuflihMunte/BebyKit/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/hawariMuflihMunte/BebyKit?color=red&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/hawariMuflihMunte/BebyKit?style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/hawariMuflihMunte/BebyKit?color=yellow&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/hawariMuflihMunte/BebyKit?color=green&style=flat-square"></a> <a href="https://github.com/hawariMuflihMunte/BebyKit/discussions"><img alt="GitHub discussions" src="https://img.shields.io/github/discussions/hawariMuflihMunte/BebyKit?style=flat-square"></a>
+<br/>
+<br/>
 
-💎- Front-end Utilities -💎
+## BebyKit
 
-Made with ❤️ by all the _BebyKit_'s Developer whose participated.
-### Description
+<!-- *Lightweight CSS Framework* -->
+_Framework CSS Ringan_
 
-Welcome onboard Front-end Developer, here you can express yourself freely by contributing to our Open-source Front-end framework. If you think it is nice for others to see it, then why not contribute it? Don't let your imagination slipped away before you can even realize it to the world.
+<!-- Made with ❤️ by all the _BebyKit_'s team. -->
+<!-- #### Description -->
+#### 📍 Deskripsi
 
-> “ If freedom of speech is taken away, then dumb and silent we may be led, like sheep to the slaughter. ”
-> 
-> ```- George Washington```
+Selamat datang di proyek _front-end_ ini. Kamu bisa bantu kembangkan _BebyKit_ menjadi lebih baik lagi dengan mengembangkan kreativitas kamu di proyek _open source_ ini.
 
-### Contribution Guideline
-Instruction
+<!-- #### Contribution Guideline -->
+#### 📍 Cara Kontribusi
+<!-- Instruction
 - At the very first step, star this repo!
 - Fork this repo
 - Clone your forked repo
 - Create your own creative script
 - Commit & Push your code
 - Discuss the Pull Request to be merged (if accepted, your script will be pulled)
-- Celebrate your contribute to open-source project 😄
----
-MIT License
+- Celebrate your contribute to open-source project 😄 -->
 
-Copyright (c) 2022 Hawari Muflih Munte
+Instruksi:
+- Pertama sekali, bintangin _repo_ ini!
+- Kemudian, _fork_ repo ini
+- _clone_ repo yang sudah di _fork_
+- Mulailah mengoding...
+- _commit_ dan _push_ hasil codinganmu
+- Buka diskusi, diskusikan hasil codinganmu. Apabila banyak yang setuju, maka hasil codinganmu akan menjadi pembaruan bagi proyek _open source_ ini.
+- Selamat, kamu sudah berkontribusi di proyek _open source_.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+----
