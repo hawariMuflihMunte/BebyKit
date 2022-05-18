@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BebyKit | Border</title>
+    <title>BebyKit | Radius</title>
 
     <!-- Bootstrap Icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -102,157 +102,188 @@
     </div>
     <div class="relative padding-top-8">
         <div class="container text-grey-3">
-            <h2 class="text-brand-color">Border</h2>
+            <h2 class="text-brand-color">Radius</h2>
             <hr class="margin-bottom-10">
             <p>
-                <code>margin</code> digunakan untuk memberikan jarak diluar konten.
+                <code>padding</code> digunakan untuk memberikan jarak didalam konten.
                 <br>
                 Seperti contoh dibawah ini:
                 <br>
             </p>
-            <div class="flex padding-x-2-on-small overflow-x-auto">
-                <div class="flex-column">
-                    <div class="display-block width-max-content border-1 border-grey-2 padding-5 margin-right-5 radius-2">
-                        <div class="display-block background-blue-4 padding-6"></div>
-                    </div>
+            <div class="flex padding-x-2-on-small">
+                <div class="display-block width-max-content border-2 border-grey-2 padding-5 radius-2 margin-right-6">
+                    <div class="display-block background-blue-4 padding-6"></div>
                 </div>
-                <div class="flex-column">
-                    <div class="display-block width-max-content border-2 border-blue-2 padding-5 margin-right-5 radius-2">
-                        <div class="display-block background-blue-4 padding-6"></div>
-                    </div>
-                </div>
-                <div class="flex-column">
-                    <div class="display-block width-max-content border-top-5 border-bottom-8 border-red-2 padding-5 margin-right-5 radius-2">
-                        <div class="display-block background-blue-4 padding-6"></div>
-                    </div>
-                </div>
-                <div class="flex-column">
-                    <div class="display-block width-max-content border-top-5 border-right-8 border-bottom-8 border-left-3 border-top-red-2 border-right-blue-5 border-bottom-yellow-3 border-left-orange-6 padding-5 margin-right-5 radius-2">
-                        <div class="display-block background-blue-4 padding-6"></div>
-                    </div>
+                <div class="display-block width-max-content border-2 border-grey-2 padding-5 radius-top-left-5 radius-bottom-right-10 radius-bottom-left-4 overflow-hidden">
+                    <div class="display-block background-blue-4 padding-6"></div>
                 </div>
             </div>
             <p>
-                Tiap elemen diatass memiliki <code>border</code> yang berbeda-beda.
+                Pada contoh diatas, elemen berwarna biru di dalam kotak tersebut memberikan jarak kepada wadahnya, garis hitam.
                 <br>
-                Hal ini dikarenakan <code>class</code> <span class="text-brand-color">BebyKit</span> memiliki
-                <code>class</code> yang dapat memberikan styling (<em>warna & ukuran</em>) terhadap masing-masing 4 sisi <code>border</code> yang berbeda.
+                <br>
+                Berikut <code>class</code> <span class="text-brand-color">BebyKit</span> yang dapat digunakan untuk memberikan <code>padding</code>
+                pada elemen HTML kamu:
                 <br>
                 <br>
             </p>
-            <h5>Ukuran Border</h5>
             <div class="overflow-x-auto">
                 <table class="highlight-table" style="width: 100%;">
                     <thead>
                         <tr>
                             <th class="background-blue-3 text-light"><em>Semua Sisi</em></th>
-                            <th class="background-light"><em>Sisi Kanan & Kiri</em></th>
-                            <th class="background-blue-3 text-light"><em>Sisi Atas & Bawah</em></th>
-                            <th class="background-light"><em>Sisi Atas</em></th>
-                            <th class="background-blue-3 text-light"><em>Sisi Kanan</em></th>
-                            <th class="background-light"><em>Sisi Bawah</em></th>
-                            <th class="background-blue-3 text-light"><em>Sisi Kiri</em></th>
+                            <!-- <th class="background-light"><em>Sisi Atas & Bawah</em></th>
+                            <th class="background-blue-3 text-light"><em>Sisi Kanan & Kiri</em></th> -->
+                            <th class="background-light"><em>Sisi Kiri Atas</em></th>
+                            <th class="background-blue-3 text-light"><em>Sisi Kanan Atas</em></th>
+                            <th class="background-light"><em>Sisi Kanan Bawah</em></th>
+                            <th class="background-blue-3 text-light"><em>Sisi Kiri Bawah</em></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="background-blue-1"><code>border-none</code></td>
-                            <td class="background-light"><code>border-x-none</code></td>
-                            <td class="background-blue-1"><code>border-y-none</code></td>
-                            <td class="background-light"><code>border-top-none</code></td>
-                            <td class="background-blue-1"><code>border-right-none</code></td>
-                            <td class="background-light"><code>border-bottom-none</code></td>
-                            <td class="background-blue-1"><code>border-left-none</code></td>
+                            <td class="background-blue-1"><code>radius-none</code></td>
+                            <!-- <td class="background-light"><code>radius-x-none</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-none</code></td> -->
+                            <td class="background-light"><code>radius-top-left-none</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-none</code></td>
+                            <td class="background-light"><code>radius-bottom-right-none</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-none</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-1</code></td>
-                            <td class="background-light"><code>border-x-1</code></td>
-                            <td class="background-blue-1"><code>border-y-1</code></td>
-                            <td class="background-light"><code>border-top-1</code></td>
-                            <td class="background-blue-1"><code>border-right-1</code></td>
-                            <td class="background-light"><code>border-bottom-1</code></td>
-                            <td class="background-blue-1"><code>border-left-1</code></td>
+                            <td class="background-blue-1"><code>radius-mini</code></td>
+                            <!-- <td class="background-light"><code>radius-x-mini</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-mini</code></td> -->
+                            <td class="background-light"><code>radius-top-left-mini</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-mini</code></td>
+                            <td class="background-light"><code>radius-bottom-right-mini</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-mini</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-2</code></td>
-                            <td class="background-light"><code>border-x-2</code></td>
-                            <td class="background-blue-1"><code>border-y-2</code></td>
-                            <td class="background-light"><code>border-top-2</code></td>
-                            <td class="background-blue-1"><code>border-right-2</code></td>
-                            <td class="background-light"><code>border-bottom-2</code></td>
-                            <td class="background-blue-1"><code>border-left-2</code></td>
+                            <td class="background-blue-1"><code>radius-small</code></td>
+                            <!-- <td class="background-light"><code>radius-x-small</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-small</code></td> -->
+                            <td class="background-light"><code>radius-top-left-small</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-small</code></td>
+                            <td class="background-light"><code>radius-bottom-right-small</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-small</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-3</code></td>
-                            <td class="background-light"><code>border-x-3</code></td>
-                            <td class="background-blue-1"><code>border-y-3</code></td>
-                            <td class="background-light"><code>border-top-3</code></td>
-                            <td class="background-blue-1"><code>border-right-3</code></td>
-                            <td class="background-light"><code>border-bottom-3</code></td>
-                            <td class="background-blue-1"><code>border-left-3</code></td>
+                            <td class="background-blue-1"><code>radius-medium</code></td>
+                            <!-- <td class="background-light"><code>radius-x-medium</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-medium</code></td> -->
+                            <td class="background-light"><code>radius-top-left-medium</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-medium</code></td>
+                            <td class="background-light"><code>radius-bottom-right-medium</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-medium</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-4</code></td>
-                            <td class="background-light"><code>border-x-4</code></td>
-                            <td class="background-blue-1"><code>border-y-4</code></td>
-                            <td class="background-light"><code>border-top-4</code></td>
-                            <td class="background-blue-1"><code>border-right-4</code></td>
-                            <td class="background-light"><code>border-bottom-4</code></td>
-                            <td class="background-blue-1"><code>border-left-4</code></td>
+                            <td class="background-blue-1"><code>radius-large</code></td>
+                            <!-- <td class="background-light"><code>radius-x-large</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-large</code></td> -->
+                            <td class="background-light"><code>radius-top-left-large</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-large</code></td>
+                            <td class="background-light"><code>radius-bottom-right-large</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-large</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-5</code></td>
-                            <td class="background-light"><code>border-x-5</code></td>
-                            <td class="background-blue-1"><code>border-y-5</code></td>
-                            <td class="background-light"><code>border-top-5</code></td>
-                            <td class="background-blue-1"><code>border-right-5</code></td>
-                            <td class="background-light"><code>border-bottom-5</code></td>
-                            <td class="background-blue-1"><code>border-left-5</code></td>
+                            <td class="background-blue-1"><code>radius-maxi</code></td>
+                            <!-- <td class="background-light"><code>radius-x-maxi</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-maxi</code></td> -->
+                            <td class="background-light"><code>radius-top-left-maxi</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-maxi</code></td>
+                            <td class="background-light"><code>radius-bottom-right-maxi</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-maxi</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-6</code></td>
-                            <td class="background-light"><code>border-x-6</code></td>
-                            <td class="background-blue-1"><code>border-y-6</code></td>
-                            <td class="background-light"><code>border-top-6</code></td>
-                            <td class="background-blue-1"><code>border-right-6</code></td>
-                            <td class="background-light"><code>border-bottom-6</code></td>
-                            <td class="background-blue-1"><code>border-left-6</code></td>
+                            <td class="background-blue-1"><code>radius-1</code></td>
+                            <!-- <td class="background-light"><code>radius-x-1</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-1</code></td> -->
+                            <td class="background-light"><code>radius-top-left-1</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-1</code></td>
+                            <td class="background-light"><code>radius-bottom-right-1</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-1</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-7</code></td>
-                            <td class="background-light"><code>border-x-7</code></td>
-                            <td class="background-blue-1"><code>border-y-7</code></td>
-                            <td class="background-light"><code>border-top-7</code></td>
-                            <td class="background-blue-1"><code>border-right-7</code></td>
-                            <td class="background-light"><code>border-bottom-7</code></td>
-                            <td class="background-blue-1"><code>border-left-7</code></td>
+                            <td class="background-blue-1"><code>radius-2</code></td>
+                            <!-- <td class="background-light"><code>radius-x-2</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-2</code></td> -->
+                            <td class="background-light"><code>radius-top-left-2</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-2</code></td>
+                            <td class="background-light"><code>radius-bottom-right-2</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-2</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-8</code></td>
-                            <td class="background-light"><code>border-x-8</code></td>
-                            <td class="background-blue-1"><code>border-y-8</code></td>
-                            <td class="background-light"><code>border-top-8</code></td>
-                            <td class="background-blue-1"><code>border-right-8</code></td>
-                            <td class="background-light"><code>border-bottom-8</code></td>
-                            <td class="background-blue-1"><code>border-left-8</code></td>
+                            <td class="background-blue-1"><code>radius-3</code></td>
+                            <!-- <td class="background-light"><code>radius-x-3</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-3</code></td> -->
+                            <td class="background-light"><code>radius-top-left-3</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-3</code></td>
+                            <td class="background-light"><code>radius-bottom-right-3</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-3</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-9</code></td>
-                            <td class="background-light"><code>border-x-9</code></td>
-                            <td class="background-blue-1"><code>border-y-9</code></td>
-                            <td class="background-light"><code>border-top-9</code></td>
-                            <td class="background-blue-1"><code>border-right-9</code></td>
-                            <td class="background-light"><code>border-bottom-9</code></td>
-                            <td class="background-blue-1"><code>border-left-9</code></td>
+                            <td class="background-blue-1"><code>radius-4</code></td>
+                            <!-- <td class="background-light"><code>radius-x-4</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-4</code></td> -->
+                            <td class="background-light"><code>radius-top-left-4</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-4</code></td>
+                            <td class="background-light"><code>radius-bottom-right-4</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-4</code></td>
                         </tr>
                         <tr>
-                            <td class="background-blue-1"><code>border-10</code></td>
-                            <td class="background-light"><code>border-x-10</code></td>
-                            <td class="background-blue-1"><code>border-y-10</code></td>
-                            <td class="background-light"><code>border-top-10</code></td>
-                            <td class="background-blue-1"><code>border-right-10</code></td>
-                            <td class="background-light"><code>border-bottom-10</code></td>
-                            <td class="background-blue-1"><code>border-left-10</code></td>
+                            <td class="background-blue-1"><code>radius-5</code></td>
+                            <!-- <td class="background-light"><code>radius-x-5</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-5</code></td> -->
+                            <td class="background-light"><code>radius-top-left-5</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-5</code></td>
+                            <td class="background-light"><code>radius-bottom-right-5</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-5</code></td>
+                        </tr>
+                        <tr>
+                            <td class="background-blue-1"><code>radius-6</code></td>
+                            <!-- <td class="background-light"><code>radius-x-6</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-6</code></td> -->
+                            <td class="background-light"><code>radius-top-left-6</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-6</code></td>
+                            <td class="background-light"><code>radius-bottom-right-6</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-6</code></td>
+                        </tr>
+                        <tr>
+                            <td class="background-blue-1"><code>radius-7</code></td>
+                            <!-- <td class="background-light"><code>radius-x-7</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-7</code></td> -->
+                            <td class="background-light"><code>radius-top-left-7</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-7</code></td>
+                            <td class="background-light"><code>radius-bottom-right-7</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-7</code></td>
+                        </tr>
+                        <tr>
+                            <td class="background-blue-1"><code>radius-8</code></td>
+                            <!-- <td class="background-light"><code>radius-x-8</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-8</code></td> -->
+                            <td class="background-light"><code>radius-top-left-8</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-8</code></td>
+                            <td class="background-light"><code>radius-bottom-right-8</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-8</code></td>
+                        </tr>
+                        <tr>
+                            <td class="background-blue-1"><code>radius-9</code></td>
+                            <!-- <td class="background-light"><code>radius-x-9</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-9</code></td> -->
+                            <td class="background-light"><code>radius-top-left-9</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-9</code></td>
+                            <td class="background-light"><code>radius-bottom-right-9</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-9</code></td>
+                        </tr>
+                        <tr>
+                            <td class="background-blue-1"><code>radius-10</code></td>
+                            <!-- <td class="background-light"><code>radius-x-10</code></td> -->
+                            <!-- <td class="background-blue-1"><code>radius-y-10</code></td> -->
+                            <td class="background-light"><code>radius-top-left-10</code></td>
+                            <td class="background-blue-1"><code>radius-top-right-10</code></td>
+                            <td class="background-light"><code>radius-bottom-right-10</code></td>
+                            <td class="background-blue-1"><code>radius-bottom-left-10</code></td>
                         </tr>
                     </tbody>
                 </table>
@@ -282,20 +313,12 @@
                     </span> -->
                 </div>
                 <div class="bk-code-content padding-x-3 padding-y-1">
-                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"display-block border-top-5 border-right-8 border-bottom-8 border-left-3 border-top-red-2 border-right-blue-5 border-bottom-yellow-3 border-left-orange-6 padding-5 margin-right-5 radius-2"</span> <span class="text-yellow-4">style</span>=<span class="text-green-2">"width: max-content;"</span>&gt;
-    &lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"display-block background-blue-4 padding-6"</span>&gt;
-        <span class="text-grey-1">&lt;!-- konten --&gt;</span>
-    &lt;/<span class="text-red-3">div</span>&gt;
+                    <pre class="overflow-auto padding-x-3"><code>&lt;<span class="text-red-3">div</span> <span class="text-yellow-4">class</span>=<span class="text-green-2">"radius-5 padding-5"</span>&gt;
+    <span class="text-grey-1">&lt;!-- konten --&gt;</span>
 &lt;/<span class="text-red-3">div</span>&gt;</code></pre>
                 </div>
             </div><!-- CODE DISPLAY -->
-            <div class="padding-y-3">
-                <p>
-                    Referensi Warna:
-                    <br>
-                    <a href="../../../index.html#colors">Lihat Selengkapnya <i class="bi-palette"></i></a>
-                </p>
-            </div>
+            <div class="padding-y-3"></div>
         </div>
     </div>
     <div class="relative padding-none margin-top-10 bottom-footer">
