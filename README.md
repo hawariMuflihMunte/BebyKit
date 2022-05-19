@@ -33,4 +33,46 @@ Instruksi:
 - Buka diskusi, diskusikan hasil codinganmu. Apabila banyak yang setuju, maka hasil codinganmu akan menjadi pembaruan bagi proyek _open source_ ini.
 - Selamat, kamu sudah berkontribusi di proyek _open source_.
 
+<br>
+
 ----
+
+<br>
+
+#### Perilisan BebyKit_v1.0.3
+* Rilis Framework CSS *BebyKit_v1.0.3*
+* LISENSI dibuat oleh @hawariMuflihMunte di https://github.com/hawariMuflihMunte/BebyKit/pull/2
+* Penarikan _source code_ terbaru BebyKit_v1.0.3 by @hawari-882 in https://github.com/hawariMuflihMunte/BebyKit/pull/5
+<br>
+
+#### Fitur
+* Tata Letak & Komponen
+* Tipografi
+* Eksploitasi
+<br>
+
+#### Riwayat Proyek
+* @hawariMuflihMunte kontribusi pertama kali di dalam proyek ini di https://github.com/hawariMuflihMunte/BebyKit/pull/2
+* @hawari-882 kontribusi pertama kali di dalam proyek ini di https://github.com/hawariMuflihMunte/BebyKit/pull/5
+<br>
+
+#### Kontributor
+* @hawariMuflihMunte
+* @hawari-882
+<br>
+
+### Fitur (*yang akan datang*)
+* Form
+* Komponen Independen
+<br>
+
+**Riwayat Lengkap**: https://github.com/hawariMuflihMunte/BebyKit/commits/bebykit
+
+<br>
+<br>
+
+<img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@main/assets/images/bebykit.png?raw=true" width="40px">
+v1.0.3
+
+Buatan Anak Negeri 💪💪💪&nbsp;
+<img src="https://cdn.jsdelivr.net/gh/hawariMuflihMunte/BebyKit@429552555c907bb5bf52dfffc1219ce251b19ba5/assets/images/indonesia-flag.svg" width="25px">
